@@ -121,11 +121,11 @@
     <Compile Include="fTinDung.Designer.cs">
       <DependentUpon>fTinDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="fSoTietKiem.cs">
+    <Compile Include="fTK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fSoTietKiem.Designer.cs">
-      <DependentUpon>fSoTietKiem.cs</DependentUpon>
+    <Compile Include="fTK.Designer.cs">
+      <DependentUpon>fTK.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiTien.cs">
       <SubType>Form</SubType>
@@ -176,8 +176,8 @@
     <EmbeddedResource Include="fTinDung.resx">
       <DependentUpon>fTinDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fSoTietKiem.resx">
-      <DependentUpon>fSoTietKiem.cs</DependentUpon>
+    <EmbeddedResource Include="fTK.resx">
+      <DependentUpon>fTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiTien.resx">
       <DependentUpon>GuiTien.cs</DependentUpon>

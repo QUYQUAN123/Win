@@ -94,7 +94,7 @@ namespace QLNganHang
         private void btnLayThongTin_Click(object sender, EventArgs e)
         {
             string d = tbxSTKTK.Text;
-            var item = (from u in NH.View_GuiTiens
+            var item = (from u in NH.SoTietKiems
                         where u.MaSo == d
                         select u).FirstOrDefault();
             tbxTenKH.Text = item.TenKH;
@@ -105,19 +105,27 @@ namespace QLNganHang
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string d = tbxSTKTK.Text;
-            var item = (from u in NH.SoTietKiems
-                        where u.MaSo == d
-                        select u).FirstOrDefault();
-            if (Convert.ToInt32(tbxSoTienGui.Text) == 0)
+            if(tbxSTKTK.Text == null)
             {
-                MessageBox.Show("Vui lòng nhập số tiền trên 500.000 VNĐ.");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             }
             else
             {
-                item.TienGui = item.TienGui + Convert.ToDecimal(tbxSoTienGui.Text);
-                NH.SubmitChanges();
-                MessageBox.Show("Giao dịch gửi tiền thành công!");
+                
+                string d = tbxSTKTK.Text;
+                var item = (from u in NH.SoTietKiems
+                            where u.MaSo == d
+                            select u).FirstOrDefault();
+                if (Convert.ToInt32(tbxSoTienGui.Text) == 0)
+                {
+                    MessageBox.Show("Vui lòng nhập số tiền trên 500.000 VNĐ.");
+                }
+                else
+                {
+                    item.TienGui = item.TienGui + Convert.ToDecimal(tbxSoTienGui.Text);
+                    NH.SubmitChanges();
+                    MessageBox.Show("Giao dịch gửi tiền thành công!");
+                }
             }
         }
     }

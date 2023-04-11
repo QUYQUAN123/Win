@@ -114,7 +114,7 @@ namespace QLNganHang
 
         private void sổTiếtKiệmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fSoTietKiem tk = new fSoTietKiem();
+            fTK tk = new fTK();
             tk.ShowDialog();
         }
     }

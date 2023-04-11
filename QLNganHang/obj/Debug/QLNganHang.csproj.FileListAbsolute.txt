@@ -21,3 +21,26 @@
 \\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\GIT QLNganHang\master\QLNganHang\obj\Debug\QLNganHang.pdb
 \\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\GIT QLNganHang\master\QLNganHang\obj\Debug\QLNganHang.DKSoTietKiem.resources
 \\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\GIT QLNganHang\master\QLNganHang\obj\Debug\QLNganHang.fTK.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.csproj.AssemblyReference.cache
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.exe
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\bin\Debug\QLNganHang.exe.config
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\bin\Debug\QLNganHang.exe
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\bin\Debug\QLNganHang.pdb
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.DKSoTietKiem.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fAccountProfile.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fChuyenTien.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fKhachHang.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fKiemTraTD.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.Form1.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fNapRut.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fNhanVien.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fNoTinDung.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fTaoTinDung.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fTinDung.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.fTK.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.GuiTien.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.Properties.Resources.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.VayTien.resources
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.cache
+C:\Users\luanngo9352gmail.com\Source\Repos\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache

@@ -59,11 +59,14 @@ namespace QLNganHang
                     "'{7}','{8}','{9}')",tbxSTKTK.Text,tbxTenKH.Text,textMaKH.Text,tbxSDT.Text,tbxCCCD.Text,tbxSoTienGui.Text,txbNgayGui.Text,comboKyHan.Text,txbLaiXuat.Text,tbxThanhToan.Text);
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("them thanh cong");
+                {
+                    NH.SubmitChanges();
+                    MessageBox.Show("Mở sổ thành công!");                   
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("them that bai" + ex);
+                MessageBox.Show("Thất bại!" + ex);
             }
             finally
             {
