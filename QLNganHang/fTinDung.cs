@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,7 @@ namespace QLNganHang
 
         private void fTinDung_Load(object sender, EventArgs e)
         {
-            db = new DataQLNganHangDataContext();
-            gvTinDung.DataSource = db.TinDungs;
+            LoadData();
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
@@ -29,6 +29,11 @@ namespace QLNganHang
             var lst = (from s in db.TinDungs where s.Cccd.Contains(txtTimKiem.Text) select s).ToList();
             gvTinDung.DataSource = lst;
 
+        }
+         void LoadData()
+        {
+            db = new DataQLNganHangDataContext();
+            gvTinDung.DataSource = db.TinDungs;
         }
 
         private void gvTinDung_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -48,6 +53,31 @@ namespace QLNganHang
 
         }
 
-        
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string matd = txtMaTD.Text, tenkh = txtTenKH.Text,cccd= txtCccd.Text,loaithe = cmbLoaiThe.Text;
+            double laixuattd = double.Parse(cmbLaiXuat.Text);
+            DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
+            decimal thunhap = decimal.Parse(txtThuNhap.Text),hanmuc = decimal.Parse(cmbHanMuc.Text)
+                , notd= decimal.Parse(txtNoTD.Text), noxau= decimal.Parse(txtNoXau.Text);
+            var item = new TinDung
+            {
+                MaTD = matd,
+                TenKH = tenkh,
+                ThuNhap = thunhap,
+                Cccd = cccd,
+                LoaiThe = loaithe,
+                HanMuc = hanmuc,
+                NgayTra = ngaytra,
+                LaiXuatTD = laixuattd,
+                NoTD = notd,
+                NoXau = noxau,
+
+            };
+            db.TinDungs.InsertOnSubmit(item);
+            db.SubmitChanges();
+            MessageBox.Show("Them thanh cong");
+            LoadData();
+        }
     }
 }
