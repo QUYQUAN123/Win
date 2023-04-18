@@ -1,44 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNganHang" Class="DataQLNganHangDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0BEFH93;Initial Catalog=QLNganHang;Integrated Security=True" SettingsObjectName="QLNganHang.Properties.Settings" SettingsPropertyName="QLNganHangConnectionString2" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.KhachHang" Member="KhachHangs">
-    <Type Name="KhachHang">
-      <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="DiaChi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="ThuNhap" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.LaiXuat" Member="LaiXuats">
-    <Type Name="LaiXuat">
-      <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuatVay" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuatGui" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.LichSuGiaoDich" Member="LichSuGiaoDiches">
-    <Type Name="LichSuGiaoDich">
-      <Column Name="MaGD" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="SoKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="SoTienGiaoDich" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Column Name="NoiDungGiaoDich" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.NhanVien" Member="NhanViens">
-    <Type Name="NhanVien">
-      <Column Name="MaNV" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenNV" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="DiaChi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NGMINHLUN884A\SQLEXPRESS;Initial Catalog=QLNganHang;Integrated Security=True" SettingsObjectName="QLNganHang.Properties.Settings" SettingsPropertyName="QLNganHangConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.SoTietKiem" Member="SoTietKiems">
     <Type Name="SoTietKiem">
       <Column Name="MaSo" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -80,18 +41,11 @@
       <Column Name="SoLan" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.View_GuiTien" Member="View_GuiTiens">
-    <Type Name="View_GuiTien">
-      <Column Name="MaSo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="TienGui" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+  <Table Name="dbo.LaiXuat" Member="LaiXuats">
+    <Type Name="LaiXuat">
       <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuat" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="NgayGui" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="SoTKhoanTK" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LaiXuatVay" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="LaiXuatGui" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.View_KhachHang" Member="View_KhachHangs">
@@ -106,34 +60,6 @@
       <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="DiaChi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="Expr1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.View_SoTietKiem" Member="View_SoTietKiems">
-    <Type Name="View_SoTietKiem">
-      <Column Name="MaSo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="TienGui" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Column Name="NgayGui" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuat" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
-      <Column Name="DaThanhToan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SoDu" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-      <Column Name="SoTKhoanTK" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.View_VayTien" Member="View_VayTiens">
-    <Type Name="View_VayTien">
-      <Column Name="SoTK" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="SoTKhoanTK" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="SoDu" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-      <Column Name="SoTienVay" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuatVay" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
-      <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>
