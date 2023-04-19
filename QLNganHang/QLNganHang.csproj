@@ -148,12 +148,6 @@
     <Compile Include="fTinDung.Designer.cs">
       <DependentUpon>fTinDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="fSoTietKiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fSoTietKiem.Designer.cs">
-      <DependentUpon>fSoTietKiem.cs</DependentUpon>
-    </Compile>
     <Compile Include="GuiTien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +168,24 @@
     <Compile Include="NhanVienDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhToanSoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToanSoTK.Designer.cs">
+      <DependentUpon>ThanhToanSoTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinSoTietKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinSoTietKiem.Designer.cs">
+      <DependentUpon>ThongTinSoTietKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VayTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VayTien.Designer.cs">
+      <DependentUpon>VayTien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DKSoTietKiem.resx">
       <DependentUpon>DKSoTietKiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,9 +231,6 @@
     <EmbeddedResource Include="fTinDung.resx">
       <DependentUpon>fTinDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fSoTietKiem.resx">
-      <DependentUpon>fSoTietKiem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GuiTien.resx">
       <DependentUpon>GuiTien.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +247,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ThanhToanSoTK.resx">
+      <DependentUpon>ThanhToanSoTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinSoTietKiem.resx">
+      <DependentUpon>ThongTinSoTietKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VayTien.resx">
+      <DependentUpon>VayTien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataQLNganHang.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataQLNganHang.designer.cs</LastGenOutput>

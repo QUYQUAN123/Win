@@ -92,8 +92,8 @@ namespace QLNganHang
 
         private void vayTiềnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //VayTien v = new VayTien();
-           // v.ShowDialog();
+           VayTien v = new VayTien();
+           v.ShowDialog();
         }
 
         private void gửiTiềnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace QLNganHang
 
         private void sổTiếtKiệmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fTK tk = new fTK();
+            ThongTinSoTietKiem tk = new ThongTinSoTietKiem();
             tk.ShowDialog();
         }
 

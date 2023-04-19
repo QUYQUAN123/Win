@@ -32,7 +32,7 @@ namespace QLNganHang
             KHcombo.Items.Add("7");
             KHcombo.Items.Add("9");
         }
-
+        
         private void KTbtn_Click(object sender, EventArgs e)
         {
             string d = STKtxt.Text;

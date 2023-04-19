@@ -18,7 +18,7 @@ namespace QLNganHang
             InitializeComponent();
         }
 
-        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string d = tbxMaKH.Text;
             var item = (from u in NH.SoTietKiems
@@ -26,7 +26,7 @@ namespace QLNganHang
                         select u).ToList();
             gridviewThanhToan.DataSource = item;
         }
-
+        //dhdcc
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             ThanhToanSoTK tt = new ThanhToanSoTK();
@@ -43,13 +43,13 @@ namespace QLNganHang
 
         }
 
-        private void btnGuiTien_Click_1(object sender, EventArgs e)
+        private void btnGuiTien_Click(object sender, EventArgs e)
         {
             GuiTien dt = new GuiTien();
             dt.ShowDialog();
         }
 
-        private void btnDKMoSoTK_Click_1(object sender, EventArgs e)
+        private void btnDKMoSoTK_Click(object sender, EventArgs e)
         {
             DKSoTietKiem dk = new DKSoTietKiem();
             dk.ShowDialog();

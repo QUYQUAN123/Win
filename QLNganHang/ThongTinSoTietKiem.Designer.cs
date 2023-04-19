@@ -1,5 +1,4 @@
-﻿
-namespace QLNganHang
+﻿namespace QLNganHang
 {
     partial class ThongTinSoTietKiem
     {
@@ -41,75 +40,75 @@ namespace QLNganHang
             // 
             // btnDKMoSoTK
             // 
-            this.btnDKMoSoTK.Location = new System.Drawing.Point(148, 510);
+            this.btnDKMoSoTK.Location = new System.Drawing.Point(137, 477);
             this.btnDKMoSoTK.Name = "btnDKMoSoTK";
             this.btnDKMoSoTK.Size = new System.Drawing.Size(183, 64);
-            this.btnDKMoSoTK.TabIndex = 66;
+            this.btnDKMoSoTK.TabIndex = 80;
             this.btnDKMoSoTK.Text = "Đăng ký mở sổ";
             this.btnDKMoSoTK.UseVisualStyleBackColor = true;
-            this.btnDKMoSoTK.Click += new System.EventHandler(this.btnDKMoSoTK_Click_1);
+            this.btnDKMoSoTK.Click += new System.EventHandler(this.btnDKMoSoTK_Click);
             // 
             // btnGuiTien
             // 
-            this.btnGuiTien.Location = new System.Drawing.Point(446, 510);
+            this.btnGuiTien.Location = new System.Drawing.Point(435, 477);
             this.btnGuiTien.Name = "btnGuiTien";
             this.btnGuiTien.Size = new System.Drawing.Size(183, 64);
-            this.btnGuiTien.TabIndex = 65;
+            this.btnGuiTien.TabIndex = 79;
             this.btnGuiTien.Text = "Nộp tiền vào sổ";
             this.btnGuiTien.UseVisualStyleBackColor = true;
-            this.btnGuiTien.Click += new System.EventHandler(this.btnGuiTien_Click_1);
+            this.btnGuiTien.Click += new System.EventHandler(this.btnGuiTien_Click);
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(753, 510);
+            this.btnThanhToan.Location = new System.Drawing.Point(742, 477);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(183, 64);
-            this.btnThanhToan.TabIndex = 64;
+            this.btnThanhToan.TabIndex = 78;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(500, 56);
+            this.btnTimKiem.Location = new System.Drawing.Point(489, 18);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(176, 35);
-            this.btnTimKiem.TabIndex = 63;
+            this.btnTimKiem.Size = new System.Drawing.Size(176, 41);
+            this.btnTimKiem.TabIndex = 77;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // tbxMaKH
             // 
-            this.tbxMaKH.Location = new System.Drawing.Point(148, 55);
+            this.tbxMaKH.Location = new System.Drawing.Point(137, 22);
             this.tbxMaKH.Name = "tbxMaKH";
             this.tbxMaKH.Size = new System.Drawing.Size(302, 31);
-            this.tbxMaKH.TabIndex = 62;
+            this.tbxMaKH.TabIndex = 76;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 61);
+            this.label2.Location = new System.Drawing.Point(38, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 25);
-            this.label2.TabIndex = 61;
+            this.label2.TabIndex = 75;
             this.label2.Text = "Mã KH:";
             // 
             // gridviewThanhToan
             // 
             this.gridviewThanhToan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewThanhToan.Location = new System.Drawing.Point(51, 119);
+            this.gridviewThanhToan.Location = new System.Drawing.Point(40, 86);
             this.gridviewThanhToan.Name = "gridviewThanhToan";
             this.gridviewThanhToan.RowHeadersWidth = 82;
             this.gridviewThanhToan.RowTemplate.Height = 33;
             this.gridviewThanhToan.Size = new System.Drawing.Size(990, 342);
-            this.gridviewThanhToan.TabIndex = 60;
+            this.gridviewThanhToan.TabIndex = 74;
             // 
             // ThongTinSoTietKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 621);
+            this.ClientSize = new System.Drawing.Size(1068, 563);
             this.Controls.Add(this.btnDKMoSoTK);
             this.Controls.Add(this.btnGuiTien);
             this.Controls.Add(this.btnThanhToan);

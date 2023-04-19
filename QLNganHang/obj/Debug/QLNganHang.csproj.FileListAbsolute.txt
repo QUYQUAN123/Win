@@ -83,3 +83,35 @@ C:\Users\quanv\OneDrive\Máy tính\New folder\Project\Win\QLNganHang\obj\Debug\Q
 C:\Users\quanv\OneDrive\Máy tính\New folder\Project\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete
 C:\Users\quanv\OneDrive\Máy tính\New folder\Project\Win\QLNganHang\obj\Debug\QLNganHang.exe
 C:\Users\quanv\OneDrive\Máy tính\New folder\Project\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.DKSoTietKiem.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fAccountProfile.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fChuyenTien.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fDangKiKhachHangMoi.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fKhachHang.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fKiemTraTD.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.Form1.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fMoTaiKhoancs.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fNapRut.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fNewAccount.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fNhanVien.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fNoTinDung.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.FThongTinKhacHang.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fThongTinNV.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.fTinDung.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.GuiTien.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.LichSuGiaoDich.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.Properties.Resources.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanSoTK.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.ThongTinSoTietKiem.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.VayTien.resources
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.exe
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\QLNganHang.exe.config
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\QLNganHang.exe
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\QLNganHang.pdb
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\System.Data.SqlClient.dll
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\System.Data.SqlClient.xml
+\\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete

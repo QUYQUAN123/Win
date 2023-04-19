@@ -41,7 +41,7 @@ namespace QLNganHang
                 tbxTienLai.Text = Convert.ToString(Convert.ToDecimal(tbxSoTienGui.Text) + Convert.ToDecimal(tbxSoTienGui.Text) * Convert.ToDecimal(txbLaiXuat.Text) / 100);
             }
         }
-
+        //hbyub
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             string d = tbxSTKTK.Text;
