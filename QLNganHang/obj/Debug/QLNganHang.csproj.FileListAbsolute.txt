@@ -115,3 +115,36 @@ C:\Users\quanv\OneDrive\Máy tính\New folder\Project\Win\QLNganHang\obj\Debug\Q
 \\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\System.Data.SqlClient.dll
 \\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\bin\Debug\System.Data.SqlClient.xml
 \\Mac\Home\Desktop\ĐỒ ÁN CUỐI KỲ\New folder\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete
+E:\ProjetWin02\Win\QLNganHang\bin\Debug\QLNganHang.exe.config
+E:\ProjetWin02\Win\QLNganHang\bin\Debug\QLNganHang.exe
+E:\ProjetWin02\Win\QLNganHang\bin\Debug\QLNganHang.pdb
+E:\ProjetWin02\Win\QLNganHang\bin\Debug\System.Data.SqlClient.dll
+E:\ProjetWin02\Win\QLNganHang\bin\Debug\System.Data.SqlClient.xml
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.AssemblyReference.cache
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.SuggestedBindingRedirects.cache
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.DKSoTietKiem.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fAccountProfile.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fChuyenTien.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fDangKiKhachHangMoi.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fKhachHang.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fKiemTraTD.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.Form1.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fMoTaiKhoancs.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNapRut.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNewAccount.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNhanVien.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNoTinDung.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.FThongTinKhacHang.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fThongTinNV.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fTinDung.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.GuiTien.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.LichSuGiaoDich.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.Properties.Resources.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanSoTK.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.ThongTinSoTietKiem.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.VayTien.resources
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.cache
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.exe
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.pdb

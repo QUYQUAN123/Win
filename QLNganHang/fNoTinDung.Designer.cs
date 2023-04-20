@@ -45,6 +45,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSolan = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -129,17 +131,17 @@
             // 
             // btnKT
             // 
-            this.btnKT.Location = new System.Drawing.Point(455, 32);
+            this.btnKT.Location = new System.Drawing.Point(62, 27);
             this.btnKT.Name = "btnKT";
             this.btnKT.Size = new System.Drawing.Size(128, 31);
             this.btnKT.TabIndex = 17;
-            this.btnKT.Text = "Kiem tra";
+            this.btnKT.Text = "Kiem tra no";
             this.btnKT.UseVisualStyleBackColor = true;
             this.btnKT.Click += new System.EventHandler(this.btnKT_Click);
             // 
             // btnTN
             // 
-            this.btnTN.Location = new System.Drawing.Point(455, 87);
+            this.btnTN.Location = new System.Drawing.Point(62, 70);
             this.btnTN.Name = "btnTN";
             this.btnTN.Size = new System.Drawing.Size(127, 28);
             this.btnTN.TabIndex = 18;
@@ -149,7 +151,7 @@
             // 
             // btnCNNoXau
             // 
-            this.btnCNNoXau.Location = new System.Drawing.Point(455, 136);
+            this.btnCNNoXau.Location = new System.Drawing.Point(62, 104);
             this.btnCNNoXau.Name = "btnCNNoXau";
             this.btnCNNoXau.Size = new System.Drawing.Size(129, 30);
             this.btnCNNoXau.TabIndex = 19;
@@ -159,7 +161,7 @@
             // 
             // btnChuyen
             // 
-            this.btnChuyen.Location = new System.Drawing.Point(457, 182);
+            this.btnChuyen.Location = new System.Drawing.Point(64, 140);
             this.btnChuyen.Name = "btnChuyen";
             this.btnChuyen.Size = new System.Drawing.Size(127, 29);
             this.btnChuyen.TabIndex = 20;
@@ -183,17 +185,26 @@
             this.txtSolan.Size = new System.Drawing.Size(134, 22);
             this.txtSolan.TabIndex = 22;
             // 
-            // fTinDung
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnKT);
+            this.groupBox1.Controls.Add(this.btnTN);
+            this.groupBox1.Controls.Add(this.btnCNNoXau);
+            this.groupBox1.Controls.Add(this.btnChuyen);
+            this.groupBox1.Location = new System.Drawing.Point(323, 37);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(242, 218);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            // 
+            // fNoTinDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 453);
+            this.ClientSize = new System.Drawing.Size(577, 356);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtSolan);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnChuyen);
-            this.Controls.Add(this.btnCNNoXau);
-            this.Controls.Add(this.btnTN);
-            this.Controls.Add(this.btnKT);
             this.Controls.Add(this.txtST);
             this.Controls.Add(this.txtNX);
             this.Controls.Add(this.txtNoTD);
@@ -204,9 +215,10 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "fTinDung";
+            this.Name = "fNoTinDung";
             this.Text = "fTinDung";
             this.Load += new System.EventHandler(this.fTinDung_Load);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +243,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSolan;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
