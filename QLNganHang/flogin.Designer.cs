@@ -61,7 +61,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(267, 277);
+            this.label2.Location = new System.Drawing.Point(258, 277);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 25);
             this.label2.TabIndex = 1;
@@ -129,7 +129,7 @@
             this.label3.ForeColor = System.Drawing.Color.Lime;
             this.label3.Location = new System.Drawing.Point(204, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(424, 39);
+            this.label3.Size = new System.Drawing.Size(409, 38);
             this.label3.TabIndex = 7;
             this.label3.Text = "Bank Management System";
             // 

@@ -148,3 +148,4 @@ E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cach
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.exe
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fMain.resources
