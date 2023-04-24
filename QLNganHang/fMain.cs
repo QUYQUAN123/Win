@@ -16,5 +16,21 @@ namespace QLNganHang
         {
             InitializeComponent();
         }
+
+        private void PBTinDung_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fTinDung f = new fTinDung();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void PBMoSoTK_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DKSoTietKiem f = new DKSoTietKiem();
+            f.ShowDialog();
+            this.Close();
+        }
     }
 }

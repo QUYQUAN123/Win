@@ -51,10 +51,7 @@ namespace QLNganHang
             txtSoLan.Text = gvTinDung.Rows[i].Cells[10].Value.ToString();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnKiemTra_Click_1(object sender, EventArgs e)
         {

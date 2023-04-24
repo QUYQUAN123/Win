@@ -133,7 +133,11 @@ namespace QLNganHang
 
         }
 
-        private void btnChuyen_Click(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
         {
             this.Hide();
             fNoTinDung f = new fNoTinDung();
@@ -141,9 +145,12 @@ namespace QLNganHang
             this.Close();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void btnTinDung_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fTinDung f = new fTinDung();
+            f.ShowDialog();
+            this.Close();
         }
     }
 }
