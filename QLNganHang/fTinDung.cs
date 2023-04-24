@@ -48,12 +48,83 @@ namespace QLNganHang
             cmbLaiXuat.Text = gvTinDung.Rows[i].Cells[7].Value.ToString();
             txtNoTD.Text = gvTinDung.Rows[i].Cells[8].Value.ToString();
             txtNoXau.Text = gvTinDung.Rows[i].Cells[9].Value.ToString();
-            txtSoLan.Text= gvTinDung.Rows[i].Cells[10].Value.ToString();
+            txtSoLan.Text = gvTinDung.Rows[i].Cells[10].Value.ToString();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            string matd = txtMaTD.Text, tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan= txtSoLan.Text;
+
+        }
+
+        private void btnKiemTra_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            fKiemTraTD f = new fKiemTraTD();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void btnThanhToan_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            fNoTinDung f = new fNoTinDung();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ban co muon xoa khong", "Xoa", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                string tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan = txtSoLan.Text;
+                double laixuattd = double.Parse(cmbLaiXuat.Text);
+                DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
+                decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
+                , notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
+                var st = (from s in db.TinDungs where s.MaTD == txtMaTD.Text select s).First();
+                st.TenKH = tenkh;
+                st.ThuNhap = thunhap;
+                st.Cccd = cccd;
+                st.LoaiThe = loaithe;
+                st.HanMuc = hanmuc;
+                st.NgayTra = ngaytra;
+                st.LaiXuatTD = laixuattd;
+                st.NoTD = notd;
+                st.NoXau = noxau;
+                st.SoLan = solan;
+                db.TinDungs.DeleteOnSubmit(st);
+                db.SubmitChanges();
+                MessageBox.Show("Xoa thanh cong");
+                LoadData();
+            }
+        }
+
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
+            string tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan = txtSoLan.Text;
+            double laixuattd = double.Parse(cmbLaiXuat.Text);
+            DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
+            decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
+            , notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
+            var st = (from s in db.TinDungs where s.MaTD == txtMaTD.Text select s).First();
+            st.TenKH = tenkh;
+            st.ThuNhap = thunhap;
+            st.Cccd = cccd;
+            st.LoaiThe = loaithe;
+            st.HanMuc = hanmuc;
+            st.NgayTra = ngaytra;
+            st.LaiXuatTD = laixuattd;
+            st.NoTD = notd;
+            st.NoXau = noxau;
+            st.SoLan = solan;
+            db.SubmitChanges();
+            MessageBox.Show("Sua thanh cong");
+            LoadData();
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
+        {
+            string matd = txtMaTD.Text, tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan = txtSoLan.Text;
             double laixuattd = double.Parse(cmbLaiXuat.Text);
             DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
             decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
@@ -77,77 +148,6 @@ namespace QLNganHang
             db.SubmitChanges();
             MessageBox.Show("Them thanh cong");
             LoadData();
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            string tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text,solan= txtSoLan.Text;
-            double laixuattd = double.Parse(cmbLaiXuat.Text);
-            DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
-            decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
-            , notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
-            var st = (from s in db.TinDungs where s.MaTD == txtMaTD.Text select s).First();
-            st.TenKH = tenkh;
-            st.ThuNhap = thunhap;
-            st.Cccd = cccd;
-            st.LoaiThe = loaithe;
-            st.HanMuc = hanmuc;
-            st.NgayTra = ngaytra;
-            st.LaiXuatTD = laixuattd;
-            st.NoTD = notd;
-            st.NoXau = noxau;
-            st.SoLan = solan;
-            db.SubmitChanges();
-            MessageBox.Show("Sua thanh cong");
-            LoadData();
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Ban co muon xoa khong", "Xoa", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                string tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan= txtSoLan.Text;
-                double laixuattd = double.Parse(cmbLaiXuat.Text);
-                DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
-                decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
-                , notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
-                var st = (from s in db.TinDungs where s.MaTD == txtMaTD.Text select s).First();
-                st.TenKH = tenkh;
-                st.ThuNhap = thunhap;
-                st.Cccd = cccd;
-                st.LoaiThe = loaithe;
-                st.HanMuc = hanmuc;
-                st.NgayTra = ngaytra;
-                st.LaiXuatTD = laixuattd;
-                st.NoTD = notd;
-                st.NoXau = noxau;
-                st.SoLan = solan;
-                db.TinDungs.DeleteOnSubmit(st);
-                db.SubmitChanges();
-                MessageBox.Show("Xoa thanh cong");
-                LoadData();
-            }
-        }
-
-        private void btnKiemTra_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fKiemTraTD f = new fKiemTraTD();
-            f.ShowDialog();
-            this.Close();
-        }
-
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fNoTinDung f = new fNoTinDung();
-            f.ShowDialog();
-            this.Close();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

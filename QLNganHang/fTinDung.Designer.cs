@@ -28,17 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.gvTinDung = new System.Windows.Forms.DataGridView();
-            this.label12 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnThanhToan = new System.Windows.Forms.Button();
-            this.btnKiemTra = new System.Windows.Forms.Button();
+            this.btnKiemTra = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThanhToan = new Guna.UI2.WinForms.Guna2Button();
+            this.gvTinDung = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnThem = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnSua = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,77 +71,26 @@
             this.txtSoLan = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvTinDung)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvTinDung)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox2.Controls.Add(this.btnXoa);
-            this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnThem);
-            this.groupBox2.Location = new System.Drawing.Point(577, 21);
+            this.groupBox2.Controls.Add(this.btnSua);
+            this.groupBox2.Location = new System.Drawing.Point(572, 47);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(142, 170);
+            this.groupBox2.Size = new System.Drawing.Size(115, 133);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(31, 105);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(85, 36);
-            this.btnXoa.TabIndex = 2;
-            this.btnXoa.Text = "Xoa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(31, 61);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(85, 34);
-            this.btnSua.TabIndex = 1;
-            this.btnSua.Text = "Sua";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(31, 18);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(85, 35);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "Them";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // gvTinDung
-            // 
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.gvTinDung.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvTinDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvTinDung.Location = new System.Drawing.Point(9, 487);
-            this.gvTinDung.Name = "gvTinDung";
-            this.gvTinDung.RowHeadersWidth = 51;
-            this.gvTinDung.RowTemplate.Height = 24;
-            this.gvTinDung.Size = new System.Drawing.Size(574, 140);
-            this.gvTinDung.TabIndex = 3;
-            this.gvTinDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvTinDung_CellContentClick);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 421);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 16);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Tim kiem";
-            // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(137, 415);
+            this.txtTimKiem.Location = new System.Drawing.Point(4, 338);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(327, 22);
             this.txtTimKiem.TabIndex = 27;
@@ -141,33 +98,189 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnThanhToan);
+            this.groupBox3.BackColor = System.Drawing.Color.AntiqueWhite;
             this.groupBox3.Controls.Add(this.btnKiemTra);
-            this.groupBox3.Location = new System.Drawing.Point(577, 226);
+            this.groupBox3.Controls.Add(this.btnThanhToan);
+            this.groupBox3.Location = new System.Drawing.Point(572, 197);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(142, 187);
+            this.groupBox3.Size = new System.Drawing.Size(139, 137);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.Location = new System.Drawing.Point(31, 68);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(91, 45);
-            this.btnThanhToan.TabIndex = 1;
-            this.btnThanhToan.Text = "Thanh toan tin dung";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
-            // 
             // btnKiemTra
             // 
-            this.btnKiemTra.Location = new System.Drawing.Point(31, 19);
+            this.btnKiemTra.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnKiemTra.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTra.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKiemTra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKiemTra.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnKiemTra.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnKiemTra.ForeColor = System.Drawing.Color.Black;
+            this.btnKiemTra.Location = new System.Drawing.Point(14, 19);
             this.btnKiemTra.Name = "btnKiemTra";
-            this.btnKiemTra.Size = new System.Drawing.Size(91, 43);
-            this.btnKiemTra.TabIndex = 0;
+            this.btnKiemTra.Size = new System.Drawing.Size(113, 47);
+            this.btnKiemTra.TabIndex = 33;
             this.btnKiemTra.Text = "Kiem tra tin dung";
-            this.btnKiemTra.UseVisualStyleBackColor = true;
-            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click_1);
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThanhToan.FillColor = System.Drawing.Color.Violet;
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThanhToan.ForeColor = System.Drawing.Color.Black;
+            this.btnThanhToan.Location = new System.Drawing.Point(14, 74);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(113, 52);
+            this.btnThanhToan.TabIndex = 33;
+            this.btnThanhToan.Text = "Thanh toan tin dung";
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click_1);
+            // 
+            // gvTinDung
+            // 
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.gvTinDung.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvTinDung.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.gvTinDung.ColumnHeadersHeight = 4;
+            this.gvTinDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvTinDung.DefaultCellStyle = dataGridViewCellStyle18;
+            this.gvTinDung.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gvTinDung.Location = new System.Drawing.Point(4, 366);
+            this.gvTinDung.Name = "gvTinDung";
+            this.gvTinDung.RowHeadersVisible = false;
+            this.gvTinDung.RowHeadersWidth = 51;
+            this.gvTinDung.RowTemplate.Height = 24;
+            this.gvTinDung.Size = new System.Drawing.Size(804, 210);
+            this.gvTinDung.TabIndex = 29;
+            this.gvTinDung.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gvTinDung.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gvTinDung.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gvTinDung.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gvTinDung.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gvTinDung.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gvTinDung.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gvTinDung.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gvTinDung.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gvTinDung.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvTinDung.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gvTinDung.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gvTinDung.ThemeStyle.HeaderStyle.Height = 4;
+            this.gvTinDung.ThemeStyle.ReadOnly = false;
+            this.gvTinDung.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gvTinDung.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gvTinDung.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvTinDung.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gvTinDung.ThemeStyle.RowsStyle.Height = 24;
+            this.gvTinDung.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gvTinDung.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gvTinDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvTinDung_CellContentClick);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this.btnThem;
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem.FillColor = System.Drawing.Color.LightGreen;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThem.ForeColor = System.Drawing.Color.Black;
+            this.btnThem.Location = new System.Drawing.Point(17, 10);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(88, 31);
+            this.btnThem.TabIndex = 30;
+            this.btnThem.Text = "Them";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click_1);
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 15;
+            this.guna2Elipse2.TargetControl = this.btnSua;
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSua.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSua.FocusedColor = System.Drawing.Color.Transparent;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
+            this.btnSua.Location = new System.Drawing.Point(17, 51);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(88, 35);
+            this.btnSua.TabIndex = 31;
+            this.btnSua.Text = "Sua";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.FillColor = System.Drawing.Color.DarkViolet;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Location = new System.Drawing.Point(17, 92);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(88, 36);
+            this.btnXoa.TabIndex = 32;
+            this.btnXoa.Text = "Xoa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 15;
+            this.guna2Elipse3.TargetControl = this.btnXoa;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 15;
+            this.guna2Elipse4.TargetControl = this.btnKiemTra;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 15;
+            this.guna2Elipse5.TargetControl = this.btnThanhToan;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label13.Location = new System.Drawing.Point(4, 319);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(123, 16);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Tim kiem theo cccd";
             // 
             // label2
             // 
@@ -408,7 +521,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(-2, 12);
+            this.groupBox1.Location = new System.Drawing.Point(4, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(562, 302);
             this.groupBox1.TabIndex = 4;
@@ -419,19 +532,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 639);
+            this.ClientSize = new System.Drawing.Size(810, 579);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.gvTinDung);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.txtTimKiem);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.gvTinDung);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "fTinDung";
             this.Text = "fTinDung";
             this.Load += new System.EventHandler(this.fTinDung_Load);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvTinDung)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvTinDung)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -441,15 +554,20 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.DataGridView gvTinDung;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.Button btnKiemTra;
+        private Guna.UI2.WinForms.Guna2DataGridView gvTinDung;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Button btnThem;
+        private Guna.UI2.WinForms.Guna2Button btnSua;
+        private Guna.UI2.WinForms.Guna2Button btnXoa;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Button btnKiemTra;
+        private Guna.UI2.WinForms.Guna2Button btnThanhToan;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
