@@ -33,19 +33,7 @@ namespace QLNganHang
             KHcombo.Items.Add("9");
         }
         
-        private void KTbtn_Click(object sender, EventArgs e)
-        {
-            string d = STKtxt.Text;
-            var item = (from u in NH.TaiKhoans
-                        where u.SoTK == d
-                        select u).FirstOrDefault();
-            TKHtxt.Text = item.TenKH;
-            SDTtxt.Text = item.SDT;
-            cccdtxt.Text = item.Cccd;
-            TienNotxt.Text = Convert.ToString(item.SoTienVay);
-        }
-
-        private void Luubtn_Click(object sender, EventArgs e)
+        private void btnLuu_Click(object sender, EventArgs e)
         {
             string d = STKtxt.Text;
             var item = (from u in NH.TaiKhoans
@@ -69,6 +57,18 @@ namespace QLNganHang
                 NH.SubmitChanges();
                 MessageBox.Show("Vay tiền thành công!");
             }
+        }
+
+        private void btnLayThongTin_Click(object sender, EventArgs e)
+        {
+            string d = STKtxt.Text;
+            var item = (from u in NH.TaiKhoans
+                        where u.SoTK == d
+                        select u).FirstOrDefault();
+            TKHtxt.Text = item.TenKH;
+            SDTtxt.Text = item.SDT;
+            cccdtxt.Text = item.Cccd;
+            TienNotxt.Text = Convert.ToString(item.SoTienVay);
         }
     }
 }

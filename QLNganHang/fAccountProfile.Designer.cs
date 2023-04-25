@@ -28,30 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAccountProfile));
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.txbCitizenID = new System.Windows.Forms.TextBox();
             this.txbPassWord = new System.Windows.Forms.TextBox();
             this.txbNewPass = new System.Windows.Forms.TextBox();
             this.txbReEnterPass = new System.Windows.Forms.TextBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.CitizenID = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ten Dang Nhap";
             // 
             // label2
             // 
@@ -62,146 +59,198 @@
             this.label2.Size = new System.Drawing.Size(0, 18);
             this.label2.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mat Khau Cu";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(94, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Mat Khau Moi";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(97, 228);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Nhap Lai ";
-            // 
             // txbUserName
             // 
-            this.txbUserName.Location = new System.Drawing.Point(245, 43);
+            this.txbUserName.Location = new System.Drawing.Point(6, 26);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(233, 22);
             this.txbUserName.TabIndex = 5;
             // 
             // txbCitizenID
             // 
-            this.txbCitizenID.Location = new System.Drawing.Point(245, 89);
+            this.txbCitizenID.Location = new System.Drawing.Point(6, 85);
             this.txbCitizenID.Name = "txbCitizenID";
             this.txbCitizenID.Size = new System.Drawing.Size(233, 22);
             this.txbCitizenID.TabIndex = 6;
             // 
             // txbPassWord
             // 
-            this.txbPassWord.Location = new System.Drawing.Point(245, 133);
+            this.txbPassWord.Location = new System.Drawing.Point(6, 143);
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(233, 22);
             this.txbPassWord.TabIndex = 7;
             // 
             // txbNewPass
             // 
-            this.txbNewPass.Location = new System.Drawing.Point(245, 178);
+            this.txbNewPass.Location = new System.Drawing.Point(269, 26);
             this.txbNewPass.Name = "txbNewPass";
             this.txbNewPass.Size = new System.Drawing.Size(233, 22);
             this.txbNewPass.TabIndex = 8;
             // 
             // txbReEnterPass
             // 
-            this.txbReEnterPass.Location = new System.Drawing.Point(245, 222);
+            this.txbReEnterPass.Location = new System.Drawing.Point(269, 85);
             this.txbReEnterPass.Name = "txbReEnterPass";
             this.txbReEnterPass.Size = new System.Drawing.Size(233, 22);
             this.txbReEnterPass.TabIndex = 9;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.txbUserName);
+            this.panel1.Controls.Add(this.txbReEnterPass);
+            this.panel1.Controls.Add(this.txbCitizenID);
+            this.panel1.Controls.Add(this.txbNewPass);
+            this.panel1.Controls.Add(this.txbPassWord);
+            this.panel1.Location = new System.Drawing.Point(22, 70);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(591, 255);
+            this.panel1.TabIndex = 13;
+            // 
             // btnUpdate
             // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(242, 277);
+            this.btnUpdate.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdate.FillColor = System.Drawing.Color.LightGreen;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(280, 143);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(107, 37);
-            this.btnUpdate.TabIndex = 10;
-            this.btnUpdate.Text = "Cap Nhat";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnUpdate.Size = new System.Drawing.Size(90, 30);
+            this.btnUpdate.TabIndex = 111;
+            this.btnUpdate.Text = "Cap nhat";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
-            // btnExit
+            // label7
             // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(371, 277);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(107, 37);
-            this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Thoat";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label7.Location = new System.Drawing.Point(266, 5);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 16);
+            this.label7.TabIndex = 110;
+            this.label7.Text = "Mat khau moi";
             // 
-            // CitizenID
+            // label3
             // 
-            this.CitizenID.AutoSize = true;
-            this.CitizenID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitizenID.Location = new System.Drawing.Point(94, 95);
-            this.CitizenID.Name = "CitizenID";
-            this.CitizenID.Size = new System.Drawing.Size(76, 18);
-            this.CitizenID.TabIndex = 12;
-            this.CitizenID.Text = "CitizenID";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label3.Location = new System.Drawing.Point(266, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 16);
+            this.label3.TabIndex = 109;
+            this.label3.Text = "Nhap lai";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label6.Location = new System.Drawing.Point(3, 124);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 16);
+            this.label6.TabIndex = 108;
+            this.label6.Text = "Mat khau cu";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label1.Location = new System.Drawing.Point(3, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 107;
+            this.label1.Text = "CitizenID";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label15.Location = new System.Drawing.Point(3, 5);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(98, 16);
+            this.label15.TabIndex = 106;
+            this.label15.Text = "Ten dang nhap";
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this.btnUpdate;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(542, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 111;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Lime;
+            this.label12.Location = new System.Drawing.Point(150, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(296, 38);
+            this.label12.TabIndex = 112;
+            this.label12.Text = "Thay Doi Mat Khau";
             // 
             // fAccountProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QLNganHang.Properties.Resources.nen;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(590, 360);
-            this.Controls.Add(this.CitizenID);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txbReEnterPass);
-            this.Controls.Add(this.txbNewPass);
-            this.Controls.Add(this.txbPassWord);
-            this.Controls.Add(this.txbCitizenID);
-            this.Controls.Add(this.txbUserName);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(648, 326);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Chocolate;
+            this.ForeColor = System.Drawing.Color.CadetBlue;
             this.Name = "fAccountProfile";
             this.Text = "fAccountProfile";
             this.Load += new System.EventHandler(this.fAccountProfile_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.TextBox txbCitizenID;
         private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.TextBox txbNewPass;
         private System.Windows.Forms.TextBox txbReEnterPass;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label CitizenID;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label15;
+        private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label12;
     }
 }

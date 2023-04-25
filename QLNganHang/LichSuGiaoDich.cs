@@ -23,18 +23,21 @@ namespace QLNganHang
 
         }
 
-        private void tbnTim_Click(object sender, EventArgs e)
-        {
-            string soTK = txbSoTK.Text;
-            LoadLichSuGiaoDich(soTK);
-        }
+      
         private void LoadLichSuGiaoDich(string soTK)
         {
             DataTable data = LsGiaoDichDAO.Instance.LayLichSuGiaoDich(soTK);
             gvLSGD.DataSource = data;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string soTK = txbSoTK.Text;
+            LoadLichSuGiaoDich(soTK);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -18,31 +18,10 @@ namespace QLNganHang
             InitializeComponent();
         }
 
-        private void btnKiemTra_Click(object sender, EventArgs e)
-        {
-            string d = tbxSTKTK.Text;
-            var item = (from u in NH.SoTietKiems
-                        where u.MaSo == d
-                        select u).FirstOrDefault();
-            if (item == null)
-            {
-                MessageBox.Show("Vui lòng nhập Mã sổ hoặc kiểm tra lại thông tin");
-            }
-            else
-            {
-                tbxTenKH.Text = item.TenKH;
-                txbMaKH.Text = item.MaKH;
-                tbxSDT.Text = item.SDT;
-                tbxCCCD.Text = item.Cccd;
-                tbxSoTienGui.Text = Convert.ToString(item.TienGui);
-                txbNgayGui.Text = Convert.ToString(item.NgayGui);
-                txbKyHan.Text = Convert.ToString(item.KyHan);
-                txbLaiXuat.Text = Convert.ToString(item.LaiXuat);
-                tbxTienLai.Text = Convert.ToString(Convert.ToDecimal(tbxSoTienGui.Text) + Convert.ToDecimal(tbxSoTienGui.Text) * Convert.ToDecimal(txbLaiXuat.Text) / 100);
-            }
-        }
         //hbyub
-        private void btnThanhToan_Click(object sender, EventArgs e)
+      
+
+        private void btnThanhToan_Click_1(object sender, EventArgs e)
         {
             string d = tbxSTKTK.Text;
             var item = (from u in NH.SoTietKiems
@@ -81,35 +60,30 @@ namespace QLNganHang
                         }
                     }
                 }
-            }
-            else if (item.DaThanhToan == 1)
+            } 
+        }
+
+        private void bntKiemTra_Click(object sender, EventArgs e)
+        {
+            string d = tbxSTKTK.Text;
+            var item = (from u in NH.SoTietKiems
+                        where u.MaSo == d
+                        select u).FirstOrDefault();
+            if (item == null)
             {
-                DialogResult tb4 = MessageBox.Show("Bạn có muốn tiền được gửi vào tài khoản ngân hàng hay không?", "Thông báo", MessageBoxButtons.YesNoCancel);
-                if (tb4 == DialogResult.Yes)
-                {
-                    string c = txbMaKH.Text;
-                    var item2 = (from u in NH.TaiKhoans
-                                 where u.MaKH == c
-                                 select u).FirstOrDefault();
-                    item2.SoDu += Convert.ToDecimal(tbxTienLai.Text);
-                    item.DaThanhToan += 1;
-                    NH.SubmitChanges();
-                    MessageBox.Show("Giao dịch hoàn tất!");
-                }
-                else if (tb4 == DialogResult.No)
-                {
-                    item.DaThanhToan += 1;
-                    NH.SubmitChanges();
-                    MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận tiền lời.");
-                }
-                else
-                {
-                    MessageBox.Show("Giao dịch bị huỷ bỏ.");
-                }
+                MessageBox.Show("Vui lòng nhập Mã sổ hoặc kiểm tra lại thông tin");
             }
             else
             {
-                MessageBox.Show("Giao dịch bị huỷ bỏ. Sổ này đã được thanh toán!");
+                tbxTenKH.Text = item.TenKH;
+                txbMaKH.Text = item.MaKH;
+                tbxSDT.Text = item.SDT;
+                tbxCCCD.Text = item.Cccd;
+                tbxSoTienGui.Text = Convert.ToString(item.TienGui);
+                txbNgayGui.Text = Convert.ToString(item.NgayGui);
+                txbKyHan.Text = Convert.ToString(item.KyHan);
+                txbLaiXuat.Text = Convert.ToString(item.LaiXuat);
+                tbxTienLai.Text = Convert.ToString(Convert.ToDecimal(tbxSoTienGui.Text) + Convert.ToDecimal(tbxSoTienGui.Text) * Convert.ToDecimal(txbLaiXuat.Text) / 100);
             }
         }
     }

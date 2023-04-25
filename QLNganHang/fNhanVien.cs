@@ -18,17 +18,17 @@ namespace QLNganHang
 
         private Account loginAccount;
 
-        public Account LoginAccount
+       public Account LoginAccount
         {
-            get { return loginAccount; }
-            set { loginAccount = value; ChangeAccount(loginAccount.Type); }
+          get { return loginAccount; }
+           set { loginAccount = value; ChangeAccount(loginAccount.Type); }
         }
         public fNhanVien(Account acc)
         {
             InitializeComponent();
             this.LoginAccount = acc;
 
-        }
+       }
 
         private void fNhanVien_Load(object sender, EventArgs e)
         {
@@ -68,12 +68,6 @@ namespace QLNganHang
             đổiMậtKhẩuToolStripMenuItem.Text += " (" + LoginAccount.CitizenID + ")";
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            var Lst = (from Cccd in db.View_KhachHangs where Cccd.Cccd.Contains(txbNhapCccd.Text) select Cccd).ToList();
-            dataGridView1.DataSource = Lst;
-
-        }
         private void btnChuyenTien_Click(object sender, EventArgs e)
         {
            
@@ -138,6 +132,12 @@ namespace QLNganHang
                 bool resultn = AccountDAO.Instance.DeleteAccount(cccd);
                 MessageBox.Show("xoa thanh cong ");
             }
+        }
+
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        {
+            var Lst = (from Cccd in db.View_KhachHangs where Cccd.Cccd.Contains(txbNhapCccd.Text) select Cccd).ToList();
+            dataGridView1.DataSource = Lst;
         }
     }
 }

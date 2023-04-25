@@ -53,15 +53,6 @@ namespace QLNganHang
 
         }
 
-        private void btnChuyenTien_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fChuyenTien f = new fChuyenTien();
-            string nt = db.TaiKhoans.Where(p => p.Cccd == LoginAccount.CitizenID).Select(p => p.SoTK).FirstOrDefault();
-            f.TextBoxValue = nt;
-            f.ShowDialog();
-            this.Close();
-        }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -82,6 +73,16 @@ namespace QLNganHang
             FThongTinKhacHang fkh =new FThongTinKhacHang();
             fkh.ShowDialog();
 
+        }
+
+        private void btnChuyenTien_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fChuyenTien f = new fChuyenTien();
+            string nt = db.TaiKhoans.Where(p => p.Cccd == LoginAccount.CitizenID).Select(p => p.SoTK).FirstOrDefault();
+            f.TextBoxValue = nt;
+            f.ShowDialog();
+            this.Close();
         }
     }
 }

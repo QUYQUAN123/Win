@@ -30,11 +30,6 @@ namespace QLNganHang
 
 
         }
-        private void btnKiemTra_Click(object sender, EventArgs e)
-        {
-            Check();
-
-        }
         void Check()
         {
             var Lst = (from tkc in db.View_KhachHangs where tkc.SoTK.Contains(txbTkChuyen.Text) select tkc).ToList();
@@ -77,7 +72,16 @@ namespace QLNganHang
                 MessageBox.Show("Không kết nối lấy được dữ liệu từ loại hàng", "Lỗi dữ liệu!");
             }
         }
-        private void btnChuyen_Click(object sender, EventArgs e)
+
+     
+   
+
+        private void btnKiemTra_Click_1(object sender, EventArgs e)
+        {
+            Check();
+        }
+
+        private void btnChuyen_Click_1(object sender, EventArgs e)
         {
             var tkChuyen = txbTkChuyen.Text; // Tài khoản cần cộng tiền
             var tkNhan = txbTkNhan.Text; // Tài khoản nhận tiền
@@ -97,7 +101,7 @@ namespace QLNganHang
                 if (result == DialogResult.No)
                 {
                     this.Hide();
-                    fChuyenTien f= new fChuyenTien();
+                    fChuyenTien f = new fChuyenTien();
                     f.ShowDialog();
                     this.Close();
                 }
@@ -110,8 +114,8 @@ namespace QLNganHang
 
                     // Lưu các thay đổi vào cơ sở dữ liệu
 
-                    
-                  
+
+
 
                     LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKh, SoTien, tkChuyen, noidung);
                     db.SubmitChanges();
@@ -124,21 +128,25 @@ namespace QLNganHang
                 // Hiển thị thông báo cho người dùng rằng số dư không đủ để chuyển tiền
                 MessageBox.Show("Số dư không đủ để thực hiện giao dịch này!");
             }
-
         }
 
-     
-        private void btnExit_Click(object sender, EventArgs e)
-        { 
-                
-                this.Close();
-          
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            LichSuGiaoDich ls =new LichSuGiaoDich();
+            LichSuGiaoDich ls = new LichSuGiaoDich();
             ls.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fMain f = new fMain();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

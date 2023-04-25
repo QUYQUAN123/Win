@@ -28,222 +28,303 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fNapRut));
             this.txbTen = new System.Windows.Forms.TextBox();
             this.txbCccd = new System.Windows.Forms.TextBox();
             this.txbSDT = new System.Windows.Forms.TextBox();
             this.txbSoTK = new System.Windows.Forms.TextBox();
             this.txbSoDu = new System.Windows.Forms.TextBox();
             this.txbSoTien = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnKiemTra = new System.Windows.Forms.Button();
-            this.btnNap = new System.Windows.Forms.Button();
-            this.btnRut = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRut = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNap = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKiemTra = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SoTK";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ten";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(92, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "SDT";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(86, 116);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 19);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "CCCD";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(86, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "SODU";
             // 
             // txbTen
             // 
-            this.txbTen.Location = new System.Drawing.Point(184, 71);
+            this.txbTen.Location = new System.Drawing.Point(6, 80);
             this.txbTen.Name = "txbTen";
             this.txbTen.Size = new System.Drawing.Size(213, 22);
             this.txbTen.TabIndex = 5;
             // 
             // txbCccd
             // 
-            this.txbCccd.Location = new System.Drawing.Point(184, 109);
+            this.txbCccd.Location = new System.Drawing.Point(6, 124);
             this.txbCccd.Name = "txbCccd";
             this.txbCccd.Size = new System.Drawing.Size(213, 22);
             this.txbCccd.TabIndex = 6;
             // 
             // txbSDT
             // 
-            this.txbSDT.Location = new System.Drawing.Point(184, 157);
+            this.txbSDT.Location = new System.Drawing.Point(244, 36);
             this.txbSDT.Name = "txbSDT";
             this.txbSDT.Size = new System.Drawing.Size(213, 22);
             this.txbSDT.TabIndex = 7;
             // 
             // txbSoTK
             // 
-            this.txbSoTK.Location = new System.Drawing.Point(184, 26);
+            this.txbSoTK.Location = new System.Drawing.Point(6, 36);
             this.txbSoTK.Name = "txbSoTK";
             this.txbSoTK.Size = new System.Drawing.Size(213, 22);
             this.txbSoTK.TabIndex = 8;
             // 
             // txbSoDu
             // 
-            this.txbSoDu.Location = new System.Drawing.Point(184, 212);
+            this.txbSoDu.Location = new System.Drawing.Point(244, 81);
             this.txbSoDu.Name = "txbSoDu";
             this.txbSoDu.Size = new System.Drawing.Size(213, 22);
             this.txbSoDu.TabIndex = 9;
             // 
             // txbSoTien
             // 
-            this.txbSoTien.Location = new System.Drawing.Point(184, 268);
+            this.txbSoTien.Location = new System.Drawing.Point(244, 125);
             this.txbSoTien.Name = "txbSoTien";
             this.txbSoTien.Size = new System.Drawing.Size(213, 22);
             this.txbSoTien.TabIndex = 10;
             // 
-            // label6
+            // label7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(86, 271);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "SoTien";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label7.Location = new System.Drawing.Point(246, 106);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "So tien";
             // 
-            // btnKiemTra
+            // label8
             // 
-            this.btnKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKiemTra.ForeColor = System.Drawing.Color.Red;
-            this.btnKiemTra.Location = new System.Drawing.Point(553, 41);
-            this.btnKiemTra.Name = "btnKiemTra";
-            this.btnKiemTra.Size = new System.Drawing.Size(98, 49);
-            this.btnKiemTra.TabIndex = 12;
-            this.btnKiemTra.Text = "Kiemtra";
-            this.btnKiemTra.UseVisualStyleBackColor = true;
-            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label8.Location = new System.Drawing.Point(246, 61);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 16);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "So du";
             // 
-            // btnNap
+            // label9
             // 
-            this.btnNap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNap.ForeColor = System.Drawing.Color.Red;
-            this.btnNap.Location = new System.Drawing.Point(553, 109);
-            this.btnNap.Name = "btnNap";
-            this.btnNap.Size = new System.Drawing.Size(98, 52);
-            this.btnNap.TabIndex = 13;
-            this.btnNap.Text = "NapTien";
-            this.btnNap.UseVisualStyleBackColor = true;
-            this.btnNap.Click += new System.EventHandler(this.btnNap_Click);
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label9.Location = new System.Drawing.Point(246, 21);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 16);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "SDT";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label10.Location = new System.Drawing.Point(3, 105);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 16);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Cccd";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label11.Location = new System.Drawing.Point(3, 61);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 16);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Ten khach hang";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label12.Location = new System.Drawing.Point(3, 17);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 16);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "So tai khoan";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.txbSoTien);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.txbSoTK);
+            this.panel1.Controls.Add(this.txbTen);
+            this.panel1.Controls.Add(this.txbSoDu);
+            this.panel1.Controls.Add(this.txbCccd);
+            this.panel1.Controls.Add(this.txbSDT);
+            this.panel1.Location = new System.Drawing.Point(12, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(475, 181);
+            this.panel1.TabIndex = 22;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.btnRut);
+            this.panel2.Controls.Add(this.btnNap);
+            this.panel2.Controls.Add(this.btnKiemTra);
+            this.panel2.Location = new System.Drawing.Point(44, 233);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(353, 64);
+            this.panel2.TabIndex = 23;
             // 
             // btnRut
             // 
-            this.btnRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRut.ForeColor = System.Drawing.Color.Red;
-            this.btnRut.Location = new System.Drawing.Point(553, 191);
+            this.btnRut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRut.FillColor = System.Drawing.Color.Salmon;
+            this.btnRut.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRut.ForeColor = System.Drawing.Color.Black;
+            this.btnRut.Location = new System.Drawing.Point(125, 17);
             this.btnRut.Name = "btnRut";
-            this.btnRut.Size = new System.Drawing.Size(98, 43);
-            this.btnRut.TabIndex = 14;
-            this.btnRut.Text = "RutTien";
-            this.btnRut.UseVisualStyleBackColor = true;
-            this.btnRut.Click += new System.EventHandler(this.btnRut_Click);
+            this.btnRut.Size = new System.Drawing.Size(94, 30);
+            this.btnRut.TabIndex = 45;
+            this.btnRut.Text = "Rut tien";
+            this.btnRut.Click += new System.EventHandler(this.btnRut_Click_1);
             // 
-            // button1
+            // btnNap
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(553, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 36);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Thoat";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnNap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNap.FillColor = System.Drawing.Color.Coral;
+            this.btnNap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNap.ForeColor = System.Drawing.Color.Black;
+            this.btnNap.Location = new System.Drawing.Point(248, 17);
+            this.btnNap.Name = "btnNap";
+            this.btnNap.Size = new System.Drawing.Size(94, 30);
+            this.btnNap.TabIndex = 44;
+            this.btnNap.Text = "Nap tien";
+            this.btnNap.Click += new System.EventHandler(this.btnNap_Click_1);
+            // 
+            // btnKiemTra
+            // 
+            this.btnKiemTra.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTra.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKiemTra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKiemTra.FillColor = System.Drawing.Color.SlateBlue;
+            this.btnKiemTra.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnKiemTra.ForeColor = System.Drawing.Color.Black;
+            this.btnKiemTra.Location = new System.Drawing.Point(15, 17);
+            this.btnKiemTra.Name = "btnKiemTra";
+            this.btnKiemTra.Size = new System.Drawing.Size(94, 30);
+            this.btnKiemTra.TabIndex = 45;
+            this.btnKiemTra.Text = "Kiem tra";
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click_1);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this.btnKiemTra;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 15;
+            this.guna2Elipse2.TargetControl = this.btnNap;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 15;
+            this.guna2Elipse3.TargetControl = this.btnRut;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(141, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 38);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Nap rut tien";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(446, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 111;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // fNapRut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QLNganHang.Properties.Resources.download1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnRut);
-            this.Controls.Add(this.btnNap);
-            this.Controls.Add(this.btnKiemTra);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txbSoTien);
-            this.Controls.Add(this.txbSoDu);
-            this.Controls.Add(this.txbSoTK);
-            this.Controls.Add(this.txbSDT);
-            this.Controls.Add(this.txbCccd);
-            this.Controls.Add(this.txbTen);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(539, 318);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "fNapRut";
             this.Text = "fNapRut";
             this.Load += new System.EventHandler(this.fNapRut_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbTen;
         private System.Windows.Forms.TextBox txbCccd;
         private System.Windows.Forms.TextBox txbSDT;
         private System.Windows.Forms.TextBox txbSoTK;
         private System.Windows.Forms.TextBox txbSoDu;
         private System.Windows.Forms.TextBox txbSoTien;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnKiemTra;
-        private System.Windows.Forms.Button btnNap;
-        private System.Windows.Forms.Button btnRut;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2Button btnNap;
+        private Guna.UI2.WinForms.Guna2Button btnKiemTra;
+        private Guna.UI2.WinForms.Guna2Button btnRut;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

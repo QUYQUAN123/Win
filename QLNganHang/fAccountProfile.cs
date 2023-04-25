@@ -77,19 +77,25 @@ namespace QLNganHang
             InitializeComponent();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            UpdateAccountInfo();
-        }
+        
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void fAccountProfile_Load(object sender, EventArgs e)
         {
             ChangeAccount(loginAccount);
+        }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+            UpdateAccountInfo();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fMain f = new fMain();
+            f.ShowDialog();
+            this.Close();
         }
     }
     public class AccountEvent : EventArgs

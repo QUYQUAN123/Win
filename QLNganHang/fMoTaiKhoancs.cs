@@ -39,7 +39,8 @@ namespace QLNganHang
             return db.TaiKhoans.Count(tk => tk.SoTK == soTK) > 0;
         }
 
-        private void btn2_Click(object sender, EventArgs e)
+
+        private void btn2_Click_1(object sender, EventArgs e)
         {
 
             DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
@@ -50,54 +51,53 @@ namespace QLNganHang
                 bool resultn = AccountDAO.Instance.DeleteAccount(cccd);
                 this.Close();
             }
-            
-
         }
 
-        private void btnMoTK_Click(object sender, EventArgs e)
+        private void btnMoTK_Click_1(object sender, EventArgs e)
         {
-           
-                string cccd = txbCCCD.Text;
-                if (KhachHangDAO.Instance.KiemTraCCCD(cccd))
-                {
+            string cccd = txbCCCD.Text;
+            if (KhachHangDAO.Instance.KiemTraCCCD(cccd))
+            {
                 thongtin();
-                    string soTK = txbSoTk.Text;
-                    if (KiemTraTrungSoTK(soTK))
-                    {
-                        MessageBox.Show("Số tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                       
-                        TaiKhoan taiKhoan = new TaiKhoan
-                        {
-                            SoTK = soTK,
-                            MaKH = ma,
-                            TenKH = ten,
-                            SDT = sdt,
-                            Cccd = txbCCCD.Text,
-                            SoDu = 0,
-                            SoTienVay = 0,
-                            SoTKhoanTK = "0"
-                        };
-
-                        db.TaiKhoans.InsertOnSubmit(taiKhoan);
-                        db.SubmitChanges();
-
-                        MessageBox.Show("Mở tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.Close();
-                    }
+                string soTK = txbSoTk.Text;
+                if (KiemTraTrungSoTK(soTK))
+                {
+                    MessageBox.Show("Số tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    DialogResult dialogResult = MessageBox.Show("Khách hàng chưa đăng kí! Bạn có muốn đăng kí mới?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                    if (dialogResult == DialogResult.Yes)
+
+                    TaiKhoan taiKhoan = new TaiKhoan
                     {
-                        fDangKiKhachHangMoi f = new fDangKiKhachHangMoi();
-                        f.ShowDialog();
-                    }
+                        SoTK = soTK,
+                        MaKH = ma,
+                        TenKH = ten,
+                        SDT = sdt,
+                        Cccd = txbCCCD.Text,
+                        SoDu = 0,
+                        SoTienVay = 0,
+                        SoTKhoanTK = "0"
+                    };
+
+                    db.TaiKhoans.InsertOnSubmit(taiKhoan);
+                    db.SubmitChanges();
+
+                    MessageBox.Show("Mở tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
-           }
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Khách hàng chưa đăng kí! Bạn có muốn đăng kí mới?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    fDangKiKhachHangMoi f = new fDangKiKhachHangMoi();
+                    f.ShowDialog();
+                }
+            }
+        }
+
+       
        
         private void thongtin()
         {

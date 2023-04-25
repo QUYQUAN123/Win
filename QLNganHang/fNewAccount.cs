@@ -74,20 +74,11 @@ namespace QLNganHang
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+     
 
-            DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                string cccd = TextBoxValue;
-                bool result = KhachHangDAO.Instance.XoaKhachHangTheoCCCD(cccd);
-                this.Close();
-            }
-           
-        }
+      
 
-        private void btnDangKi_Click(object sender, EventArgs e)
+        private void btnDangKi_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             string cccd = txtnCCCD.Text;
@@ -96,7 +87,17 @@ namespace QLNganHang
             fmo.TextBoxValue = cccd;
             fmo.ShowDialog();
             this.Close();
-           
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string cccd = TextBoxValue;
+                bool result = KhachHangDAO.Instance.XoaKhachHangTheoCCCD(cccd);
+                this.Close();
+            }
         }
     }
 }

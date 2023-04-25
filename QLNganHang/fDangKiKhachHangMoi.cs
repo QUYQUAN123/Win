@@ -17,7 +17,13 @@ namespace QLNganHang
             InitializeComponent();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+
+        private void fDangKiKhachHangMoi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             string maKH = txbMaKH.Text;
             string tenKH = txbTenKH.Text;
@@ -49,9 +55,6 @@ namespace QLNganHang
             }
         }
 
-        private void fDangKiKhachHangMoi_Load(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

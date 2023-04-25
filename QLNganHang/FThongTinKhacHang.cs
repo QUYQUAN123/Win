@@ -51,14 +51,7 @@ namespace QLNganHang
             }
         }
 
-        
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnKT_Click(object sender, EventArgs e)
         {
             string cccd = txbCCCD.Text;
             List<KhachHang> lstKhachHang = KhachHangDAO.Instance.TimKhachHangTheoCCCD(cccd);
@@ -74,6 +67,40 @@ namespace QLNganHang
                 txbDiaChi.Text = lstKhachHang[0].DiaChi;
                 txbThuNhap.Text = lstKhachHang[0].ThuNhap.ToString();
             }
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txbTenKH.Text) || string.IsNullOrWhiteSpace(txbSDT.Text) || string.IsNullOrWhiteSpace(txbEmail.Text) || string.IsNullOrWhiteSpace(txbDiaChi.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
+                return;
+            }
+
+            KhachHang kh = new KhachHang();
+            kh.MaKH = txbMaKH.Text;
+            kh.TenKH = txbTenKH.Text;
+            kh.NgaySinh = dtNgaySinh.Value;
+            kh.SDT = txbSDT.Text;
+            kh.Email = txbEmail.Text;
+            kh.CCCD = txbCCCD.Text;
+            kh.DiaChi = txbDiaChi.Text;
+            kh.ThuNhap = decimal.Parse(txbThuNhap.Text);
+
+
+            if (KhachHangDAO.Instance.CapNhatThongTinKhachHang(kh))
+            {
+                MessageBox.Show("Cập nhật thông tin thành công.");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thông tin không thành công.");
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
     }

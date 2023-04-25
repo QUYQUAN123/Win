@@ -18,20 +18,6 @@ namespace QLNganHang
             InitializeComponent();
         }
 
-        private void btnKiemTra_Click(object sender, EventArgs e)
-        {
-
-            KiemTra();
-        }
-
-        private void btnNap_Click(object sender, EventArgs e)
-        {
-            int soTien = int.Parse(txbSoTien.Text);
-            db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu += soTien);
-            KiemTra();
-            db.SubmitChanges();
-        }
-
         private void btnRut_Click(object sender, EventArgs e)
         {
             int soTien = int.Parse(txbSoTien.Text);
@@ -61,6 +47,36 @@ namespace QLNganHang
         private void fNapRut_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNap_Click_1(object sender, EventArgs e)
+        {
+            int soTien = int.Parse(txbSoTien.Text);
+            db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu += soTien);
+            KiemTra();
+            db.SubmitChanges();
+        }
+
+        private void btnKiemTra_Click_1(object sender, EventArgs e)
+        {
+            KiemTra();
+        }
+
+        private void btnRut_Click_1(object sender, EventArgs e)
+        {
+            int soTien = int.Parse(txbSoTien.Text);
+            db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu -= soTien);
+            KiemTra();
+            // Lưu các thay đổi vào cơ sở dữ liệu
+            db.SubmitChanges();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fMain f = new fMain();
+            f.ShowDialog();
+            this.Close();
         }
     }
 }

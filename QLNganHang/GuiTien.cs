@@ -39,8 +39,9 @@ namespace QLNganHang
 
         }
 
-        private void btnLayThongTin_Click(object sender, EventArgs e)
+        private void btnLayThongTin_Click_1(object sender, EventArgs e)
         {
+
             string d = tbxSTKTK.Text;
             var item = (from u in NH.SoTietKiems
                         where u.MaSo == d
@@ -51,7 +52,7 @@ namespace QLNganHang
             tbxSoDU.Text = Convert.ToString(item.TienGui);
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
+        private void btnLuu_Click_1(object sender, EventArgs e)
         {
             if (tbxSTKTK.Text == null)
             {
@@ -75,6 +76,14 @@ namespace QLNganHang
                     MessageBox.Show("Giao dịch gửi tiền thành công!");
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fMain f = new fMain();
+            f.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -41,7 +41,13 @@ namespace QLNganHang
             }
         }
 
-        private void btnCapNhat_Click(object sender, EventArgs e)
+
+        private void dtNgaySinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhat_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txbTenNV.Text) || string.IsNullOrWhiteSpace(txbSDT.Text) || string.IsNullOrWhiteSpace(txbEmail.Text) || string.IsNullOrWhiteSpace(txbDiaChi.Text))
             {
@@ -68,15 +74,11 @@ namespace QLNganHang
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void dtNgaySinh_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 
 }
