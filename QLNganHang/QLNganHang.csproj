@@ -103,12 +103,6 @@
     <Compile Include="fKiemTraTD.Designer.cs">
       <DependentUpon>fKiemTraTD.cs</DependentUpon>
     </Compile>
-    <Compile Include="fMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fMain.Designer.cs">
-      <DependentUpon>fMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="fMoTaiKhoancs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +133,11 @@
     <Compile Include="flogin.Designer.cs">
       <DependentUpon>flogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="fNoTinDung.cs">
+    <Compile Include="fThanhToanTinDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fNoTinDung.Designer.cs">
-      <DependentUpon>fNoTinDung.cs</DependentUpon>
+    <Compile Include="fThanhToanTinDung.Designer.cs">
+      <DependentUpon>fThanhToanTinDung.cs</DependentUpon>
     </Compile>
     <Compile Include="FThongTinKhacHang.cs">
       <SubType>Form</SubType>
@@ -222,9 +216,6 @@
     <EmbeddedResource Include="flogin.resx">
       <DependentUpon>flogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fMain.resx">
-      <DependentUpon>fMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fMoTaiKhoancs.resx">
       <DependentUpon>fMoTaiKhoancs.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,8 +228,8 @@
     <EmbeddedResource Include="fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fNoTinDung.resx">
-      <DependentUpon>fNoTinDung.cs</DependentUpon>
+    <EmbeddedResource Include="fThanhToanTinDung.resx">
+      <DependentUpon>fThanhToanTinDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FThongTinKhacHang.resx">
       <DependentUpon>FThongTinKhacHang.cs</DependentUpon>

@@ -139,6 +139,12 @@ namespace QLNganHang
             var Lst = (from Cccd in db.View_KhachHangs where Cccd.Cccd.Contains(txbNhapCccd.Text) select Cccd).ToList();
             dataGridView1.DataSource = Lst;
         }
+
+        private void tínDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fTinDung f = new fTinDung();
+            f.ShowDialog();
+        }
     }
 }
 

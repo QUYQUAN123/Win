@@ -48,6 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.tínDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gvKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -157,7 +158,8 @@
             // 
             this.côngCụToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vayTiềnToolStripMenuItem,
-            this.sổTiếtKiệmToolStripMenuItem});
+            this.sổTiếtKiệmToolStripMenuItem,
+            this.tínDụngToolStripMenuItem});
             this.côngCụToolStripMenuItem.Name = "côngCụToolStripMenuItem";
             this.côngCụToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.côngCụToolStripMenuItem.Text = "Công Cụ";
@@ -227,6 +229,13 @@
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this.btnTimKiem;
             // 
+            // tínDụngToolStripMenuItem
+            // 
+            this.tínDụngToolStripMenuItem.Name = "tínDụngToolStripMenuItem";
+            this.tínDụngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tínDụngToolStripMenuItem.Text = "Tín Dụng";
+            this.tínDụngToolStripMenuItem.Click += new System.EventHandler(this.tínDụngToolStripMenuItem_Click);
+            // 
             // fNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -277,5 +286,6 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.ToolStripMenuItem tínDụngToolStripMenuItem;
     }
 }

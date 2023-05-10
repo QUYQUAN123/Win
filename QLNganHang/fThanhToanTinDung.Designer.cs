@@ -1,6 +1,6 @@
 ﻿namespace QLNganHang
 {
-    partial class fNoTinDung
+    partial class fThanhToanTinDung
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.txtNX = new System.Windows.Forms.TextBox();
             this.txtST = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRTTD = new Guna.UI2.WinForms.Guna2Button();
             this.btnKT = new Guna.UI2.WinForms.Guna2Button();
             this.btnTN = new Guna.UI2.WinForms.Guna2Button();
             this.btnCNNoXau = new Guna.UI2.WinForms.Guna2Button();
@@ -47,16 +48,21 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtHanMuc = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
@@ -97,21 +103,38 @@
             // 
             // txtST
             // 
-            this.txtST.Location = new System.Drawing.Point(68, 137);
+            this.txtST.Location = new System.Drawing.Point(46, 35);
             this.txtST.Name = "txtST";
-            this.txtST.Size = new System.Drawing.Size(179, 22);
+            this.txtST.Size = new System.Drawing.Size(189, 22);
             this.txtST.TabIndex = 15;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.Controls.Add(this.btnRTTD);
             this.panel1.Controls.Add(this.btnKT);
             this.panel1.Controls.Add(this.btnTN);
             this.panel1.Controls.Add(this.btnCNNoXau);
-            this.panel1.Location = new System.Drawing.Point(340, 72);
+            this.panel1.Location = new System.Drawing.Point(340, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 181);
+            this.panel1.Size = new System.Drawing.Size(258, 127);
             this.panel1.TabIndex = 23;
+            // 
+            // btnRTTD
+            // 
+            this.btnRTTD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRTTD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRTTD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRTTD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRTTD.FillColor = System.Drawing.Color.Silver;
+            this.btnRTTD.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRTTD.ForeColor = System.Drawing.Color.Black;
+            this.btnRTTD.Location = new System.Drawing.Point(17, 64);
+            this.btnRTTD.Name = "btnRTTD";
+            this.btnRTTD.Size = new System.Drawing.Size(99, 48);
+            this.btnRTTD.TabIndex = 27;
+            this.btnRTTD.Text = "Rut tien tin dung";
+            this.btnRTTD.Click += new System.EventHandler(this.btnRTTD_Click);
             // 
             // btnKT
             // 
@@ -122,11 +145,11 @@
             this.btnKT.FillColor = System.Drawing.Color.Gray;
             this.btnKT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnKT.ForeColor = System.Drawing.Color.Black;
-            this.btnKT.Location = new System.Drawing.Point(37, 3);
+            this.btnKT.Location = new System.Drawing.Point(139, 3);
             this.btnKT.Name = "btnKT";
             this.btnKT.Size = new System.Drawing.Size(87, 48);
             this.btnKT.TabIndex = 24;
-            this.btnKT.Text = "Kiem tra no";
+            this.btnKT.Text = "Kiem tra";
             this.btnKT.Click += new System.EventHandler(this.btnKT_Click_1);
             // 
             // btnTN
@@ -138,7 +161,7 @@
             this.btnTN.FillColor = System.Drawing.Color.Silver;
             this.btnTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTN.ForeColor = System.Drawing.Color.Black;
-            this.btnTN.Location = new System.Drawing.Point(37, 57);
+            this.btnTN.Location = new System.Drawing.Point(27, 3);
             this.btnTN.Name = "btnTN";
             this.btnTN.Size = new System.Drawing.Size(87, 48);
             this.btnTN.TabIndex = 25;
@@ -154,7 +177,7 @@
             this.btnCNNoXau.FillColor = System.Drawing.Color.Brown;
             this.btnCNNoXau.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCNNoXau.ForeColor = System.Drawing.Color.Black;
-            this.btnCNNoXau.Location = new System.Drawing.Point(37, 111);
+            this.btnCNNoXau.Location = new System.Drawing.Point(139, 64);
             this.btnCNNoXau.Name = "btnCNNoXau";
             this.btnCNNoXau.Size = new System.Drawing.Size(87, 48);
             this.btnCNNoXau.TabIndex = 26;
@@ -170,7 +193,7 @@
             this.btnTinDung.FillColor = System.Drawing.Color.Salmon;
             this.btnTinDung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTinDung.ForeColor = System.Drawing.Color.Black;
-            this.btnTinDung.Location = new System.Drawing.Point(96, 9);
+            this.btnTinDung.Location = new System.Drawing.Point(122, 9);
             this.btnTinDung.Name = "btnTinDung";
             this.btnTinDung.Size = new System.Drawing.Size(87, 45);
             this.btnTinDung.TabIndex = 28;
@@ -186,10 +209,10 @@
             this.btnChuyen.FillColor = System.Drawing.Color.Chocolate;
             this.btnChuyen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnChuyen.ForeColor = System.Drawing.Color.Black;
-            this.btnChuyen.Location = new System.Drawing.Point(3, 6);
+            this.btnChuyen.Location = new System.Drawing.Point(14, 6);
             this.btnChuyen.Name = "btnChuyen";
             this.btnChuyen.PressedColor = System.Drawing.Color.OrangeRed;
-            this.btnChuyen.Size = new System.Drawing.Size(87, 48);
+            this.btnChuyen.Size = new System.Drawing.Size(97, 48);
             this.btnChuyen.TabIndex = 27;
             this.btnChuyen.Text = "Kiem tra tin dung";
             this.btnChuyen.Click += new System.EventHandler(this.btnChuyen_Click_1);
@@ -222,32 +245,39 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Linen;
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.txtHanMuc);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtSoTD);
-            this.panel2.Controls.Add(this.txtST);
             this.panel2.Controls.Add(this.txtNX);
             this.panel2.Controls.Add(this.txtTenKH);
             this.panel2.Controls.Add(this.txtNoTD);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(1, 72);
+            this.panel2.Location = new System.Drawing.Point(4, 53);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(330, 220);
             this.panel2.TabIndex = 24;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(126, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "So lan";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label2.Location = new System.Drawing.Point(114, 118);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 16);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Han muc";
+            // 
+            // txtHanMuc
+            // 
+            this.txtHanMuc.Location = new System.Drawing.Point(58, 137);
+            this.txtHanMuc.Name = "txtHanMuc";
+            this.txtHanMuc.Size = new System.Drawing.Size(177, 22);
+            this.txtHanMuc.TabIndex = 28;
             // 
             // label10
             // 
@@ -293,6 +323,17 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Ma tin dung";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label1.Location = new System.Drawing.Point(103, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 16);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "So tien";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -309,28 +350,46 @@
             this.panel3.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel3.Controls.Add(this.btnChuyen);
             this.panel3.Controls.Add(this.btnTinDung);
-            this.panel3.Location = new System.Drawing.Point(337, 259);
+            this.panel3.Location = new System.Drawing.Point(357, 183);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(188, 64);
+            this.panel3.Size = new System.Drawing.Size(222, 71);
             this.panel3.TabIndex = 41;
             // 
-            // fNoTinDung
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 15;
+            this.guna2Elipse6.TargetControl = this.btnRTTD;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Linen;
+            this.panel4.Controls.Add(this.txtST);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Location = new System.Drawing.Point(24, 279);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(262, 77);
+            this.panel4.TabIndex = 42;
+            // 
+            // fThanhToanTinDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(578, 328);
+            this.ClientSize = new System.Drawing.Size(626, 382);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "fNoTinDung";
+            this.Name = "fThanhToanTinDung";
             this.Text = "fTinDung";
             this.Load += new System.EventHandler(this.fTinDung_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,5 +421,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button btnRTTD;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtHanMuc;
+        private System.Windows.Forms.Panel panel4;
     }
 }

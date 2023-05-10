@@ -11,23 +11,41 @@ using System.Windows.Forms;
 namespace QLNganHang
 {
 
-    public partial class fNoTinDung : Form
+    public partial class fThanhToanTinDung : Form
     {
         DataQLNganHangDataContext db = new DataQLNganHangDataContext();
-        public fNoTinDung()
+        public fThanhToanTinDung()
         {
             InitializeComponent();
         }
         public void KiemTraTD()
         {
-            string std = txtSoTD.Text;
+            if (txtSoTD.Text != "")
+            {
+                string std = txtSoTD.Text;
+                var stexist = from u in db.TinDungs
+                              where u.MaTD == std
+                              select u.MaTD;
+                if (stexist.Count() > 0)
+                {
+                    var item = (from u in db.TinDungs
+                                where u.MaTD == std
+                                select u).FirstOrDefault();
+                    txtTenKH.Text = item.TenKH;
+                    txtNoTD.Text = Convert.ToString(item.NoTD);
+                    txtNX.Text = Convert.ToString(item.NoXau);
+                    txtHanMuc.Text = Convert.ToString(item.HanMuc);
+                }
+                else
+                {
+                    MessageBox.Show("Ma tin dung khong dung");
 
-            var item = (from u in db.TinDungs
-                        where u.MaTD == std
-                        select u).FirstOrDefault();
-            txtTenKH.Text = item.TenKH;
-            txtNoTD.Text = Convert.ToString(item.NoTD);
-            txtNX.Text = Convert.ToString(item.NoXau);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nhap ma tin dung");
+            }
         }
 
         private void fTinDung_Load(object sender, EventArgs e)
@@ -82,6 +100,12 @@ namespace QLNganHang
             this.Close();
         }
 
-        
+        private void btnRTTD_Click(object sender, EventArgs e)
+        {
+            int sotien = int.Parse(txtST.Text);
+            db.TinDungs.Where(tk => tk.MaTD == txtSoTD.Text).ToList().ForEach(tk => tk.HanMuc -= sotien);
+            KiemTraTD();
+            db.SubmitChanges();
+        }
     }
 }

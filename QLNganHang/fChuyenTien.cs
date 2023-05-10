@@ -136,13 +136,7 @@ namespace QLNganHang
             ls.ShowDialog();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fMain f = new fMain();
-            f.ShowDialog();
-            this.Close();
-        }
+        
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {

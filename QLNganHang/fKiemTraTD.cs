@@ -140,7 +140,7 @@ namespace QLNganHang
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fNoTinDung f = new fNoTinDung();
+            fThanhToanTinDung f = new fThanhToanTinDung();
             f.ShowDialog();
             this.Close();
         }

@@ -30,7 +30,6 @@ namespace QLNganHang
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuiTien));
             this.txtDate = new System.Windows.Forms.TextBox();
             this.tbxCCCD = new System.Windows.Forms.TextBox();
             this.tbxSoDU = new System.Windows.Forms.TextBox();
@@ -39,27 +38,25 @@ namespace QLNganHang
             this.tbxTenKH = new System.Windows.Forms.TextBox();
             this.tbxSTKTK = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.btnLayThongTin = new Guna.UI2.WinForms.Guna2Button();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDate
             // 
             this.txtDate.Location = new System.Drawing.Point(5, 24);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(223, 22);
             this.txtDate.TabIndex = 68;
@@ -67,7 +64,7 @@ namespace QLNganHang
             // tbxCCCD
             // 
             this.tbxCCCD.Location = new System.Drawing.Point(256, 73);
-            this.tbxCCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCCCD.Name = "tbxCCCD";
             this.tbxCCCD.Size = new System.Drawing.Size(224, 22);
             this.tbxCCCD.TabIndex = 67;
@@ -75,7 +72,7 @@ namespace QLNganHang
             // tbxSoDU
             // 
             this.tbxSoDU.Location = new System.Drawing.Point(256, 123);
-            this.tbxSoDU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSoDU.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSoDU.Name = "tbxSoDU";
             this.tbxSoDU.Size = new System.Drawing.Size(224, 22);
             this.tbxSoDU.TabIndex = 65;
@@ -83,7 +80,7 @@ namespace QLNganHang
             // tbxSoTienGui
             // 
             this.tbxSoTienGui.Location = new System.Drawing.Point(135, 188);
-            this.tbxSoTienGui.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSoTienGui.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSoTienGui.Name = "tbxSoTienGui";
             this.tbxSoTienGui.Size = new System.Drawing.Size(223, 22);
             this.tbxSoTienGui.TabIndex = 60;
@@ -91,7 +88,7 @@ namespace QLNganHang
             // tbxSDT
             // 
             this.tbxSDT.Location = new System.Drawing.Point(256, 24);
-            this.tbxSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSDT.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSDT.Name = "tbxSDT";
             this.tbxSDT.Size = new System.Drawing.Size(224, 22);
             this.tbxSDT.TabIndex = 59;
@@ -99,7 +96,7 @@ namespace QLNganHang
             // tbxTenKH
             // 
             this.tbxTenKH.Location = new System.Drawing.Point(5, 123);
-            this.tbxTenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxTenKH.Margin = new System.Windows.Forms.Padding(2);
             this.tbxTenKH.Name = "tbxTenKH";
             this.tbxTenKH.Size = new System.Drawing.Size(224, 22);
             this.tbxTenKH.TabIndex = 58;
@@ -107,7 +104,7 @@ namespace QLNganHang
             // tbxSTKTK
             // 
             this.tbxSTKTK.Location = new System.Drawing.Point(5, 73);
-            this.tbxSTKTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSTKTK.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSTKTK.Name = "tbxSTKTK";
             this.tbxSTKTK.Size = new System.Drawing.Size(224, 22);
             this.tbxSTKTK.TabIndex = 57;
@@ -135,83 +132,6 @@ namespace QLNganHang
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(505, 345);
             this.panel1.TabIndex = 69;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(205, 170);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 16);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "So tien gui";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label5.Location = new System.Drawing.Point(253, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 16);
-            this.label5.TabIndex = 70;
-            this.label5.Text = "So du";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label8.Location = new System.Drawing.Point(253, 55);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 16);
-            this.label8.TabIndex = 71;
-            this.label8.Text = "Cccd";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label9.Location = new System.Drawing.Point(253, 6);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 16);
-            this.label9.TabIndex = 72;
-            this.label9.Text = "SDT";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(3, 102);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 16);
-            this.label10.TabIndex = 73;
-            this.label10.Text = "Ten khach hang";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(3, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(133, 16);
-            this.label11.TabIndex = 74;
-            this.label11.Text = "So tai khoan tiet kiem";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label12.Location = new System.Drawing.Point(3, 6);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 16);
-            this.label12.TabIndex = 75;
-            this.label12.Text = "Ngay";
             // 
             // btnLayThongTin
             // 
@@ -245,6 +165,83 @@ namespace QLNganHang
             this.btnLuu.Text = "Luu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click_1);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label12.Location = new System.Drawing.Point(3, 6);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 16);
+            this.label12.TabIndex = 75;
+            this.label12.Text = "Ngay";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label11.Location = new System.Drawing.Point(3, 55);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(133, 16);
+            this.label11.TabIndex = 74;
+            this.label11.Text = "So tai khoan tiet kiem";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label10.Location = new System.Drawing.Point(3, 102);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 16);
+            this.label10.TabIndex = 73;
+            this.label10.Text = "Ten khach hang";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label9.Location = new System.Drawing.Point(253, 6);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 16);
+            this.label9.TabIndex = 72;
+            this.label9.Text = "SDT";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label8.Location = new System.Drawing.Point(253, 55);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 16);
+            this.label8.TabIndex = 71;
+            this.label8.Text = "Cccd";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label5.Location = new System.Drawing.Point(253, 105);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 16);
+            this.label5.TabIndex = 70;
+            this.label5.Text = "So du";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label13.Location = new System.Drawing.Point(205, 170);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 16);
+            this.label13.TabIndex = 69;
+            this.label13.Text = "So tien gui";
+            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 15;
@@ -254,17 +251,6 @@ namespace QLNganHang
             // 
             this.guna2Elipse2.BorderRadius = 15;
             this.guna2Elipse2.TargetControl = this.btnLuu;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(456, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 111;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -285,15 +271,13 @@ namespace QLNganHang
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(586, 402);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GuiTien";
             this.Text = "GuiTien";
             this.Load += new System.EventHandler(this.GuiTien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,7 +304,6 @@ namespace QLNganHang
         private Guna.UI2.WinForms.Guna2Button btnLayThongTin;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
     }
 }

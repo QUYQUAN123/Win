@@ -133,7 +133,6 @@ E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fMoTaiKhoancs.resources
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNapRut.resources
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNewAccount.resources
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNhanVien.resources
-E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fNoTinDung.resources
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.FThongTinKhacHang.resources
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fThongTinNV.resources
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fTinDung.resources
@@ -148,6 +147,6 @@ E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cach
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.exe
 E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.pdb
-E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fMain.resources
 E:\ProjetWin02\Win\QLNganHang\bin\Debug\Guna.Charts.WinForms.dll
 E:\ProjetWin02\Win\QLNganHang\bin\Debug\Guna.UI2.dll
+E:\ProjetWin02\Win\QLNganHang\obj\Debug\QLNganHang.fThanhToanTinDung.resources

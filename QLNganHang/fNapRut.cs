@@ -71,12 +71,6 @@ namespace QLNganHang
             db.SubmitChanges();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fMain f = new fMain();
-            f.ShowDialog();
-            this.Close();
-        }
+        
     }
 }

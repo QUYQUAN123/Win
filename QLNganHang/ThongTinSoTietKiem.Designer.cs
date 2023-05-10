@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinSoTietKiem));
             this.tbxMaKH = new System.Windows.Forms.TextBox();
             this.gridviewThanhToan = new System.Windows.Forms.DataGridView();
             this.btnDKMoSoTK = new Guna.UI2.WinForms.Guna2Button();
@@ -43,17 +42,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewThanhToan)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbxMaKH
             // 
             this.tbxMaKH.Location = new System.Drawing.Point(96, 10);
-            this.tbxMaKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxMaKH.Margin = new System.Windows.Forms.Padding(2);
             this.tbxMaKH.Name = "tbxMaKH";
             this.tbxMaKH.Size = new System.Drawing.Size(203, 22);
             this.tbxMaKH.TabIndex = 76;
@@ -62,7 +59,7 @@
             // 
             this.gridviewThanhToan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridviewThanhToan.Location = new System.Drawing.Point(27, 55);
-            this.gridviewThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridviewThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.gridviewThanhToan.Name = "gridviewThanhToan";
             this.gridviewThanhToan.RowHeadersWidth = 82;
             this.gridviewThanhToan.RowTemplate.Height = 33;
@@ -186,35 +183,22 @@
             this.guna2Elipse3.BorderRadius = 15;
             this.guna2Elipse3.TargetControl = this.btnGuiTien;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(522, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 112;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ThongTinSoTietKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(712, 360);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gridviewThanhToan);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThongTinSoTietKiem";
             this.Text = "ThongTinSoTietKiem";
             ((System.ComponentModel.ISupportInitialize)(this.gridviewThanhToan)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,6 +217,5 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
