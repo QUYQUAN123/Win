@@ -71,6 +71,9 @@ namespace QLNganHang
             db.SubmitChanges();
         }
 
-        
+        private void gbtnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

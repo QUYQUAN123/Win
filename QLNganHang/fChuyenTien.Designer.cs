@@ -59,6 +59,7 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label12 = new System.Windows.Forms.Label();
+            this.gbtnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -77,7 +78,7 @@
             this.txbSoTienChuyen.Location = new System.Drawing.Point(205, 9);
             this.txbSoTienChuyen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbSoTienChuyen.Name = "txbSoTienChuyen";
-            this.txbSoTienChuyen.Size = new System.Drawing.Size(226, 24);
+            this.txbSoTienChuyen.Size = new System.Drawing.Size(271, 24);
             this.txbSoTienChuyen.TabIndex = 3;
             // 
             // txbTkNhan
@@ -92,7 +93,7 @@
             // 
             this.txbNoiDung.Location = new System.Drawing.Point(205, 47);
             this.txbNoiDung.Name = "txbNoiDung";
-            this.txbNoiDung.Size = new System.Drawing.Size(226, 24);
+            this.txbNoiDung.Size = new System.Drawing.Size(271, 24);
             this.txbNoiDung.TabIndex = 15;
             // 
             // txbTenKHC
@@ -261,6 +262,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Linen;
+            this.panel3.Controls.Add(this.gbtnThoat);
             this.panel3.Controls.Add(this.guna2Button1);
             this.panel3.Controls.Add(this.btnChuyen);
             this.panel3.Controls.Add(this.btnKiemTra);
@@ -268,9 +270,9 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.txbSoTienChuyen);
             this.panel3.Controls.Add(this.txbNoiDung);
-            this.panel3.Location = new System.Drawing.Point(220, 236);
+            this.panel3.Location = new System.Drawing.Point(204, 236);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(445, 177);
+            this.panel3.Size = new System.Drawing.Size(532, 177);
             this.panel3.TabIndex = 31;
             // 
             // guna2Button1
@@ -372,6 +374,23 @@
             this.label12.TabIndex = 116;
             this.label12.Text = "Chuyen Tien";
             // 
+            // gbtnThoat
+            // 
+            this.gbtnThoat.BackColor = System.Drawing.Color.OrangeRed;
+            this.gbtnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gbtnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gbtnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gbtnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gbtnThoat.FillColor = System.Drawing.Color.LightGreen;
+            this.gbtnThoat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnThoat.ForeColor = System.Drawing.Color.Black;
+            this.gbtnThoat.Location = new System.Drawing.Point(419, 113);
+            this.gbtnThoat.Name = "gbtnThoat";
+            this.gbtnThoat.Size = new System.Drawing.Size(110, 30);
+            this.gbtnThoat.TabIndex = 120;
+            this.gbtnThoat.Text = "Thoat";
+            this.gbtnThoat.Click += new System.EventHandler(this.gbtnThoat_Click);
+            // 
             // fChuyenTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -431,5 +450,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2Button gbtnThoat;
     }
 }

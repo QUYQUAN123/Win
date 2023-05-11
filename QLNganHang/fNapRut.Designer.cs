@@ -50,6 +50,7 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.gbtnthoat = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -185,12 +186,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.gbtnthoat);
             this.panel2.Controls.Add(this.btnRut);
             this.panel2.Controls.Add(this.btnNap);
             this.panel2.Controls.Add(this.btnKiemTra);
-            this.panel2.Location = new System.Drawing.Point(44, 233);
+            this.panel2.Location = new System.Drawing.Point(18, 233);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(353, 64);
+            this.panel2.Size = new System.Drawing.Size(469, 64);
             this.panel2.TabIndex = 23;
             // 
             // btnRut
@@ -267,6 +269,22 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "Nap rut tien";
             // 
+            // gbtnthoat
+            // 
+            this.gbtnthoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gbtnthoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gbtnthoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gbtnthoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gbtnthoat.FillColor = System.Drawing.Color.IndianRed;
+            this.gbtnthoat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnthoat.ForeColor = System.Drawing.Color.Black;
+            this.gbtnthoat.Location = new System.Drawing.Point(357, 17);
+            this.gbtnthoat.Name = "gbtnthoat";
+            this.gbtnthoat.Size = new System.Drawing.Size(94, 30);
+            this.gbtnthoat.TabIndex = 46;
+            this.gbtnthoat.Text = "Thoat";
+            this.gbtnthoat.Click += new System.EventHandler(this.gbtnthoat_Click);
+            // 
             // fNapRut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,5 +327,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button gbtnthoat;
     }
 }

@@ -28,12 +28,6 @@ namespace QLNganHang
             gvTinDung.DataSource = db.TinDungs;
         }
 
-        private void txtTimKiem_TextChanged(object sender, EventArgs e)
-        {
-            var lst = (from s in db.TinDungs where s.Cccd.Contains(txtTimKiem.Text) select s).ToList();
-            gvTinDung.DataSource = lst;
-        }
-
         private void gvTinDung_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int i;
@@ -145,6 +139,17 @@ namespace QLNganHang
             db.SubmitChanges();
             MessageBox.Show("Them thanh cong");
             LoadData();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

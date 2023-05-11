@@ -142,5 +142,10 @@ namespace QLNganHang
         {
 
         }
+
+        private void gbtnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
