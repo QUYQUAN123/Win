@@ -43,8 +43,7 @@ namespace QLNganHang
         {
             DataTable data = new DataTable();
             string query = "SELECT MaGD,TenKH,SoTK, SoTienGiaoDich, NoiDungGiaoDich " +
-                   "FROM LichSuGiaoDich " +
-                   "WHERE SoTK = @sotk";
+                   "FROM LichSuGiaoDich WHERE SoTK = @sotk";
             data = DataProvider.Instance.ExecuteQuery(query, new object[] { sotk });
             return data;
 

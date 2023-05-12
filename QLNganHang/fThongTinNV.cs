@@ -23,6 +23,8 @@ namespace QLNganHang
         {
             txbCCCD.Text = TextBoxValue;
             string cccd = txbCCCD.Text;
+            txbCCCD.ReadOnly= true;
+            txbMaNV.ReadOnly= true;
             List<NhanVien> lstNhanVien = NhanVienDAO.Instance.ThongTinNV(cccd);
             if (lstNhanVien.Count > 0)
             {

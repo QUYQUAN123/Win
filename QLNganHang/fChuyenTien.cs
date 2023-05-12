@@ -27,6 +27,12 @@ namespace QLNganHang
         private void fChuyenTien_Load(object sender, EventArgs e)
         {
             txbTkChuyen.Text = TextBoxValue;
+            txbSoDuC.ReadOnly = true;
+            txbCCCDC.ReadOnly = true;
+            txbCCCDN.ReadOnly = true;
+            txbSoDuN.ReadOnly = true;
+            txbTenKHC.ReadOnly = true; 
+            txbTenKHN.ReadOnly = true;
 
 
         }
@@ -88,6 +94,7 @@ namespace QLNganHang
             int SoTien = int.Parse(txbSoTienChuyen.Text); // Số tiền cần chuyển
             var tenKh = txbTenKHC.Text;
             var noidung = txbNoiDung.Text;
+            var tenKhn = txbTenKHN.Text;
 
             // Lấy số dư của tài khoản cần chuyển tiền
             var soDuChuyen = db.TaiKhoans.Where(tk => tk.SoTK == tkChuyen).Select(tk => tk.SoDu).FirstOrDefault();
@@ -111,13 +118,11 @@ namespace QLNganHang
 
                     // Cập nhật số dư của tài khoản nhận tiền
                     db.TaiKhoans.Where(tk => tk.SoTK == tkNhan).ToList().ForEach(tk => tk.SoDu += SoTien);
-
+                    string noidungc = noidung += "  (chuyen tien toi so TK " + tkNhan + ")";
                     // Lưu các thay đổi vào cơ sở dữ liệu
-
-
-
-
-                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKh, SoTien, tkChuyen, noidung);
+                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKh, SoTien, tkChuyen, noidungc);
+                    string noidungn = noidung += "  (Nhan tien tu so TK " + tkChuyen + ")";
+                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKhn, SoTien, tkNhan, noidungn);
                     db.SubmitChanges();
                     MessageBox.Show("Chuyen tien Thanh cong");
                     Check();

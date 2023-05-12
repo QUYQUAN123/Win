@@ -44,16 +44,18 @@
             // 
             // txbSoTk
             // 
-            this.txbSoTk.Location = new System.Drawing.Point(6, 81);
+            this.txbSoTk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSoTk.Location = new System.Drawing.Point(42, 116);
             this.txbSoTk.Name = "txbSoTk";
-            this.txbSoTk.Size = new System.Drawing.Size(198, 22);
+            this.txbSoTk.Size = new System.Drawing.Size(271, 27);
             this.txbSoTk.TabIndex = 1;
             // 
             // txbCCCD
             // 
-            this.txbCCCD.Location = new System.Drawing.Point(6, 37);
+            this.txbCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCCCD.Location = new System.Drawing.Point(42, 36);
             this.txbCCCD.Name = "txbCCCD";
-            this.txbCCCD.Size = new System.Drawing.Size(198, 22);
+            this.txbCCCD.Size = new System.Drawing.Size(271, 27);
             this.txbCCCD.TabIndex = 5;
             // 
             // panel1
@@ -65,9 +67,9 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txbCCCD);
             this.panel1.Controls.Add(this.txbSoTk);
-            this.panel1.Location = new System.Drawing.Point(56, 64);
+            this.panel1.Location = new System.Drawing.Point(38, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(358, 132);
+            this.panel1.Size = new System.Drawing.Size(462, 172);
             this.panel1.TabIndex = 6;
             // 
             // btn2
@@ -77,11 +79,11 @@
             this.btn2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn2.FillColor = System.Drawing.Color.Salmon;
-            this.btn2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.Black;
-            this.btn2.Location = new System.Drawing.Point(233, 81);
+            this.btn2.Location = new System.Drawing.Point(339, 100);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(94, 30);
+            this.btn2.Size = new System.Drawing.Size(102, 53);
             this.btn2.TabIndex = 43;
             this.btn2.Text = "Thoat";
             this.btn2.Click += new System.EventHandler(this.btn2_Click_1);
@@ -93,9 +95,9 @@
             this.btnMoTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMoTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMoTK.FillColor = System.Drawing.Color.Salmon;
-            this.btnMoTK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMoTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMoTK.ForeColor = System.Drawing.Color.Black;
-            this.btnMoTK.Location = new System.Drawing.Point(233, 18);
+            this.btnMoTK.Location = new System.Drawing.Point(339, 23);
             this.btnMoTK.Name = "btnMoTK";
             this.btnMoTK.Size = new System.Drawing.Size(102, 56);
             this.btnMoTK.TabIndex = 42;
@@ -106,23 +108,25 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(3, 62);
+            this.label2.Location = new System.Drawing.Point(3, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Nhap so tai khoan";
+            this.label2.Text = "So tai khoan";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label7.Location = new System.Drawing.Point(3, 18);
+            this.label7.Location = new System.Drawing.Point(3, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 16);
+            this.label7.Size = new System.Drawing.Size(52, 20);
             this.label7.TabIndex = 20;
-            this.label7.Text = "Nhap Cccd";
+            this.label7.Text = "Cccd";
             // 
             // guna2Elipse1
             // 
@@ -139,7 +143,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Lime;
-            this.label12.Location = new System.Drawing.Point(116, 9);
+            this.label12.Location = new System.Drawing.Point(187, 9);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(203, 38);
             this.label12.TabIndex = 39;
@@ -150,7 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(481, 245);
+            this.ClientSize = new System.Drawing.Size(556, 264);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel1);
             this.Name = "fMoTaiKhoancs";

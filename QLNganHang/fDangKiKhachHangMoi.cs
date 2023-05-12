@@ -20,7 +20,8 @@ namespace QLNganHang
 
         private void fDangKiKhachHangMoi_Load(object sender, EventArgs e)
         {
-
+            txbMaKH.Text = KhachHangDAO.Instance.SinhSoMa();
+            txbMaKH.ReadOnly = true;
         }
 
         private void btnThem_Click_1(object sender, EventArgs e)

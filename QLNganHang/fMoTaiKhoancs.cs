@@ -23,6 +23,9 @@ namespace QLNganHang
         private void fMoTaiKhoancs_Load(object sender, EventArgs e)
         {
             txbCCCD.Text = TextBoxValue;
+            txbCCCD.ReadOnly = true;
+            txbSoTk.Text = SinhSoTK();
+            txbSoTk.ReadOnly = true;
         }
         private void XoaDuLieuTaiKhoan(string soTK)
         {
@@ -32,6 +35,20 @@ namespace QLNganHang
                 db.TaiKhoans.DeleteOnSubmit(taiKhoan);
                 db.SubmitChanges();
             }
+        }
+        private string SinhSoTK()
+        {
+            string soTK;
+            Random random = new Random();
+
+            do
+            {
+                // Sinh ngẫu nhiên 4 chữ số
+                int randomNumber = random.Next(1000, 10000);
+                soTK = "TK" + randomNumber.ToString();
+            } while (KiemTraTrungSoTK(soTK)); // Kiểm tra tính duy nhất
+
+            return soTK;
         }
 
         private bool KiemTraTrungSoTK(string soTK)
@@ -55,9 +72,6 @@ namespace QLNganHang
 
         private void btnMoTK_Click_1(object sender, EventArgs e)
         {
-            string cccd = txbCCCD.Text;
-            if (KhachHangDAO.Instance.KiemTraCCCD(cccd))
-            {
                 thongtin();
                 string soTK = txbSoTk.Text;
                 if (KiemTraTrungSoTK(soTK))
@@ -85,16 +99,6 @@ namespace QLNganHang
                     MessageBox.Show("Mở tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
-            }
-            else
-            {
-                DialogResult dialogResult = MessageBox.Show("Khách hàng chưa đăng kí! Bạn có muốn đăng kí mới?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    fDangKiKhachHangMoi f = new fDangKiKhachHangMoi();
-                    f.ShowDialog();
-                }
-            }
         }
 
        

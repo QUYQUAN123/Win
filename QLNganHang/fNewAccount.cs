@@ -22,6 +22,7 @@ namespace QLNganHang
         private void fNewAccount_Load(object sender, EventArgs e)
         {
             txtnCCCD.Text = TextBoxValue;
+            txtnCCCD.ReadOnly = true;
         }
         public void Themaccount()
         {
@@ -41,36 +42,21 @@ namespace QLNganHang
                  MessageBox.Show("Thêm tài khoản thất bại");
             }
         }
-        private bool CheckCCCD(string cccd)
+        private void ChecKAccount()
         {
-            // Kiểm tra xem CCCD đã có trong bảng KhachHang chưa
-            if (KhachHangDAO.Instance.KiemTraCCCD(cccd))
+            string tenDangNhap = txtNAccount.Text;
+
+            bool trungTenDangNhap = AccountDAO.Instance.KiemTraTrungTenDangNhap(tenDangNhap);
+            if (trungTenDangNhap)
             {
-                // Nếu đã có trong bảng KhachHang, kiểm tra xem có trong bảng Account chưa
-                if (AccountDAO.Instance.CheckExistAccount(cccd))
-                {
-                    // Nếu đã có trong bảng Account, thông báo thêm tài khoản thất bại
-                    MessageBox.Show("Khách hàng này đã có tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return false;
-                }
-                else
-                {
-                    // Nếu chưa có trong bảng Account, gọi hàm thêm tài khoản
-                    Themaccount();
-                    return true;
-                }
+                MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                // Nếu chưa có trong bảng KhachHang, thông báo cần đăng kí khách hàng và hỏi có muốn đăng kí không
-                DialogResult result = MessageBox.Show("Khách hàng chưa được đăng kí! Bạn có muốn đăng kí mới không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if (result == DialogResult.Yes)
-                {
-                    // Nếu chọn đồng ý, gọi form đăng kí mới
-                    fDangKiKhachHangMoi form = new fDangKiKhachHangMoi();
-                    form.Show();
-                }
-                return false;
+                string cccd = txtnCCCD.Text;
+                fMoTaiKhoancs fmo = new fMoTaiKhoancs();
+                fmo.TextBoxValue = cccd;
+                fmo.ShowDialog();
             }
         }
 
@@ -81,11 +67,9 @@ namespace QLNganHang
         private void btnDangKi_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            string cccd = txtnCCCD.Text;
-            CheckCCCD(cccd);
-            fMoTaiKhoancs fmo = new fMoTaiKhoancs();
-            fmo.TextBoxValue = cccd;
-            fmo.ShowDialog();
+            
+            ChecKAccount();
+            
             this.Close();
         }
 

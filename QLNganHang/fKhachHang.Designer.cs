@@ -49,7 +49,7 @@
             this.thoátToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(651, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(971, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,7 +82,7 @@
             this.gvTaikhoanKH.Name = "gvTaikhoanKH";
             this.gvTaikhoanKH.RowHeadersWidth = 51;
             this.gvTaikhoanKH.RowTemplate.Height = 24;
-            this.gvTaikhoanKH.Size = new System.Drawing.Size(637, 114);
+            this.gvTaikhoanKH.Size = new System.Drawing.Size(932, 174);
             this.gvTaikhoanKH.TabIndex = 2;
             // 
             // btnChuyenTien
@@ -93,11 +93,11 @@
             this.btnChuyenTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChuyenTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnChuyenTien.FillColor = System.Drawing.Color.LightGreen;
-            this.btnChuyenTien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChuyenTien.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChuyenTien.ForeColor = System.Drawing.Color.Black;
-            this.btnChuyenTien.Location = new System.Drawing.Point(0, 162);
+            this.btnChuyenTien.Location = new System.Drawing.Point(68, 222);
             this.btnChuyenTien.Name = "btnChuyenTien";
-            this.btnChuyenTien.Size = new System.Drawing.Size(110, 31);
+            this.btnChuyenTien.Size = new System.Drawing.Size(165, 49);
             this.btnChuyenTien.TabIndex = 32;
             this.btnChuyenTien.Text = "Chuyen tien";
             this.btnChuyenTien.Click += new System.EventHandler(this.btnChuyenTien_Click);
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(651, 258);
+            this.ClientSize = new System.Drawing.Size(971, 301);
             this.Controls.Add(this.btnChuyenTien);
             this.Controls.Add(this.gvTaikhoanKH);
             this.Controls.Add(this.menuStrip1);

@@ -124,5 +124,29 @@ namespace QLNganHang
         }
 
 
+        public string SinhSoMa()
+        {
+            string maKH;
+            Random random = new Random();
+
+            do
+            {
+                // Sinh ngẫu nhiên 4 chữ số
+                int randomNumber = random.Next(1000, 10000);
+                maKH = "KH" + randomNumber.ToString();
+            } while (KiemTraTrungMaKH(maKH)); // Kiểm tra tính duy nhất
+
+            return maKH;
+        }
+
+        private bool KiemTraTrungMaKH(string maKH)
+        {
+            string query = $"SELECT COUNT(*) FROM KhachHang WHERE MaKH = '{maKH}'";
+            int count = Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
+            return count > 0;
+        }
+
+
+
     }
 }

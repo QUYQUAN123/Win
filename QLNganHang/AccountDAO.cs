@@ -75,6 +75,13 @@ namespace QLNganHang
 
             return result > 0;
         }
+        public bool KiemTraTrungTenDangNhap(string tenDangNhap)
+        {
+            string query = $"SELECT COUNT(*) FROM Account WHERE UserName = '{tenDangNhap}'";
+            int count = Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
+            return count > 0;
+        }
+
 
         public bool DeleteAccount(string name)
         {

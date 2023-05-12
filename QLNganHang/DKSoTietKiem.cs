@@ -78,6 +78,34 @@ namespace QLNganHang
             }
         }
 
-       
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tbxTenKH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxSTKTK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textMaKH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxSDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxCCCD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

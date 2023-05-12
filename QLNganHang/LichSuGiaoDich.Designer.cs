@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gvLSGD = new System.Windows.Forms.DataGridView();
-            this.txbSoTK = new System.Windows.Forms.TextBox();
+            this.txbnhaptim = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTim = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTim = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gvLSGD)).BeginInit();
@@ -44,30 +44,32 @@
             // gvLSGD
             // 
             this.gvLSGD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvLSGD.Location = new System.Drawing.Point(34, 48);
+            this.gvLSGD.Location = new System.Drawing.Point(48, 48);
             this.gvLSGD.Name = "gvLSGD";
             this.gvLSGD.RowHeadersWidth = 51;
             this.gvLSGD.RowTemplate.Height = 24;
-            this.gvLSGD.Size = new System.Drawing.Size(727, 223);
+            this.gvLSGD.Size = new System.Drawing.Size(841, 223);
             this.gvLSGD.TabIndex = 0;
             // 
-            // txbSoTK
+            // txbnhaptim
             // 
-            this.txbSoTK.Location = new System.Drawing.Point(4, 29);
-            this.txbSoTK.Name = "txbSoTK";
-            this.txbSoTK.Size = new System.Drawing.Size(167, 22);
-            this.txbSoTK.TabIndex = 2;
+            this.txbnhaptim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbnhaptim.Location = new System.Drawing.Point(252, 23);
+            this.txbnhaptim.Name = "txbnhaptim";
+            this.txbnhaptim.Size = new System.Drawing.Size(286, 27);
+            this.txbnhaptim.TabIndex = 2;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(3, 10);
+            this.label13.Location = new System.Drawing.Point(3, 30);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(139, 16);
+            this.label13.Size = new System.Drawing.Size(221, 20);
             this.label13.TabIndex = 70;
-            this.label13.Text = "Nhap tai khoan tra cuu";
+            this.label13.Text = "Nhap tai khoan/Cccd tra cuu";
             // 
             // panel1
             // 
@@ -75,27 +77,11 @@
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.btnTim);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.txbSoTK);
-            this.panel1.Location = new System.Drawing.Point(135, 277);
+            this.panel1.Controls.Add(this.txbnhaptim);
+            this.panel1.Location = new System.Drawing.Point(41, 277);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(446, 70);
+            this.panel1.Size = new System.Drawing.Size(848, 70);
             this.panel1.TabIndex = 71;
-            // 
-            // btnTim
-            // 
-            this.btnTim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTim.FillColor = System.Drawing.Color.SkyBlue;
-            this.btnTim.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTim.ForeColor = System.Drawing.Color.Black;
-            this.btnTim.Location = new System.Drawing.Point(214, 14);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(96, 48);
-            this.btnTim.TabIndex = 71;
-            this.btnTim.Text = "Tim";
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // guna2Button1
             // 
@@ -106,12 +92,28 @@
             this.guna2Button1.FillColor = System.Drawing.Color.SlateBlue;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(331, 14);
+            this.guna2Button1.Location = new System.Drawing.Point(720, 10);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(96, 48);
             this.guna2Button1.TabIndex = 72;
             this.guna2Button1.Text = "Thoat";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // btnTim
+            // 
+            this.btnTim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTim.FillColor = System.Drawing.Color.SkyBlue;
+            this.btnTim.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTim.ForeColor = System.Drawing.Color.Black;
+            this.btnTim.Location = new System.Drawing.Point(559, 10);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(96, 48);
+            this.btnTim.TabIndex = 71;
+            this.btnTim.Text = "Tim";
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // guna2Elipse1
             // 
@@ -128,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(806, 373);
+            this.ClientSize = new System.Drawing.Size(927, 445);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gvLSGD);
             this.Name = "LichSuGiaoDich";
@@ -144,7 +146,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView gvLSGD;
-        private System.Windows.Forms.TextBox txbSoTK;
+        private System.Windows.Forms.TextBox txbnhaptim;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnTim;

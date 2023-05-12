@@ -50,6 +50,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.gbtnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnChuyen = new Guna.UI2.WinForms.Guna2Button();
             this.btnKiemTra = new Guna.UI2.WinForms.Guna2Button();
@@ -59,7 +60,6 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label12 = new System.Windows.Forms.Label();
-            this.gbtnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,7 +70,7 @@
             this.txbTkChuyen.Location = new System.Drawing.Point(7, 32);
             this.txbTkChuyen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTkChuyen.Name = "txbTkChuyen";
-            this.txbTkChuyen.Size = new System.Drawing.Size(166, 24);
+            this.txbTkChuyen.Size = new System.Drawing.Size(166, 27);
             this.txbTkChuyen.TabIndex = 2;
             // 
             // txbSoTienChuyen
@@ -78,7 +78,7 @@
             this.txbSoTienChuyen.Location = new System.Drawing.Point(205, 9);
             this.txbSoTienChuyen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbSoTienChuyen.Name = "txbSoTienChuyen";
-            this.txbSoTienChuyen.Size = new System.Drawing.Size(271, 24);
+            this.txbSoTienChuyen.Size = new System.Drawing.Size(271, 27);
             this.txbSoTienChuyen.TabIndex = 3;
             // 
             // txbTkNhan
@@ -86,56 +86,56 @@
             this.txbTkNhan.Location = new System.Drawing.Point(4, 28);
             this.txbTkNhan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTkNhan.Name = "txbTkNhan";
-            this.txbTkNhan.Size = new System.Drawing.Size(226, 24);
+            this.txbTkNhan.Size = new System.Drawing.Size(226, 27);
             this.txbTkNhan.TabIndex = 7;
             // 
             // txbNoiDung
             // 
             this.txbNoiDung.Location = new System.Drawing.Point(205, 47);
             this.txbNoiDung.Name = "txbNoiDung";
-            this.txbNoiDung.Size = new System.Drawing.Size(271, 24);
+            this.txbNoiDung.Size = new System.Drawing.Size(271, 27);
             this.txbNoiDung.TabIndex = 15;
             // 
             // txbTenKHC
             // 
             this.txbTenKHC.Location = new System.Drawing.Point(7, 84);
             this.txbTenKHC.Name = "txbTenKHC";
-            this.txbTenKHC.Size = new System.Drawing.Size(166, 24);
+            this.txbTenKHC.Size = new System.Drawing.Size(166, 27);
             this.txbTenKHC.TabIndex = 23;
             // 
             // txbCCCDC
             // 
             this.txbCCCDC.Location = new System.Drawing.Point(240, 32);
             this.txbCCCDC.Name = "txbCCCDC";
-            this.txbCCCDC.Size = new System.Drawing.Size(166, 24);
+            this.txbCCCDC.Size = new System.Drawing.Size(166, 27);
             this.txbCCCDC.TabIndex = 24;
             // 
             // txbSoDuC
             // 
             this.txbSoDuC.Location = new System.Drawing.Point(241, 84);
             this.txbSoDuC.Name = "txbSoDuC";
-            this.txbSoDuC.Size = new System.Drawing.Size(166, 24);
+            this.txbSoDuC.Size = new System.Drawing.Size(166, 27);
             this.txbSoDuC.TabIndex = 25;
             // 
             // txbTenKHN
             // 
             this.txbTenKHN.Location = new System.Drawing.Point(7, 76);
             this.txbTenKHN.Name = "txbTenKHN";
-            this.txbTenKHN.Size = new System.Drawing.Size(223, 24);
+            this.txbTenKHN.Size = new System.Drawing.Size(223, 27);
             this.txbTenKHN.TabIndex = 26;
             // 
             // txbCCCDN
             // 
             this.txbCCCDN.Location = new System.Drawing.Point(281, 28);
             this.txbCCCDN.Name = "txbCCCDN";
-            this.txbCCCDN.Size = new System.Drawing.Size(145, 24);
+            this.txbCCCDN.Size = new System.Drawing.Size(145, 27);
             this.txbCCCDN.TabIndex = 27;
             // 
             // txbSoDuN
             // 
             this.txbSoDuN.Location = new System.Drawing.Point(282, 76);
             this.txbSoDuN.Name = "txbSoDuN";
-            this.txbSoDuN.Size = new System.Drawing.Size(145, 24);
+            this.txbSoDuN.Size = new System.Drawing.Size(145, 27);
             this.txbSoDuN.TabIndex = 28;
             // 
             // panel1
@@ -149,7 +149,8 @@
             this.panel1.Controls.Add(this.txbTenKHC);
             this.panel1.Controls.Add(this.txbSoDuC);
             this.panel1.Controls.Add(this.txbCCCDC);
-            this.panel1.Location = new System.Drawing.Point(3, 75);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(34, 103);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(458, 155);
             this.panel1.TabIndex = 29;
@@ -161,7 +162,7 @@
             this.label15.ForeColor = System.Drawing.Color.OrangeRed;
             this.label15.Location = new System.Drawing.Point(238, 63);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 18);
+            this.label15.Size = new System.Drawing.Size(57, 20);
             this.label15.TabIndex = 107;
             this.label15.Text = "So du";
             // 
@@ -172,7 +173,7 @@
             this.label11.ForeColor = System.Drawing.Color.OrangeRed;
             this.label11.Location = new System.Drawing.Point(238, 7);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 18);
+            this.label11.Size = new System.Drawing.Size(52, 20);
             this.label11.TabIndex = 108;
             this.label11.Text = "Cccd";
             // 
@@ -183,7 +184,7 @@
             this.label13.ForeColor = System.Drawing.Color.OrangeRed;
             this.label13.Location = new System.Drawing.Point(4, 63);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 18);
+            this.label13.Size = new System.Drawing.Size(141, 20);
             this.label13.TabIndex = 110;
             this.label13.Text = "Ten khach hang";
             // 
@@ -194,7 +195,7 @@
             this.label14.ForeColor = System.Drawing.Color.OrangeRed;
             this.label14.Location = new System.Drawing.Point(4, 7);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(172, 18);
+            this.label14.Size = new System.Drawing.Size(193, 20);
             this.label14.TabIndex = 111;
             this.label14.Text = "Tai hhoan chuyen tien";
             // 
@@ -209,7 +210,8 @@
             this.panel2.Controls.Add(this.txbSoDuN);
             this.panel2.Controls.Add(this.txbCCCDN);
             this.panel2.Controls.Add(this.txbTenKHN);
-            this.panel2.Location = new System.Drawing.Point(506, 75);
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(572, 103);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(449, 155);
             this.panel2.TabIndex = 30;
@@ -222,7 +224,7 @@
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Location = new System.Drawing.Point(279, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 18);
+            this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 112;
             this.label2.Text = "So du";
             // 
@@ -233,7 +235,7 @@
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
             this.label1.Location = new System.Drawing.Point(279, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 18);
+            this.label1.Size = new System.Drawing.Size(52, 20);
             this.label1.TabIndex = 112;
             this.label1.Text = "Cccd";
             // 
@@ -244,7 +246,7 @@
             this.label5.ForeColor = System.Drawing.Color.OrangeRed;
             this.label5.Location = new System.Drawing.Point(4, 55);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 18);
+            this.label5.Size = new System.Drawing.Size(140, 20);
             this.label5.TabIndex = 114;
             this.label5.Text = "Ten nguoi Nhan";
             // 
@@ -255,7 +257,7 @@
             this.label8.ForeColor = System.Drawing.Color.OrangeRed;
             this.label8.Location = new System.Drawing.Point(4, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(155, 18);
+            this.label8.Size = new System.Drawing.Size(173, 20);
             this.label8.TabIndex = 115;
             this.label8.Text = "Tai khoan nhan tien";
             // 
@@ -270,10 +272,28 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.txbSoTienChuyen);
             this.panel3.Controls.Add(this.txbNoiDung);
-            this.panel3.Location = new System.Drawing.Point(204, 236);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(234, 315);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(532, 177);
             this.panel3.TabIndex = 31;
+            // 
+            // gbtnThoat
+            // 
+            this.gbtnThoat.BackColor = System.Drawing.Color.OrangeRed;
+            this.gbtnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gbtnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gbtnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gbtnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gbtnThoat.FillColor = System.Drawing.Color.LightGreen;
+            this.gbtnThoat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnThoat.ForeColor = System.Drawing.Color.Black;
+            this.gbtnThoat.Location = new System.Drawing.Point(419, 113);
+            this.gbtnThoat.Name = "gbtnThoat";
+            this.gbtnThoat.Size = new System.Drawing.Size(110, 30);
+            this.gbtnThoat.TabIndex = 120;
+            this.gbtnThoat.Text = "Thoat";
+            this.gbtnThoat.Click += new System.EventHandler(this.gbtnThoat_Click);
             // 
             // guna2Button1
             // 
@@ -333,7 +353,7 @@
             this.label3.ForeColor = System.Drawing.Color.OrangeRed;
             this.label3.Location = new System.Drawing.Point(14, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 18);
+            this.label3.Size = new System.Drawing.Size(185, 20);
             this.label3.TabIndex = 117;
             this.label3.Text = "Noi dung chuyen tien";
             // 
@@ -344,7 +364,7 @@
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
             this.label4.Location = new System.Drawing.Point(14, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 18);
+            this.label4.Size = new System.Drawing.Size(169, 20);
             this.label4.TabIndex = 116;
             this.label4.Text = "So tien can chuyen";
             // 
@@ -374,30 +394,13 @@
             this.label12.TabIndex = 116;
             this.label12.Text = "Chuyen Tien";
             // 
-            // gbtnThoat
-            // 
-            this.gbtnThoat.BackColor = System.Drawing.Color.OrangeRed;
-            this.gbtnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.gbtnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.gbtnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gbtnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gbtnThoat.FillColor = System.Drawing.Color.LightGreen;
-            this.gbtnThoat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gbtnThoat.ForeColor = System.Drawing.Color.Black;
-            this.gbtnThoat.Location = new System.Drawing.Point(419, 113);
-            this.gbtnThoat.Name = "gbtnThoat";
-            this.gbtnThoat.Size = new System.Drawing.Size(110, 30);
-            this.gbtnThoat.TabIndex = 120;
-            this.gbtnThoat.Text = "Thoat";
-            this.gbtnThoat.Click += new System.EventHandler(this.gbtnThoat_Click);
-            // 
             // fChuyenTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1000, 418);
+            this.ClientSize = new System.Drawing.Size(1058, 544);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
