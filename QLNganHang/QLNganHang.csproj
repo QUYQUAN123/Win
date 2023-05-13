@@ -139,6 +139,12 @@
     <Compile Include="fThanhToanTinDung.Designer.cs">
       <DependentUpon>fThanhToanTinDung.cs</DependentUpon>
     </Compile>
+    <Compile Include="fThemTinDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemTinDung.Designer.cs">
+      <DependentUpon>fThemTinDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="FThongTinKhacHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fThanhToanTinDung.resx">
       <DependentUpon>fThanhToanTinDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemTinDung.resx">
+      <DependentUpon>fThemTinDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FThongTinKhacHang.resx">
       <DependentUpon>FThongTinKhacHang.cs</DependentUpon>

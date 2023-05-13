@@ -12,6 +12,7 @@ namespace QLNganHang
     {
         private static KhachHangDAO instance;
 
+
         public static KhachHangDAO Instance
         {
             get { if (instance == null) instance = new KhachHangDAO(); return KhachHangDAO.instance; }
@@ -20,7 +21,31 @@ namespace QLNganHang
 
         private KhachHangDAO() { }
 
+        public List<KhachHang> ThongTinKH(string cccd)
+        {
+            List<KhachHang> lst = new List<KhachHang>();
 
+            // Truy vấn khách hàng theo CCCD
+            string query = $"SELECT * FROM KhachHang WHERE CCCD = '{cccd}'";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+
+            foreach (DataRow row in data.Rows)
+            {
+                KhachHang kh = new KhachHang();
+                kh.MaKH = row["MaKH"].ToString();
+                kh.TenKH = row["TenKH"].ToString();
+                kh.NgaySinh = DateTime.Parse(row["NgaySinh"].ToString());
+                kh.SDT = row["SDT"].ToString();
+                kh.Email = row["Email"].ToString();
+                kh.CCCD = row["CCCD"].ToString();
+                kh.DiaChi = row["DiaChi"].ToString();
+                kh.ThuNhap = decimal.Parse(row["ThuNhap"].ToString());
+                lst.Add(kh);
+            }
+
+            return lst;
+        }
         public bool ThemKhachHang(string maKH, string tenKH, DateTime ngaySinh, string sdt, string email, string cccd, string diaChi, Decimal thuNhap)
         {
             // Tạo đối tượng KhachHang từ các thông tin trên form

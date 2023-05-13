@@ -115,30 +115,10 @@ namespace QLNganHang
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
-            string matd = txtMaTD.Text, tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan = txtSoLan.Text;
-            double laixuattd = double.Parse(cmbLaiXuat.Text);
-            DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
-            decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
-                , notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
-            var item = new TinDung
-            {
-                MaTD = matd,
-                TenKH = tenkh,
-                ThuNhap = thunhap,
-                Cccd = cccd,
-                LoaiThe = loaithe,
-                HanMuc = hanmuc,
-                NgayTra = ngaytra,
-                LaiXuatTD = laixuattd,
-                NoTD = notd,
-                NoXau = noxau,
-                SoLan = solan,
-
-            };
-            db.TinDungs.InsertOnSubmit(item);
-            db.SubmitChanges();
-            MessageBox.Show("Them thanh cong");
-            LoadData();
+            this.Hide();
+            fThemTinDung f = new fThemTinDung();
+            f.ShowDialog();
+            this.Close();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
