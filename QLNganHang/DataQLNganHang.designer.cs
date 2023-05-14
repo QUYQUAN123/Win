@@ -42,7 +42,7 @@ namespace QLNganHang
     #endregion
 		
 		public DataQLNganHangDataContext() : 
-				base(global::QLNganHang.Properties.Settings.Default.QLNganHangConnectionString3, mappingSource)
+				base(global::QLNganHang.Properties.Settings.Default.QLNganHangConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -108,6 +108,14 @@ namespace QLNganHang
 			get
 			{
 				return this.GetTable<View_KhachHang>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VayTien> VayTiens
+		{
+			get
+			{
+				return this.GetTable<VayTien>();
 			}
 		}
 	}
@@ -989,9 +997,11 @@ namespace QLNganHang
 	public partial class View_KhachHang
 	{
 		
-		private string _MaKH;
+		private string _SoTK;
 		
-		private string _Cccd;
+		private decimal _SoDu;
+		
+		private string _MaKH;
 		
 		private string _TenKH;
 		
@@ -1001,14 +1011,46 @@ namespace QLNganHang
 		
 		private string _Email;
 		
+		private string _Cccd;
+		
 		private string _DiaChi;
 		
-		private string _SoTK;
-		
-		private decimal _SoDu;
+		private string _Expr1;
 		
 		public View_KhachHang()
 		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoTK", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string SoTK
+		{
+			get
+			{
+				return this._SoTK;
+			}
+			set
+			{
+				if ((this._SoTK != value))
+				{
+					this._SoTK = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDu", DbType="Money NOT NULL")]
+		public decimal SoDu
+		{
+			get
+			{
+				return this._SoDu;
+			}
+			set
+			{
+				if ((this._SoDu != value))
+				{
+					this._SoDu = value;
+				}
+			}
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
@@ -1023,22 +1065,6 @@ namespace QLNganHang
 				if ((this._MaKH != value))
 				{
 					this._MaKH = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cccd", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
-		public string Cccd
-		{
-			get
-			{
-				return this._Cccd;
-			}
-			set
-			{
-				if ((this._Cccd != value))
-				{
-					this._Cccd = value;
 				}
 			}
 		}
@@ -1107,6 +1133,22 @@ namespace QLNganHang
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cccd", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string Cccd
+		{
+			get
+			{
+				return this._Cccd;
+			}
+			set
+			{
+				if ((this._Cccd != value))
+				{
+					this._Cccd = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
 		public string DiaChi
 		{
@@ -1123,34 +1165,258 @@ namespace QLNganHang
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoTK", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
-		public string SoTK
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Expr1", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string Expr1
 		{
 			get
 			{
-				return this._SoTK;
+				return this._Expr1;
 			}
 			set
 			{
-				if ((this._SoTK != value))
+				if ((this._Expr1 != value))
 				{
-					this._SoTK = value;
+					this._Expr1 = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.VayTien")]
+	public partial class VayTien
+	{
+		
+		private string _MaKH;
+		
+		private string _TenKH;
+		
+		private string _SDT;
+		
+		private string _Email;
+		
+		private string _Cccd;
+		
+		private string _DiaChi;
+		
+		private System.Nullable<decimal> _ThuNhap;
+		
+		private decimal _SoTienVay;
+		
+		private int _KyHan;
+		
+		private decimal _LaiXuat;
+		
+		private System.DateTime _NgayVay;
+		
+		private System.DateTime _NgayTra;
+		
+		private System.Nullable<int> _NoXau;
+		
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string MaKH
+		{
+			get
+			{
+				return this._MaKH;
+			}
+			set
+			{
+				if ((this._MaKH != value))
+				{
+					this._MaKH = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDu", DbType="Money NOT NULL")]
-		public decimal SoDu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string TenKH
 		{
 			get
 			{
-				return this._SoDu;
+				return this._TenKH;
 			}
 			set
 			{
-				if ((this._SoDu != value))
+				if ((this._TenKH != value))
 				{
-					this._SoDu = value;
+					this._TenKH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDT", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string SDT
+		{
+			get
+			{
+				return this._SDT;
+			}
+			set
+			{
+				if ((this._SDT != value))
+				{
+					this._SDT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this._Email = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cccd", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string Cccd
+		{
+			get
+			{
+				return this._Cccd;
+			}
+			set
+			{
+				if ((this._Cccd != value))
+				{
+					this._Cccd = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
+		public string DiaChi
+		{
+			get
+			{
+				return this._DiaChi;
+			}
+			set
+			{
+				if ((this._DiaChi != value))
+				{
+					this._DiaChi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThuNhap", DbType="Money")]
+		public System.Nullable<decimal> ThuNhap
+		{
+			get
+			{
+				return this._ThuNhap;
+			}
+			set
+			{
+				if ((this._ThuNhap != value))
+				{
+					this._ThuNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoTienVay", DbType="Money NOT NULL")]
+		public decimal SoTienVay
+		{
+			get
+			{
+				return this._SoTienVay;
+			}
+			set
+			{
+				if ((this._SoTienVay != value))
+				{
+					this._SoTienVay = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KyHan", DbType="Int NOT NULL")]
+		public int KyHan
+		{
+			get
+			{
+				return this._KyHan;
+			}
+			set
+			{
+				if ((this._KyHan != value))
+				{
+					this._KyHan = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LaiXuat", DbType="Decimal(4,2) NOT NULL")]
+		public decimal LaiXuat
+		{
+			get
+			{
+				return this._LaiXuat;
+			}
+			set
+			{
+				if ((this._LaiXuat != value))
+				{
+					this._LaiXuat = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayVay", DbType="Date NOT NULL")]
+		public System.DateTime NgayVay
+		{
+			get
+			{
+				return this._NgayVay;
+			}
+			set
+			{
+				if ((this._NgayVay != value))
+				{
+					this._NgayVay = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTra", DbType="Date NOT NULL")]
+		public System.DateTime NgayTra
+		{
+			get
+			{
+				return this._NgayTra;
+			}
+			set
+			{
+				if ((this._NgayTra != value))
+				{
+					this._NgayTra = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoXau", DbType="Int")]
+		public System.Nullable<int> NoXau
+		{
+			get
+			{
+				return this._NoXau;
+			}
+			set
+			{
+				if ((this._NoXau != value))
+				{
+					this._NoXau = value;
 				}
 			}
 		}

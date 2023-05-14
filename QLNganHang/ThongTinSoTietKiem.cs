@@ -67,7 +67,5 @@ namespace QLNganHang
                         select u).ToList();
             gridviewThanhToan.DataSource = item;
         }
-
-      
     }
 }

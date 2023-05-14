@@ -17,13 +17,13 @@ namespace QLNganHang
         {
             InitializeComponent();
             loadmode();
-            loaddate();
+            //loaddate();
         }
 
-        private void loaddate()
-        {
-            ngaylb.Text = DateTime.UtcNow.ToString("dd/mm/yyyy");
-        }
+        //private void loaddate()
+        //{
+        //    ngaylb.Text = DateTime.UtcNow.ToString("dd/mm/yyyy");
+        //}
 
         private void loadmode()
         {

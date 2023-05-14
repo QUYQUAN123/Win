@@ -169,6 +169,12 @@
     <Compile Include="GuiTien.Designer.cs">
       <DependentUpon>GuiTien.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeVayTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeVayTien.Designer.cs">
+      <DependentUpon>HomeVayTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang.cs" />
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="LichSuGiaoDich.cs">
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuiTien.resx">
       <DependentUpon>GuiTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeVayTien.resx">
+      <DependentUpon>HomeVayTien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LichSuGiaoDich.resx">
       <DependentUpon>LichSuGiaoDich.cs</DependentUpon>
