@@ -61,9 +61,9 @@ namespace QLNganHang
 
         private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
-            string d = tbxMaKH.Text;
+            string d = tbxCccd.Text;
             var item = (from u in NH.SoTietKiems
-                        where u.MaKH == d
+                        where u.Cccd == d
                         select u).ToList();
             gridviewThanhToan.DataSource = item;
         }
