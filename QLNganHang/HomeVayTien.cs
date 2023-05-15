@@ -23,26 +23,42 @@ namespace QLNganHang
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnKiemTra_Click(object sender, EventArgs e)
         {
             string d = txbCCCD.Text;
             var item = (from u in NH.VayTiens 
                         where u.Cccd == d
                         select u).FirstOrDefault();
-            if(item.NoXau == 1)
+            if(item == null)
             {
-                gridVayTien.DataSource = item;
+                MessageBox.Show("Không có thông tin.");
+            }
+            else if(item.NoXau == 0)
+            {
+                MessageBox.Show("Khách hàng này không có lịch sử nợ xấu, đủ điều kiện giao dịch!");              
             }
             else
             {
-                labelResult.Text = "Khách hàng này không có lịch sử nợ xấu, đủ điều kiện giao dịch!";
+                gridVayTien.DataSource = item;
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnDK_Click(object sender, EventArgs e)
         {
             VayTien vt = new VayTien();
             vt.ShowDialog();
+        }
+
+        private void btnDSden_Click(object sender, EventArgs e)
+        {
+            var item = (from u in NH.VayTiens
+                        where u.NoXau == 1
+                        select u);
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

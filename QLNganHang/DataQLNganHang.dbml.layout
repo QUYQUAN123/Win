@@ -38,5 +38,11 @@
         <elementListCompartment Id="d09b8742-6cd1-437f-a888-fd04f5e5d3d3" absoluteBounds="6.14, 4.335, 1.9700000000000003, 2.7493082682291664" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="7764d61a-448c-48c5-b483-edf2ebf02bf0" absoluteBounds="3.625, 3.625, 2, 2.3478011067708336">
+      <DataClassMoniker Name="/DataQLNganHangDataContext/View_VayTien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0563c17-ca4d-4d42-bc48-06b36151b183" absoluteBounds="3.64, 4.085, 1.9700000000000003, 1.7878011067708336" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

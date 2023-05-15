@@ -29,228 +29,43 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.cccdtxt = new System.Windows.Forms.TextBox();
-            this.TienNotxt = new System.Windows.Forms.TextBox();
-            this.ngaylb = new System.Windows.Forms.Label();
-            this.KHcombo = new System.Windows.Forms.ComboBox();
-            this.STVtxt = new System.Windows.Forms.TextBox();
-            this.SDTtxt = new System.Windows.Forms.TextBox();
-            this.TKHtxt = new System.Windows.Forms.TextBox();
-            this.STKtxt = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLayThongTin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txbSDT = new System.Windows.Forms.TextBox();
+            this.txbMaKH = new System.Windows.Forms.TextBox();
+            this.cccdtxt = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKiemTra = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.txbTenKH = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbDChi = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txbThuNhap = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txbTienVay = new System.Windows.Forms.TextBox();
+            this.txbTaiSanTheChap = new System.Windows.Forms.TextBox();
+            this.comboHinhThuc = new System.Windows.Forms.ComboBox();
+            this.comboKyHan = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txbNgayTra = new System.Windows.Forms.TextBox();
+            this.dateNgayVay = new System.Windows.Forms.DateTimePicker();
+            this.txbLaiXuat = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // cccdtxt
-            // 
-            this.cccdtxt.Location = new System.Drawing.Point(278, 33);
-            this.cccdtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cccdtxt.Name = "cccdtxt";
-            this.cccdtxt.Size = new System.Drawing.Size(224, 22);
-            this.cccdtxt.TabIndex = 87;
-            // 
-            // TienNotxt
-            // 
-            this.TienNotxt.Location = new System.Drawing.Point(278, 84);
-            this.TienNotxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TienNotxt.Name = "TienNotxt";
-            this.TienNotxt.Size = new System.Drawing.Size(224, 22);
-            this.TienNotxt.TabIndex = 85;
-            // 
-            // ngaylb
-            // 
-            this.ngaylb.AutoSize = true;
-            this.ngaylb.Location = new System.Drawing.Point(234, 30);
-            this.ngaylb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ngaylb.Name = "ngaylb";
-            this.ngaylb.Size = new System.Drawing.Size(0, 16);
-            this.ngaylb.TabIndex = 82;
-            // 
-            // KHcombo
-            // 
-            this.KHcombo.FormattingEnabled = true;
-            this.KHcombo.Location = new System.Drawing.Point(15, 173);
-            this.KHcombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.KHcombo.Name = "KHcombo";
-            this.KHcombo.Size = new System.Drawing.Size(224, 24);
-            this.KHcombo.TabIndex = 79;
-            // 
-            // STVtxt
-            // 
-            this.STVtxt.Location = new System.Drawing.Point(278, 126);
-            this.STVtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.STVtxt.Name = "STVtxt";
-            this.STVtxt.Size = new System.Drawing.Size(224, 22);
-            this.STVtxt.TabIndex = 78;
-            // 
-            // SDTtxt
-            // 
-            this.SDTtxt.Location = new System.Drawing.Point(15, 126);
-            this.SDTtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.SDTtxt.Name = "SDTtxt";
-            this.SDTtxt.Size = new System.Drawing.Size(224, 22);
-            this.SDTtxt.TabIndex = 77;
-            // 
-            // TKHtxt
-            // 
-            this.TKHtxt.Location = new System.Drawing.Point(15, 84);
-            this.TKHtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TKHtxt.Name = "TKHtxt";
-            this.TKHtxt.Size = new System.Drawing.Size(224, 22);
-            this.TKHtxt.TabIndex = 76;
-            // 
-            // STKtxt
-            // 
-            this.STKtxt.Location = new System.Drawing.Point(15, 33);
-            this.STKtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.STKtxt.Name = "STKtxt";
-            this.STKtxt.Size = new System.Drawing.Size(224, 22);
-            this.STKtxt.TabIndex = 75;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.btnLayThongTin);
-            this.panel1.Controls.Add(this.btnLuu);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.TienNotxt);
-            this.panel1.Controls.Add(this.cccdtxt);
-            this.panel1.Controls.Add(this.KHcombo);
-            this.panel1.Controls.Add(this.STKtxt);
-            this.panel1.Controls.Add(this.STVtxt);
-            this.panel1.Controls.Add(this.TKHtxt);
-            this.panel1.Controls.Add(this.SDTtxt);
-            this.panel1.Location = new System.Drawing.Point(56, 60);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(550, 297);
-            this.panel1.TabIndex = 88;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(280, 108);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 16);
-            this.label11.TabIndex = 92;
-            this.label11.Text = "So tien vay";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label12.Location = new System.Drawing.Point(275, 66);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 16);
-            this.label12.TabIndex = 93;
-            this.label12.Text = "Tien no";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(280, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 16);
-            this.label13.TabIndex = 94;
-            this.label13.Text = "Cccd";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label14.Location = new System.Drawing.Point(12, 155);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 16);
-            this.label14.TabIndex = 95;
-            this.label14.Text = "Ky han (thang)";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label15.Location = new System.Drawing.Point(12, 108);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 16);
-            this.label15.TabIndex = 96;
-            this.label15.Text = "SDT";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label16.Location = new System.Drawing.Point(12, 66);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(103, 16);
-            this.label16.TabIndex = 97;
-            this.label16.Text = "Ten khach hang";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label17.Location = new System.Drawing.Point(12, 15);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 16);
-            this.label17.TabIndex = 98;
-            this.label17.Text = "So tai khoan";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLuu.FillColor = System.Drawing.Color.PeachPuff;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Location = new System.Drawing.Point(148, 220);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(104, 48);
-            this.btnLuu.TabIndex = 99;
-            this.btnLuu.Text = "Luu";
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnLayThongTin
-            // 
-            this.btnLayThongTin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLayThongTin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLayThongTin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLayThongTin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLayThongTin.FillColor = System.Drawing.Color.LightCoral;
-            this.btnLayThongTin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLayThongTin.ForeColor = System.Drawing.Color.Black;
-            this.btnLayThongTin.Location = new System.Drawing.Point(283, 220);
-            this.btnLayThongTin.Name = "btnLayThongTin";
-            this.btnLayThongTin.Size = new System.Drawing.Size(118, 48);
-            this.btnLayThongTin.TabIndex = 100;
-            this.btnLayThongTin.Text = "Lay thong tin";
-            this.btnLayThongTin.Click += new System.EventHandler(this.btnLayThongTin_Click);
             // 
             // guna2Elipse1
             // 
@@ -260,61 +75,453 @@
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 15;
-            this.guna2Elipse2.TargetControl = this.btnLayThongTin;
+            this.guna2Elipse2.TargetControl = this.btnKiemTra;
+            // 
+            // txbSDT
+            // 
+            this.txbSDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbSDT.Location = new System.Drawing.Point(45, 317);
+            this.txbSDT.Name = "txbSDT";
+            this.txbSDT.Size = new System.Drawing.Size(402, 31);
+            this.txbSDT.TabIndex = 77;
+            // 
+            // txbMaKH
+            // 
+            this.txbMaKH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbMaKH.Location = new System.Drawing.Point(488, 228);
+            this.txbMaKH.Name = "txbMaKH";
+            this.txbMaKH.Size = new System.Drawing.Size(188, 31);
+            this.txbMaKH.TabIndex = 76;
+            // 
+            // cccdtxt
+            // 
+            this.cccdtxt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cccdtxt.Location = new System.Drawing.Point(37, 79);
+            this.cccdtxt.Name = "cccdtxt";
+            this.cccdtxt.Size = new System.Drawing.Size(396, 31);
+            this.cccdtxt.TabIndex = 87;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(32, 51);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 25);
+            this.label13.TabIndex = 94;
+            this.label13.Text = "CCCD:";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(41, 289);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(166, 25);
+            this.label15.TabIndex = 96;
+            this.label15.Text = "Số Điện Thoại:";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(483, 199);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(192, 25);
+            this.label16.TabIndex = 97;
+            this.label16.Text = "Mã Khách Hàng:";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLuu.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLuu.Font = new System.Drawing.Font("Mongolian Baiti", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.Black;
+            this.btnLuu.Location = new System.Drawing.Point(243, 584);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(199, 76);
+            this.btnLuu.TabIndex = 99;
+            this.btnLuu.Text = "Đăng Ký";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnKiemTra
+            // 
+            this.btnKiemTra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnKiemTra.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTra.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKiemTra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKiemTra.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnKiemTra.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKiemTra.ForeColor = System.Drawing.Color.Black;
+            this.btnKiemTra.Location = new System.Drawing.Point(498, 69);
+            this.btnKiemTra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnKiemTra.Name = "btnKiemTra";
+            this.btnKiemTra.Size = new System.Drawing.Size(156, 51);
+            this.btnKiemTra.TabIndex = 100;
+            this.btnKiemTra.Text = "Kiểm Tra";
+            this.btnKiemTra.Click += new System.EventHandler(this.btnLayThongTin_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txbThuNhap);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txbDChi);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txbEmail);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txbTenKH);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.btnKiemTra);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.cccdtxt);
+            this.panel1.Controls.Add(this.txbMaKH);
+            this.panel1.Controls.Add(this.txbSDT);
+            this.panel1.Location = new System.Drawing.Point(27, 35);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(724, 702);
+            this.panel1.TabIndex = 88;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(263, 12);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(41, 199);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 38);
-            this.label1.TabIndex = 89;
-            this.label1.Text = "Vay Tien";
+            this.label1.Size = new System.Drawing.Size(199, 25);
+            this.label1.TabIndex = 102;
+            this.label1.Text = "Tên Khách Hàng:";
+            // 
+            // txbTenKH
+            // 
+            this.txbTenKH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbTenKH.Location = new System.Drawing.Point(45, 227);
+            this.txbTenKH.Name = "txbTenKH";
+            this.txbTenKH.Size = new System.Drawing.Size(402, 31);
+            this.txbTenKH.TabIndex = 101;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(40, 379);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.TabIndex = 104;
+            this.label2.Text = "Email:";
+            // 
+            // txbEmail
+            // 
+            this.txbEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbEmail.Location = new System.Drawing.Point(44, 407);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(402, 31);
+            this.txbEmail.TabIndex = 103;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(42, 473);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 25);
+            this.label3.TabIndex = 106;
+            this.label3.Text = "Địa Chỉ:";
+            // 
+            // txbDChi
+            // 
+            this.txbDChi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbDChi.Location = new System.Drawing.Point(44, 501);
+            this.txbDChi.Name = "txbDChi";
+            this.txbDChi.Size = new System.Drawing.Size(402, 31);
+            this.txbDChi.TabIndex = 105;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(40, 564);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 25);
+            this.label4.TabIndex = 108;
+            this.label4.Text = "Thu Nhập:";
+            // 
+            // txbThuNhap
+            // 
+            this.txbThuNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbThuNhap.Location = new System.Drawing.Point(44, 592);
+            this.txbThuNhap.Name = "txbThuNhap";
+            this.txbThuNhap.Size = new System.Drawing.Size(402, 31);
+            this.txbThuNhap.TabIndex = 107;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.txbLaiXuat);
+            this.panel2.Controls.Add(this.dateNgayVay);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.btnLuu);
+            this.panel2.Controls.Add(this.txbNgayTra);
+            this.panel2.Controls.Add(this.comboKyHan);
+            this.panel2.Controls.Add(this.comboHinhThuc);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.txbTienVay);
+            this.panel2.Controls.Add(this.txbTaiSanTheChap);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Location = new System.Drawing.Point(817, 35);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(685, 702);
+            this.panel2.TabIndex = 102;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(41, 349);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 25);
+            this.label5.TabIndex = 120;
+            this.label5.Text = "Ngày Vay:";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(368, 452);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(112, 25);
+            this.label6.TabIndex = 118;
+            this.label6.Text = "Lãi Xuất:";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(368, 358);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(97, 25);
+            this.label7.TabIndex = 116;
+            this.label7.Text = "Kỳ Hạn:";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(36, 152);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(131, 25);
+            this.label8.TabIndex = 114;
+            this.label8.Text = "Hình Thức:";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(36, 249);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(314, 25);
+            this.label9.TabIndex = 112;
+            this.label9.Text = "Tài Sản Thế Chấp (Nếu Có):";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(36, 51);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(151, 25);
+            this.label10.TabIndex = 111;
+            this.label10.Text = "Số Tiền Vay:";
+            // 
+            // txbTienVay
+            // 
+            this.txbTienVay.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbTienVay.Location = new System.Drawing.Point(38, 79);
+            this.txbTienVay.Name = "txbTienVay";
+            this.txbTienVay.Size = new System.Drawing.Size(396, 31);
+            this.txbTienVay.TabIndex = 110;
+            // 
+            // txbTaiSanTheChap
+            // 
+            this.txbTaiSanTheChap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbTaiSanTheChap.Location = new System.Drawing.Point(40, 277);
+            this.txbTaiSanTheChap.Name = "txbTaiSanTheChap";
+            this.txbTaiSanTheChap.Size = new System.Drawing.Size(402, 31);
+            this.txbTaiSanTheChap.TabIndex = 109;
+            // 
+            // comboHinhThuc
+            // 
+            this.comboHinhThuc.FormattingEnabled = true;
+            this.comboHinhThuc.Location = new System.Drawing.Point(36, 180);
+            this.comboHinhThuc.Name = "comboHinhThuc";
+            this.comboHinhThuc.Size = new System.Drawing.Size(393, 33);
+            this.comboHinhThuc.TabIndex = 121;
+            // 
+            // comboKyHan
+            // 
+            this.comboKyHan.FormattingEnabled = true;
+            this.comboKyHan.Location = new System.Drawing.Point(368, 386);
+            this.comboKyHan.Name = "comboKyHan";
+            this.comboKyHan.Size = new System.Drawing.Size(280, 33);
+            this.comboKyHan.TabIndex = 122;
+            this.comboKyHan.SelectedIndexChanged += new System.EventHandler(this.comboKyHan_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(41, 452);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(119, 25);
+            this.label11.TabIndex = 124;
+            this.label11.Text = "Ngày Trả:";
+            // 
+            // txbNgayTra
+            // 
+            this.txbNgayTra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbNgayTra.Location = new System.Drawing.Point(45, 483);
+            this.txbNgayTra.Name = "txbNgayTra";
+            this.txbNgayTra.Size = new System.Drawing.Size(281, 31);
+            this.txbNgayTra.TabIndex = 123;
+            // 
+            // dateNgayVay
+            // 
+            this.dateNgayVay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayVay.Location = new System.Drawing.Point(46, 382);
+            this.dateNgayVay.Name = "dateNgayVay";
+            this.dateNgayVay.Size = new System.Drawing.Size(280, 31);
+            this.dateNgayVay.TabIndex = 126;
+            // 
+            // txbLaiXuat
+            // 
+            this.txbLaiXuat.Location = new System.Drawing.Point(373, 483);
+            this.txbLaiXuat.Name = "txbLaiXuat";
+            this.txbLaiXuat.Size = new System.Drawing.Size(275, 31);
+            this.txbLaiXuat.TabIndex = 127;
             // 
             // VayTien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(742, 369);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1532, 769);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.ngaylb);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VayTien";
             this.Text = "VayTien";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox cccdtxt;
-        private System.Windows.Forms.TextBox TienNotxt;
-        private System.Windows.Forms.Label ngaylb;
-        private System.Windows.Forms.ComboBox KHcombo;
-        private System.Windows.Forms.TextBox STVtxt;
-        private System.Windows.Forms.TextBox SDTtxt;
-        private System.Windows.Forms.TextBox TKHtxt;
-        private System.Windows.Forms.TextBox STKtxt;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2Button btnLuu;
-        private Guna.UI2.WinForms.Guna2Button btnLayThongTin;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Button btnLuu;
+        private Guna.UI2.WinForms.Guna2Button btnKiemTra;
+        private System.Windows.Forms.TextBox txbSDT;
+        private System.Windows.Forms.TextBox txbMaKH;
+        private System.Windows.Forms.TextBox cccdtxt;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txbTenKH;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txbThuNhap;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txbDChi;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox comboHinhThuc;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txbTienVay;
+        private System.Windows.Forms.TextBox txbTaiSanTheChap;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txbNgayTra;
+        private System.Windows.Forms.ComboBox comboKyHan;
+        private System.Windows.Forms.DateTimePicker dateNgayVay;
+        private System.Windows.Forms.TextBox txbLaiXuat;
     }
 }
