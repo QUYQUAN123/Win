@@ -131,5 +131,11 @@ namespace QLNganHang
         {
             this.Close();
         }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            var lst = (from s in db.TinDungs where s.Cccd.Contains(txtTimKiem.Text) select s).ToList();
+            gvTinDung.DataSource = lst;
+        }
     }
 }
