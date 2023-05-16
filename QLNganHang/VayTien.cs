@@ -24,8 +24,8 @@ namespace QLNganHang
         
         private void loadHinhThuc()
         {
-            comboHinhThuc.Items.Add("Tín Chấp");
-            comboHinhThuc.Items.Add("Thế Chấp");
+            comboHinhThuc.Items.Add("Tin Chap");
+            comboHinhThuc.Items.Add("The Chap");
         }
 
         private void loadKyHan()
@@ -43,9 +43,12 @@ namespace QLNganHang
             var item = (from u in NH.VayTiens
                         where u.Cccd == d
                         select u).FirstOrDefault();
-            var item2 = (from u in NH.View_VayTiens
+            var item1 = (from u in NH.View_VayTiens
                         where u.Cccd == d
                         select u).FirstOrDefault();
+            var item2 = (from u in NH.TaiKhoans
+                         where u.Cccd == d
+                         select u).FirstOrDefault();
             if (txbTienVay.Text == null)
             {
                 MessageBox.Show("Vui lòng nhập số tiền cần vay!");
@@ -54,7 +57,7 @@ namespace QLNganHang
             {
                 MessageBox.Show("Vui lòng nhập Kỳ hạn.");
             }
-            else if (item2.ThuNhap < Convert.ToDecimal(txbTienVay.Text))
+            else if (item1.ThuNhap < Convert.ToDecimal(txbTienVay.Text))
             {
                 MessageBox.Show("Giao dịch thất bại! Số dư hiện có của bạn thấp hơn số tiền bạn muốn vay.");
             }
@@ -70,6 +73,7 @@ namespace QLNganHang
                     {
                         string sqlStr = string.Format("INSERT INTO VayTien(MaKH,TenKH,SDT,Email,Cccd,DiaChi,ThuNhap,SoTienVay,HinhThucVay,TaiSanTheChap,KyHan,LaiXuat,NgayVay,NgayTra,NoXau) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}'," +
                             "'{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')", txbMaKH.Text, txbTenKH.Text, txbSDT.Text, txbEmail.Text, cccdtxt.Text, txbDChi.Text, txbThuNhap.Text, txbTienVay.Text, comboHinhThuc.Text, txbTaiSanTheChap.Text, comboKyHan.Text, txbLaiXuat.Text, dateNgayVay.Text, txbNgayTra.Text,1);
+                        item2.SoTienVay = Convert.ToDecimal(txbTienVay.Text);
                         SqlCommand cmd = new SqlCommand(sqlStr, conn);
                         if (cmd.ExecuteNonQuery() > 0)
                             MessageBox.Show("Vay tiền thành công!");
@@ -78,6 +82,7 @@ namespace QLNganHang
                     {
                         string sqlStr = string.Format("INSERT INTO VayTien(MaKH,TenKH,SDT,Email,Cccd,DiaChi,ThuNhap,SoTienVay,HinhThucVay,TaiSanTheChap,KyHan,LaiXuat,NgayVay,NgayTra,NoXau) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}'," +
                             "'{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')", txbMaKH.Text, txbTenKH.Text, txbSDT.Text, txbEmail.Text, cccdtxt.Text, txbDChi.Text, txbThuNhap.Text, txbTienVay.Text, comboHinhThuc.Text, txbTaiSanTheChap.Text, comboKyHan.Text, txbLaiXuat.Text, dateNgayVay.Text, txbNgayTra.Text, 0);
+                        item2.SoTienVay = Convert.ToDecimal(txbTienVay.Text);
                         SqlCommand cmd = new SqlCommand(sqlStr, conn);
                         if (cmd.ExecuteNonQuery() > 0)
                             MessageBox.Show("Vay Tiền Thành Công!");

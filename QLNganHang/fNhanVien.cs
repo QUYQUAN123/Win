@@ -86,7 +86,7 @@ namespace QLNganHang
 
         private void vayTiềnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           VayTien v = new VayTien();
+           HomeVayTien v = new HomeVayTien();
            v.ShowDialog();
         }
 

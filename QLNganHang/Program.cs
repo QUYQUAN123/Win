@@ -16,7 +16,7 @@ namespace QLNganHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomeVayTien());
+            Application.Run(new Form1());
         }
     }
 }

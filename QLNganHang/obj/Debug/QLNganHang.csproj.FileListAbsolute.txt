@@ -292,3 +292,5 @@ C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.c
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.exe
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
+C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources

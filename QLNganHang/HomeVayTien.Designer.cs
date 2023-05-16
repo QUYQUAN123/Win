@@ -38,8 +38,11 @@ namespace QLNganHang
             this.btnDSden = new System.Windows.Forms.Button();
             this.btnDK = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridVayTien)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +70,7 @@ namespace QLNganHang
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(43, 133);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1004, 568);
+            this.panel1.Size = new System.Drawing.Size(1023, 568);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -79,7 +82,7 @@ namespace QLNganHang
             this.gridVayTien.Name = "gridVayTien";
             this.gridVayTien.RowHeadersWidth = 82;
             this.gridVayTien.RowTemplate.Height = 33;
-            this.gridVayTien.Size = new System.Drawing.Size(1004, 432);
+            this.gridVayTien.Size = new System.Drawing.Size(1023, 432);
             this.gridVayTien.TabIndex = 3;
             // 
             // btnKiemTra
@@ -116,9 +119,9 @@ namespace QLNganHang
             this.btnDSden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDSden.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDSden.Location = new System.Drawing.Point(1140, 397);
+            this.btnDSden.Location = new System.Drawing.Point(30, 249);
             this.btnDSden.Name = "btnDSden";
-            this.btnDSden.Size = new System.Drawing.Size(322, 75);
+            this.btnDSden.Size = new System.Drawing.Size(313, 70);
             this.btnDSden.TabIndex = 5;
             this.btnDSden.Text = "Danh Sách Đen";
             this.btnDSden.UseVisualStyleBackColor = true;
@@ -129,9 +132,9 @@ namespace QLNganHang
             this.btnDK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDK.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDK.Location = new System.Drawing.Point(1140, 248);
+            this.btnDK.Location = new System.Drawing.Point(30, 75);
             this.btnDK.Name = "btnDK";
-            this.btnDK.Size = new System.Drawing.Size(322, 75);
+            this.btnDK.Size = new System.Drawing.Size(313, 71);
             this.btnDK.TabIndex = 6;
             this.btnDK.Text = "Đăng Ký Vay";
             this.btnDK.UseVisualStyleBackColor = true;
@@ -144,20 +147,41 @@ namespace QLNganHang
             this.btnThanhToan.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.Location = new System.Drawing.Point(1140, 546);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(322, 75);
+            this.btnThanhToan.Size = new System.Drawing.Size(313, 82);
             this.btnThanhToan.TabIndex = 7;
             this.btnThanhToan.Text = "Thanh Toán Khoản Vay";
             this.btnThanhToan.UseVisualStyleBackColor = true;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(43, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(791, 34);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Khách hàng có nợ xấu sẽ được hiển thị ở bảng dưới đây:";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.btnDK);
+            this.panel2.Controls.Add(this.btnDSden);
+            this.panel2.Location = new System.Drawing.Point(1110, 133);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(383, 568);
+            this.panel2.TabIndex = 9;
+            // 
             // HomeVayTien
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1521, 738);
-            this.Controls.Add(this.btnDSden);
-            this.Controls.Add(this.btnDK);
+            this.ClientSize = new System.Drawing.Size(1540, 738);
             this.Controls.Add(this.btnThanhToan);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(50, 71);
@@ -167,6 +191,7 @@ namespace QLNganHang
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridVayTien)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +208,7 @@ namespace QLNganHang
         private System.Windows.Forms.Button btnDSden;
         private System.Windows.Forms.Button btnDK;
         private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
     }
 }

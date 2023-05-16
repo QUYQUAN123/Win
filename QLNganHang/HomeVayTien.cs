@@ -39,7 +39,10 @@ namespace QLNganHang
             }
             else
             {
-                gridVayTien.DataSource = item;
+                var item1 = (from u in NH.VayTiens
+                            where u.Cccd == d
+                            select u).ToList();
+                gridVayTien.DataSource = item1;
             }
         }
 
@@ -51,14 +54,14 @@ namespace QLNganHang
 
         private void btnDSden_Click(object sender, EventArgs e)
         {
-            var item = (from u in NH.VayTiens
-                        where u.NoXau == 1
-                        select u);
+            DSden ds = new DSden();
+            ds.ShowDialog();
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-
+            ThanhToanVayTien tt = new ThanhToanVayTien();
+            tt.ShowDialog();
         }
     }
 }

@@ -45,28 +45,59 @@ namespace QLNganHang
             txbLaiXuat.Text = Convert.ToString(laiXuat.LaiXuatGui);
         }
 
-        private void txbLaiXuat_TextChanged(object sender, EventArgs e)
+        private void btnKiemTra_Click(object sender, EventArgs e)
         {
-
+            string d = tbxCCCD.Text;
+            var item = (from u in NH.SoTietKiems
+                        where u.Cccd == d
+                        select u).FirstOrDefault();
+            if (item == null)
+            {
+                MessageBox.Show("Thông báo! Không có thông tin khách hàng.");
+            }
+            else
+            {
+                tbxTenKH.Text = item.TenKH;
+                txbMaKH.Text = item.MaKH;
+                tbxSDT.Text = item.SDT;
+            }
         }
 
-        private void DKSoTietKiem_Load(object sender, EventArgs e)
+        private void btnDKSoTietKiem_Click(object sender, EventArgs e)
         {
 
-        }
-
-     
-
-        private void btnLuu_Click_1(object sender, EventArgs e)
-        {
             try
             {
                 conn.Open();
-                string sqlStr = string.Format("INSERT INTO SoTietKiem(MaSo,TenKH,MaKH,SDT, Cccd,TienGui,NgayGui,KyHan,LaiXuat,DaThanhToan) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}'," +
-                    "'{7}','{8}','{9}')", tbxSTKTK.Text, tbxTenKH.Text, textMaKH.Text, tbxSDT.Text, tbxCCCD.Text, tbxSoTienGui.Text, txbNgayGui.Text, comboKyHan.Text, txbLaiXuat.Text, tbxThanhToan.Text);
-                SqlCommand cmd = new SqlCommand(sqlStr, conn);
-                if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("them thanh cong");
+                DateTime now = DateTime.Now;
+                DateTime ngayGui = DateTime.Parse(dateNgayGui.Text);
+                DateTime NgayDong = ngayGui.AddMonths(Convert.ToInt32(comboKyHan.Text));
+                int soSanh = NgayDong.CompareTo(now);
+                if (soSanh > 0)
+                {
+                    string sqlStr = string.Format("INSERT INTO SoTietKiem(MaSo,TenKH,MaKH,SDT, Cccd,TienGui,NgayGui,KyHan,LaiXuat,DaThanhToan) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}'," +
+                        "'{7}','{8}','{9}')", tbxSTKTK.Text, tbxTenKH.Text, txbMaKH.Text, tbxSDT.Text, tbxCCCD.Text, tbxSoTienGui.Text, dateNgayGui.Text, comboKyHan.Text, txbLaiXuat.Text, 0);
+                    SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                    if (cmd.ExecuteNonQuery() > 0)
+                        MessageBox.Show("Mở sổ thành công!");
+                }
+                else
+                {
+                    string sqlStr = string.Format("INSERT INTO SoTietKiem(MaSo,TenKH,MaKH,SDT, Cccd,TienGui,NgayGui,KyHan,LaiXuat,DaThanhToan) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}'," +
+                        "'{7}','{8}','{9}')", tbxSTKTK.Text, tbxTenKH.Text, txbMaKH.Text, tbxSDT.Text, tbxCCCD.Text, tbxSoTienGui.Text, dateNgayGui.Text, comboKyHan.Text, txbLaiXuat.Text, 2);
+                    SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                    if (cmd.ExecuteNonQuery() > 0)
+                        MessageBox.Show("Mở sổ thành công!");
+                    NH.SubmitChanges();
+                    string d = txbMaKH.Text;
+                    var item = (from u in NH.TaiKhoans
+                                where u.MaKH == d
+                                select u).FirstOrDefault();
+                    decimal temp = Convert.ToDecimal(tbxSoTienGui.Text) + ((Convert.ToDecimal(tbxSoTienGui.Text) * Convert.ToDecimal(txbLaiXuat.Text)
+                        * Convert.ToDecimal(comboKyHan.Text)) / 100);
+                    item.SoDu += temp;
+                }
+                NH.SubmitChanges();
             }
             catch (Exception ex)
             {
@@ -76,6 +107,16 @@ namespace QLNganHang
             {
                 conn.Close();
             }
+        }
+
+        private void txbLaiXuat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DKSoTietKiem_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -104,6 +145,16 @@ namespace QLNganHang
         }
 
         private void tbxCCCD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
