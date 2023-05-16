@@ -169,7 +169,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(135, 25);
             this.label10.TabIndex = 79;
-            this.label10.Text = "Nhập CCCD:";
+            this.label10.Text = "Nhap CCCD:";
             // 
             // panel2
             // 

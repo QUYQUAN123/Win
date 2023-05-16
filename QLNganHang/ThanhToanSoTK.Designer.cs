@@ -133,7 +133,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.Linen;
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.btnKiemTra);
             this.panel1.Controls.Add(this.label12);
@@ -157,13 +157,13 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.ForeColor = System.Drawing.Color.OrangeRed;
             this.label14.Location = new System.Drawing.Point(30, 53);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(322, 29);
+            this.label14.Size = new System.Drawing.Size(209, 29);
             this.label14.TabIndex = 212;
-            this.label14.Text = "Số Tài Khoản Tiết Kiệm:";
+            this.label14.Text = "Ma so tiet kiem:";
             // 
             // btnKiemTra
             // 
@@ -179,7 +179,7 @@
             this.btnKiemTra.Name = "btnKiemTra";
             this.btnKiemTra.Size = new System.Drawing.Size(190, 59);
             this.btnKiemTra.TabIndex = 220;
-            this.btnKiemTra.Text = "Kiểm Tra";
+            this.btnKiemTra.Text = "Kiem tra";
             this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
             // 
             // label12
@@ -187,46 +187,46 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.ForeColor = System.Drawing.Color.OrangeRed;
             this.label12.Location = new System.Drawing.Point(30, 198);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(225, 29);
+            this.label12.Size = new System.Drawing.Size(213, 29);
             this.label12.TabIndex = 211;
-            this.label12.Text = "Tên Khách Hàng:";
+            this.label12.Text = "Ten khach hang:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.ForeColor = System.Drawing.Color.OrangeRed;
             this.label11.Location = new System.Drawing.Point(382, 201);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(208, 29);
+            this.label11.Size = new System.Drawing.Size(110, 29);
             this.label11.TabIndex = 210;
-            this.label11.Text = "Mã Khách Hàng";
+            this.label11.Text = "Ma KH:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
             this.label10.Location = new System.Drawing.Point(30, 414);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(197, 29);
+            this.label10.Size = new System.Drawing.Size(182, 29);
             this.label10.TabIndex = 209;
-            this.label10.Text = "Số Điện Thoại:";
+            this.label10.Text = "So dien thoai:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.ForeColor = System.Drawing.Color.OrangeRed;
             this.label5.Location = new System.Drawing.Point(30, 308);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -248,7 +248,7 @@
             this.btnDongSo.Name = "btnDongSo";
             this.btnDongSo.Size = new System.Drawing.Size(219, 98);
             this.btnDongSo.TabIndex = 209;
-            this.btnDongSo.Text = "Đóng Sổ";
+            this.btnDongSo.Text = "Dong so";
             this.btnDongSo.Click += new System.EventHandler(this.btnDongSo_Click);
             // 
             // label7
@@ -256,65 +256,65 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
             this.label7.Location = new System.Drawing.Point(30, 278);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 29);
+            this.label7.Size = new System.Drawing.Size(122, 29);
             this.label7.TabIndex = 219;
-            this.label7.Text = "Lãi Xuất:";
+            this.label7.Text = "Lai xuat:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.ForeColor = System.Drawing.Color.OrangeRed;
             this.label6.Location = new System.Drawing.Point(30, 380);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 29);
+            this.label6.Size = new System.Drawing.Size(214, 29);
             this.label6.TabIndex = 218;
-            this.label6.Text = "Tiền Lãi Dự Kiến:";
+            this.label6.Text = "Tien lai du kien:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
             this.label1.Location = new System.Drawing.Point(238, 278);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 29);
+            this.label1.Size = new System.Drawing.Size(109, 29);
             this.label1.TabIndex = 213;
-            this.label1.Text = "Kỳ Hạn:";
+            this.label1.Text = "Ky han:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Location = new System.Drawing.Point(30, 170);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 29);
+            this.label2.Size = new System.Drawing.Size(133, 29);
             this.label2.TabIndex = 214;
-            this.label2.Text = "Ngày Gửi:";
+            this.label2.Text = "Ngay gui:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.ForeColor = System.Drawing.Color.OrangeRed;
             this.label3.Location = new System.Drawing.Point(30, 68);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 29);
+            this.label3.Size = new System.Drawing.Size(154, 29);
             this.label3.TabIndex = 215;
-            this.label3.Text = "Số Tiền Gửi:";
+            this.label3.Text = "So tien gui:";
             // 
             // guna2Elipse1
             // 
@@ -328,7 +328,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.Color.Linen;
             this.panel2.Controls.Add(this.txbKyHan);
             this.panel2.Controls.Add(this.tbxTienLai);
             this.panel2.Controls.Add(this.label3);
@@ -339,6 +339,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txbNgayGui);
+            this.panel2.ForeColor = System.Drawing.Color.OrangeRed;
             this.panel2.Location = new System.Drawing.Point(661, 31);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
@@ -351,7 +352,7 @@
             this.btnTiepTucGuiVoiLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTiepTucGuiVoiLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTiepTucGuiVoiLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTiepTucGuiVoiLai.FillColor = System.Drawing.Color.Silver;
+            this.btnTiepTucGuiVoiLai.FillColor = System.Drawing.Color.LightCoral;
             this.btnTiepTucGuiVoiLai.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTiepTucGuiVoiLai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTiepTucGuiVoiLai.Location = new System.Drawing.Point(1182, 411);
@@ -359,7 +360,7 @@
             this.btnTiepTucGuiVoiLai.Name = "btnTiepTucGuiVoiLai";
             this.btnTiepTucGuiVoiLai.Size = new System.Drawing.Size(219, 98);
             this.btnTiepTucGuiVoiLai.TabIndex = 210;
-            this.btnTiepTucGuiVoiLai.Text = "Tiếp Tục Gửi Với Lãi";
+            this.btnTiepTucGuiVoiLai.Text = "Tiep tuc gui voi lai";
             this.btnTiepTucGuiVoiLai.Click += new System.EventHandler(this.btnTiepTucGuiVoiLai_Click);
             // 
             // btnChuyenLai
@@ -368,7 +369,7 @@
             this.btnChuyenLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnChuyenLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChuyenLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChuyenLai.FillColor = System.Drawing.Color.Silver;
+            this.btnChuyenLai.FillColor = System.Drawing.Color.PeachPuff;
             this.btnChuyenLai.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChuyenLai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnChuyenLai.Location = new System.Drawing.Point(1182, 229);
@@ -376,7 +377,7 @@
             this.btnChuyenLai.Name = "btnChuyenLai";
             this.btnChuyenLai.Size = new System.Drawing.Size(219, 98);
             this.btnChuyenLai.TabIndex = 211;
-            this.btnChuyenLai.Text = "Chuyển Tiền Lãi Qua Gốc";
+            this.btnChuyenLai.Text = "Chuyen tien lai qua goc";
             this.btnChuyenLai.Click += new System.EventHandler(this.btnChuyenLai_Click);
             // 
             // ThanhToanSoTK
@@ -390,6 +391,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDongSo);
+            this.ForeColor = System.Drawing.Color.OrangeRed;
             this.Name = "ThanhToanSoTK";
             this.Text = "ThanhToanSoTK";
             this.panel1.ResumeLayout(false);

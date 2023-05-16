@@ -42,20 +42,20 @@ namespace QLNganHang
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(416, 22);
+            this.label1.Location = new System.Drawing.Point(348, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 56);
+            this.label1.Size = new System.Drawing.Size(463, 56);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Danh Sách Đen";
+            this.label1.Text = "DANH SACH DEN";
             // 
             // btnLoad
             // 
-            this.btnLoad.Font = new System.Drawing.Font("Mongolian Baiti", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.Location = new System.Drawing.Point(12, 99);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(268, 78);
             this.btnLoad.TabIndex = 3;
-            this.btnLoad.Text = "Load Danh Sách";
+            this.btnLoad.Text = "Load danh sach";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 

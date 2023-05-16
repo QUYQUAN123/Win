@@ -38,7 +38,6 @@ namespace QLNganHang
             this.btnDSden = new System.Windows.Forms.Button();
             this.btnDK = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridVayTien)).BeginInit();
@@ -54,16 +53,16 @@ namespace QLNganHang
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(331, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 50);
+            this.label1.Size = new System.Drawing.Size(498, 50);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Thông Tin Nợ Xấu";
+            this.label1.Text = "THONG TIN NO XAU";
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.Linen;
             this.panel1.Controls.Add(this.gridVayTien);
             this.panel1.Controls.Add(this.btnKiemTra);
             this.panel1.Controls.Add(this.txbCCCD);
@@ -92,7 +91,7 @@ namespace QLNganHang
             this.btnKiemTra.Name = "btnKiemTra";
             this.btnKiemTra.Size = new System.Drawing.Size(197, 56);
             this.btnKiemTra.TabIndex = 2;
-            this.btnKiemTra.Text = "Kiểm Tra";
+            this.btnKiemTra.Text = "Kiem tra";
             this.btnKiemTra.UseVisualStyleBackColor = true;
             this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
             // 
@@ -108,11 +107,12 @@ namespace QLNganHang
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Location = new System.Drawing.Point(32, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 34);
+            this.label2.Size = new System.Drawing.Size(187, 34);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nhập CCCD:";
+            this.label2.Text = "Nhap CCCD:";
             // 
             // btnDSden
             // 
@@ -123,7 +123,7 @@ namespace QLNganHang
             this.btnDSden.Name = "btnDSden";
             this.btnDSden.Size = new System.Drawing.Size(313, 70);
             this.btnDSden.TabIndex = 5;
-            this.btnDSden.Text = "Danh Sách Đen";
+            this.btnDSden.Text = "Danh sach den";
             this.btnDSden.UseVisualStyleBackColor = true;
             this.btnDSden.Click += new System.EventHandler(this.btnDSden_Click);
             // 
@@ -136,7 +136,7 @@ namespace QLNganHang
             this.btnDK.Name = "btnDK";
             this.btnDK.Size = new System.Drawing.Size(313, 71);
             this.btnDK.TabIndex = 6;
-            this.btnDK.Text = "Đăng Ký Vay";
+            this.btnDK.Text = "Dang ky vay";
             this.btnDK.UseVisualStyleBackColor = true;
             this.btnDK.Click += new System.EventHandler(this.btnDK_Click);
             // 
@@ -149,24 +149,13 @@ namespace QLNganHang
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(313, 82);
             this.btnThanhToan.TabIndex = 7;
-            this.btnThanhToan.Text = "Thanh Toán Khoản Vay";
+            this.btnThanhToan.Text = "Thanh toan khoan vay";
             this.btnThanhToan.UseVisualStyleBackColor = true;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(43, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(791, 34);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Khách hàng có nợ xấu sẽ được hiển thị ở bảng dưới đây:";
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.Color.Linen;
             this.panel2.Controls.Add(this.btnDK);
             this.panel2.Controls.Add(this.btnDSden);
             this.panel2.Location = new System.Drawing.Point(1110, 133);
@@ -181,7 +170,6 @@ namespace QLNganHang
             this.ClientSize = new System.Drawing.Size(1540, 738);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(50, 71);
@@ -208,7 +196,6 @@ namespace QLNganHang
         private System.Windows.Forms.Button btnDSden;
         private System.Windows.Forms.Button btnDK;
         private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
     }
 }
