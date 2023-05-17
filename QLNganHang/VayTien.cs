@@ -141,5 +141,10 @@ namespace QLNganHang
             txbLaiXuat.Text = Convert.ToString(item.LaiXuatVay);
             txbNgayTra.Text = Convert.ToString(ngayVay.AddMonths(d));
         }
+
+        private void VayTien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

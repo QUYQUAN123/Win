@@ -53,7 +53,7 @@ namespace QLNganHang
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(331, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(498, 50);
+            this.label1.Size = new System.Drawing.Size(320, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "THONG TIN NO XAU";
             // 
@@ -100,7 +100,7 @@ namespace QLNganHang
             this.txbCCCD.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCCCD.Location = new System.Drawing.Point(238, 50);
             this.txbCCCD.Name = "txbCCCD";
-            this.txbCCCD.Size = new System.Drawing.Size(351, 44);
+            this.txbCCCD.Size = new System.Drawing.Size(351, 31);
             this.txbCCCD.TabIndex = 1;
             // 
             // label2
@@ -110,7 +110,7 @@ namespace QLNganHang
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Location = new System.Drawing.Point(32, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 34);
+            this.label2.Size = new System.Drawing.Size(117, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nhap CCCD:";
             // 
@@ -176,6 +176,7 @@ namespace QLNganHang
             this.Name = "HomeVayTien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "HomeVayTien";
+            this.Load += new System.EventHandler(this.HomeVayTien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridVayTien)).EndInit();

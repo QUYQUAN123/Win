@@ -63,5 +63,10 @@ namespace QLNganHang
             ThanhToanVayTien tt = new ThanhToanVayTien();
             tt.ShowDialog();
         }
+
+        private void HomeVayTien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

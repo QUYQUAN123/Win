@@ -45,18 +45,32 @@ namespace QLNganHang
         private void ChecKAccount()
         {
             string tenDangNhap = txtNAccount.Text;
+            string matKhau = txtNPass.Text;
+            string nhapLaiMatKhau = txtNrPass.Text;
 
-            bool trungTenDangNhap = AccountDAO.Instance.KiemTraTrungTenDangNhap(tenDangNhap);
-            if (trungTenDangNhap)
+            if (string.IsNullOrEmpty(tenDangNhap) || string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(nhapLaiMatKhau))
             {
-                MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (matKhau != nhapLaiMatKhau)
+            {
+                MessageBox.Show("Mật khẩu không khớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                string cccd = txtnCCCD.Text;
-                fMoTaiKhoancs fmo = new fMoTaiKhoancs();
-                fmo.TextBoxValue = cccd;
-                fmo.ShowDialog();
+                bool trungTenDangNhap = AccountDAO.Instance.KiemTraTrungTenDangNhap(tenDangNhap);
+                if (trungTenDangNhap)
+                {
+                    MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    string cccd = txtnCCCD.Text;
+                    fMoTaiKhoancs fmo = new fMoTaiKhoancs();
+                    fmo.TextBoxValue = cccd;
+                    fmo.ShowDialog();
+                    this.Close();
+                }
             }
         }
 
@@ -66,12 +80,9 @@ namespace QLNganHang
 
         private void btnDangKi_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            
+   
             ChecKAccount();
-            
-            this.Close();
-        }
+       }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {

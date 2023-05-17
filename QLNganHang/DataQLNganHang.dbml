@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNganHang" Class="DataQLNganHangDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=NGMINHLUN884A\SQLEXPRESS;Initial Catalog=QLNganHang;Integrated Security=True" SettingsObjectName="QLNganHang.Properties.Settings" SettingsPropertyName="QLNganHangConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-5OFF7U6\SQLEXPRESS;Initial Catalog=QLNganHang;Integrated Security=True" SettingsObjectName="QLNganHang.Properties.Settings" SettingsPropertyName="QLNganHangConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LaiXuat" Member="LaiXuats">
+    <Type Name="LaiXuat">
+      <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LaiXuatVay" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="LaiXuatGui" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
   <Table Name="dbo.SoTietKiem" Member="SoTietKiems">
     <Type Name="SoTietKiem">
       <Column Name="MaSo" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -12,13 +19,6 @@
       <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="LaiXuat" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
       <Column Name="DaThanhToan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.LaiXuat" Member="LaiXuats">
-    <Type Name="LaiXuat">
-      <Column Name="KyHan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuatVay" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
-      <Column Name="LaiXuatGui" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
@@ -66,6 +66,18 @@
       <Column Name="NoXau" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.View_VayTien" Member="View_VayTiens">
+    <Type Name="View_VayTien">
+      <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="SDT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ThuNhap" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.View_KhachHang" Member="View_KhachHangs">
     <Type Name="View_KhachHang">
       <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
@@ -77,18 +89,6 @@
       <Column Name="DiaChi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="SoTK" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="SoDu" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.View_VayTien" Member="View_VayTiens">
-    <Type Name="View_VayTien">
-      <Column Name="MaKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="Cccd" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="DiaChi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="ThuNhap" Type="System.Decimal" DbType="Money" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

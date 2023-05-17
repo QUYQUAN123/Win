@@ -82,10 +82,9 @@
             this.btnLuu.FillColor = System.Drawing.Color.LightGray;
             this.btnLuu.Font = new System.Drawing.Font("Mongolian Baiti", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Location = new System.Drawing.Point(243, 584);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLuu.Location = new System.Drawing.Point(162, 374);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(199, 76);
+            this.btnLuu.Size = new System.Drawing.Size(133, 49);
             this.btnLuu.TabIndex = 99;
             this.btnLuu.Text = "Dang ky";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -105,10 +104,9 @@
             this.btnKiemTra.FillColor = System.Drawing.Color.LightGray;
             this.btnKiemTra.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKiemTra.ForeColor = System.Drawing.Color.Black;
-            this.btnKiemTra.Location = new System.Drawing.Point(488, 69);
-            this.btnKiemTra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnKiemTra.Location = new System.Drawing.Point(325, 44);
             this.btnKiemTra.Name = "btnKiemTra";
-            this.btnKiemTra.Size = new System.Drawing.Size(187, 56);
+            this.btnKiemTra.Size = new System.Drawing.Size(125, 36);
             this.btnKiemTra.TabIndex = 100;
             this.btnKiemTra.Text = "Kiem tra";
             this.btnKiemTra.Click += new System.EventHandler(this.btnLayThongTin_Click);
@@ -116,25 +114,28 @@
             // txbSDT
             // 
             this.txbSDT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbSDT.Location = new System.Drawing.Point(45, 317);
+            this.txbSDT.Location = new System.Drawing.Point(30, 203);
+            this.txbSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbSDT.Name = "txbSDT";
-            this.txbSDT.Size = new System.Drawing.Size(402, 31);
+            this.txbSDT.Size = new System.Drawing.Size(269, 22);
             this.txbSDT.TabIndex = 77;
             // 
             // txbMaKH
             // 
             this.txbMaKH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbMaKH.Location = new System.Drawing.Point(488, 228);
+            this.txbMaKH.Location = new System.Drawing.Point(325, 146);
+            this.txbMaKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbMaKH.Name = "txbMaKH";
-            this.txbMaKH.Size = new System.Drawing.Size(188, 31);
+            this.txbMaKH.Size = new System.Drawing.Size(127, 22);
             this.txbMaKH.TabIndex = 76;
             // 
             // cccdtxt
             // 
             this.cccdtxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cccdtxt.Location = new System.Drawing.Point(37, 79);
+            this.cccdtxt.Location = new System.Drawing.Point(25, 51);
+            this.cccdtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cccdtxt.Name = "cccdtxt";
-            this.cccdtxt.Size = new System.Drawing.Size(396, 31);
+            this.cccdtxt.Size = new System.Drawing.Size(265, 22);
             this.cccdtxt.TabIndex = 87;
             // 
             // label13
@@ -144,10 +145,9 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(32, 51);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(21, 33);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(152, 25);
+            this.label13.Size = new System.Drawing.Size(100, 16);
             this.label13.TabIndex = 94;
             this.label13.Text = "Nhap CCCD:";
             // 
@@ -158,10 +158,9 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label15.Location = new System.Drawing.Point(41, 289);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(27, 185);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 25);
+            this.label15.Size = new System.Drawing.Size(107, 16);
             this.label15.TabIndex = 96;
             this.label15.Text = "So dien thoai:";
             // 
@@ -172,10 +171,9 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label16.Location = new System.Drawing.Point(483, 199);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(322, 127);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 25);
+            this.label16.Size = new System.Drawing.Size(63, 16);
             this.label16.TabIndex = 97;
             this.label16.Text = "Ma KH:";
             // 
@@ -197,10 +195,9 @@
             this.panel1.Controls.Add(this.cccdtxt);
             this.panel1.Controls.Add(this.txbMaKH);
             this.panel1.Controls.Add(this.txbSDT);
-            this.panel1.Location = new System.Drawing.Point(27, 35);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(18, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(724, 702);
+            this.panel1.Size = new System.Drawing.Size(483, 449);
             this.panel1.TabIndex = 88;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -211,19 +208,19 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label4.Location = new System.Drawing.Point(40, 564);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(27, 361);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
+            this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 108;
             this.label4.Text = "Thu nhap:";
             // 
             // txbThuNhap
             // 
             this.txbThuNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbThuNhap.Location = new System.Drawing.Point(44, 592);
+            this.txbThuNhap.Location = new System.Drawing.Point(29, 379);
+            this.txbThuNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbThuNhap.Name = "txbThuNhap";
-            this.txbThuNhap.Size = new System.Drawing.Size(402, 31);
+            this.txbThuNhap.Size = new System.Drawing.Size(269, 22);
             this.txbThuNhap.TabIndex = 107;
             // 
             // label3
@@ -233,19 +230,19 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label3.Location = new System.Drawing.Point(42, 473);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(28, 303);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 25);
+            this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 106;
             this.label3.Text = "Dia chi:";
             // 
             // txbDChi
             // 
             this.txbDChi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbDChi.Location = new System.Drawing.Point(44, 501);
+            this.txbDChi.Location = new System.Drawing.Point(29, 321);
+            this.txbDChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbDChi.Name = "txbDChi";
-            this.txbDChi.Size = new System.Drawing.Size(402, 31);
+            this.txbDChi.Size = new System.Drawing.Size(269, 22);
             this.txbDChi.TabIndex = 105;
             // 
             // label2
@@ -255,19 +252,19 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(40, 379);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(27, 243);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 104;
             this.label2.Text = "Email:";
             // 
             // txbEmail
             // 
             this.txbEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbEmail.Location = new System.Drawing.Point(44, 407);
+            this.txbEmail.Location = new System.Drawing.Point(29, 260);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(402, 31);
+            this.txbEmail.Size = new System.Drawing.Size(269, 22);
             this.txbEmail.TabIndex = 103;
             // 
             // label1
@@ -277,19 +274,19 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(41, 199);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(27, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 25);
+            this.label1.Size = new System.Drawing.Size(127, 16);
             this.label1.TabIndex = 102;
             this.label1.Text = "Ten khach hang:";
             // 
             // txbTenKH
             // 
             this.txbTenKH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbTenKH.Location = new System.Drawing.Point(45, 227);
+            this.txbTenKH.Location = new System.Drawing.Point(30, 145);
+            this.txbTenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbTenKH.Name = "txbTenKH";
-            this.txbTenKH.Size = new System.Drawing.Size(402, 31);
+            this.txbTenKH.Size = new System.Drawing.Size(269, 22);
             this.txbTenKH.TabIndex = 101;
             // 
             // panel2
@@ -310,24 +307,27 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(817, 35);
+            this.panel2.Location = new System.Drawing.Point(545, 22);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(685, 702);
+            this.panel2.Size = new System.Drawing.Size(457, 449);
             this.panel2.TabIndex = 102;
             // 
             // txbLaiXuat
             // 
-            this.txbLaiXuat.Location = new System.Drawing.Point(373, 483);
+            this.txbLaiXuat.Location = new System.Drawing.Point(249, 309);
+            this.txbLaiXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbLaiXuat.Name = "txbLaiXuat";
-            this.txbLaiXuat.Size = new System.Drawing.Size(275, 31);
+            this.txbLaiXuat.Size = new System.Drawing.Size(185, 22);
             this.txbLaiXuat.TabIndex = 127;
             // 
             // dateNgayVay
             // 
             this.dateNgayVay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayVay.Location = new System.Drawing.Point(46, 382);
+            this.dateNgayVay.Location = new System.Drawing.Point(31, 244);
+            this.dateNgayVay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateNgayVay.Name = "dateNgayVay";
-            this.dateNgayVay.Size = new System.Drawing.Size(280, 31);
+            this.dateNgayVay.Size = new System.Drawing.Size(188, 22);
             this.dateNgayVay.TabIndex = 126;
             // 
             // label11
@@ -337,36 +337,38 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(41, 452);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(27, 289);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 25);
+            this.label11.Size = new System.Drawing.Size(74, 16);
             this.label11.TabIndex = 124;
             this.label11.Text = "Ngay tra:";
             // 
             // txbNgayTra
             // 
             this.txbNgayTra.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbNgayTra.Location = new System.Drawing.Point(45, 483);
+            this.txbNgayTra.Location = new System.Drawing.Point(30, 309);
+            this.txbNgayTra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbNgayTra.Name = "txbNgayTra";
-            this.txbNgayTra.Size = new System.Drawing.Size(281, 31);
+            this.txbNgayTra.Size = new System.Drawing.Size(189, 22);
             this.txbNgayTra.TabIndex = 123;
             // 
             // comboKyHan
             // 
             this.comboKyHan.FormattingEnabled = true;
-            this.comboKyHan.Location = new System.Drawing.Point(368, 381);
+            this.comboKyHan.Location = new System.Drawing.Point(245, 244);
+            this.comboKyHan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboKyHan.Name = "comboKyHan";
-            this.comboKyHan.Size = new System.Drawing.Size(280, 33);
+            this.comboKyHan.Size = new System.Drawing.Size(188, 24);
             this.comboKyHan.TabIndex = 122;
             this.comboKyHan.SelectedIndexChanged += new System.EventHandler(this.comboKyHan_SelectedIndexChanged);
             // 
             // comboHinhThuc
             // 
             this.comboHinhThuc.FormattingEnabled = true;
-            this.comboHinhThuc.Location = new System.Drawing.Point(36, 180);
+            this.comboHinhThuc.Location = new System.Drawing.Point(24, 115);
+            this.comboHinhThuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboHinhThuc.Name = "comboHinhThuc";
-            this.comboHinhThuc.Size = new System.Drawing.Size(393, 33);
+            this.comboHinhThuc.Size = new System.Drawing.Size(263, 24);
             this.comboHinhThuc.TabIndex = 121;
             // 
             // label5
@@ -376,27 +378,28 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label5.Location = new System.Drawing.Point(41, 349);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(27, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 25);
+            this.label5.Size = new System.Drawing.Size(81, 16);
             this.label5.TabIndex = 120;
             this.label5.Text = "Ngay vay:";
             // 
             // txbTienVay
             // 
             this.txbTienVay.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbTienVay.Location = new System.Drawing.Point(38, 79);
+            this.txbTienVay.Location = new System.Drawing.Point(25, 51);
+            this.txbTienVay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbTienVay.Name = "txbTienVay";
-            this.txbTienVay.Size = new System.Drawing.Size(396, 31);
+            this.txbTienVay.Size = new System.Drawing.Size(265, 22);
             this.txbTienVay.TabIndex = 110;
             // 
             // txbTaiSanTheChap
             // 
             this.txbTaiSanTheChap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbTaiSanTheChap.Location = new System.Drawing.Point(40, 277);
+            this.txbTaiSanTheChap.Location = new System.Drawing.Point(27, 177);
+            this.txbTaiSanTheChap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbTaiSanTheChap.Name = "txbTaiSanTheChap";
-            this.txbTaiSanTheChap.Size = new System.Drawing.Size(402, 31);
+            this.txbTaiSanTheChap.Size = new System.Drawing.Size(269, 22);
             this.txbTaiSanTheChap.TabIndex = 109;
             // 
             // label6
@@ -406,10 +409,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label6.Location = new System.Drawing.Point(368, 452);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(245, 289);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 25);
+            this.label6.Size = new System.Drawing.Size(71, 16);
             this.label6.TabIndex = 118;
             this.label6.Text = "Lai xuat:";
             // 
@@ -420,10 +422,9 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(36, 51);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(24, 33);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 25);
+            this.label10.Size = new System.Drawing.Size(93, 16);
             this.label10.TabIndex = 111;
             this.label10.Text = "So tien vay:";
             // 
@@ -434,10 +435,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label9.Location = new System.Drawing.Point(36, 249);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(24, 159);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(294, 25);
+            this.label9.Size = new System.Drawing.Size(198, 16);
             this.label9.TabIndex = 112;
             this.label9.Text = "Tai san the chap (Neu co):";
             // 
@@ -448,10 +448,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label7.Location = new System.Drawing.Point(368, 353);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(245, 226);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 25);
+            this.label7.Size = new System.Drawing.Size(64, 16);
             this.label7.TabIndex = 116;
             this.label7.Text = "Ky han:";
             // 
@@ -462,24 +461,25 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label8.Location = new System.Drawing.Point(36, 152);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(24, 97);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 25);
+            this.label8.Size = new System.Drawing.Size(83, 16);
             this.label8.TabIndex = 114;
             this.label8.Text = "Hinh thuc:";
             // 
             // VayTien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1532, 769);
+            this.ClientSize = new System.Drawing.Size(1021, 492);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VayTien";
             this.Text = "VayTien";
+            this.Load += new System.EventHandler(this.VayTien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
