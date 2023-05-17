@@ -89,8 +89,7 @@ namespace QLNganHang
                         SDT = sdt,
                         Cccd = txbCCCD.Text,
                         SoDu = 0,
-                        SoTienVay = 0,
-                        SoTKhoanTK = "0"
+                        SoTienVay = 0                       
                     };
 
                     db.TaiKhoans.InsertOnSubmit(taiKhoan);

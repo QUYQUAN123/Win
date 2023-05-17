@@ -31,7 +31,7 @@ namespace QLNganHang
                         select u).FirstOrDefault();
             if(item == null)
             {
-                MessageBox.Show("Không có thông tin.");
+                MessageBox.Show("Không có thông tin. Khách hàng chưa tạo tài khoản hoặc không có lịch sử nợ xấu");
             }
             else if(item.NoXau == 0)
             {

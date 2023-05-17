@@ -48,9 +48,12 @@ namespace QLNganHang
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
             string d = tbxCCCD.Text;
-            var item = (from u in NH.SoTietKiems
+            var item = (from u in NH.TaiKhoans
                         where u.Cccd == d
                         select u).FirstOrDefault();
+            //var item = (from u in NH.SoTietKiems
+            //            where u.Cccd == d
+            //            select u).FirstOrDefault();
             if (item == null)
             {
                 MessageBox.Show("Thông báo! Không có thông tin khách hàng.");
