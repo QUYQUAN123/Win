@@ -294,6 +294,13 @@ C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.e
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.pdb
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources
+<<<<<<< HEAD
 E:\FinalProjectWin\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
 E:\FinalProjectWin\Win\QLNganHang\obj\Debug\QLNganHang.HomeVayTien.resources
 E:\FinalProjectWin\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources
+=======
+D:\WinForm\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
+D:\WinForm\Win\QLNganHang\obj\Debug\QLNganHang.fThemTinDung.resources
+D:\WinForm\Win\QLNganHang\obj\Debug\QLNganHang.HomeVayTien.resources
+D:\WinForm\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources
+>>>>>>> 1022b2794ec388f30838dcc7f3278e4bd89b20b5

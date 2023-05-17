@@ -142,6 +142,7 @@
             this.label3.Size = new System.Drawing.Size(409, 38);
             this.label3.TabIndex = 7;
             this.label3.Text = "Bank Management System";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox1
             // 

@@ -49,6 +49,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.lichSuGiaoDichToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gvKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -69,7 +71,7 @@
             // 
             this.txbNhapCccd.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNhapCccd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.txbNhapCccd.Location = new System.Drawing.Point(513, 346);
+            this.txbNhapCccd.Location = new System.Drawing.Point(387, 346);
             this.txbNhapCccd.Name = "txbNhapCccd";
             this.txbNhapCccd.Size = new System.Drawing.Size(348, 29);
             this.txbNhapCccd.TabIndex = 1;
@@ -160,7 +162,8 @@
             this.côngCụToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vayTiềnToolStripMenuItem,
             this.sổTiếtKiệmToolStripMenuItem,
-            this.tínDụngToolStripMenuItem});
+            this.tínDụngToolStripMenuItem,
+            this.lichSuGiaoDichToolStripMenuItem});
             this.côngCụToolStripMenuItem.Name = "côngCụToolStripMenuItem";
             this.côngCụToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.côngCụToolStripMenuItem.Text = "Công Cụ";
@@ -217,7 +220,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label4.Location = new System.Drawing.Point(341, 353);
+            this.label4.Location = new System.Drawing.Point(232, 345);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 22);
             this.label4.TabIndex = 10;
@@ -232,7 +235,7 @@
             this.btnTimKiem.FillColor = System.Drawing.Color.Salmon;
             this.btnTimKiem.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Location = new System.Drawing.Point(922, 345);
+            this.btnTimKiem.Location = new System.Drawing.Point(798, 346);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(155, 30);
             this.btnTimKiem.TabIndex = 47;
@@ -244,6 +247,29 @@
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this.btnTimKiem;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Salmon;
+            this.guna2Button1.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(1056, 345);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(155, 30);
+            this.guna2Button1.TabIndex = 48;
+            this.guna2Button1.Text = "Load";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // lichSuGiaoDichToolStripMenuItem
+            // 
+            this.lichSuGiaoDichToolStripMenuItem.Name = "lichSuGiaoDichToolStripMenuItem";
+            this.lichSuGiaoDichToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lichSuGiaoDichToolStripMenuItem.Text = "Lich Su Giao Dich";
+            this.lichSuGiaoDichToolStripMenuItem.Click += new System.EventHandler(this.lichSuGiaoDichToolStripMenuItem_Click);
+            // 
             // fNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -251,6 +277,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1279, 632);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
@@ -295,5 +322,7 @@
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.ToolStripMenuItem tínDụngToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.ToolStripMenuItem lichSuGiaoDichToolStripMenuItem;
     }
 }

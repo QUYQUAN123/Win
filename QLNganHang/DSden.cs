@@ -35,5 +35,10 @@ namespace QLNganHang
         {
 
         }
+
+        private void DSden_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

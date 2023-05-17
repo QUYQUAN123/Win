@@ -124,7 +124,8 @@ namespace QLNganHang
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
+            this.LoadData();
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn xoa không?", "Xác nhận", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 string cccd = txbNhapCccd.Text;
@@ -136,6 +137,7 @@ namespace QLNganHang
 
         private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
+           LoadData();
             var Lst = (from Cccd in db.View_KhachHangs where Cccd.Cccd.Contains(txbNhapCccd.Text) select Cccd).ToList();
             dataGridView1.DataSource = Lst;
         }
@@ -144,6 +146,17 @@ namespace QLNganHang
         {
             fTinDung f = new fTinDung();
             f.ShowDialog();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void lichSuGiaoDichToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LichSuGiaoDich s= new LichSuGiaoDich();
+            s.ShowDialog();
         }
     }
 }

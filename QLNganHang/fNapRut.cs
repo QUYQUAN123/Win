@@ -61,21 +61,41 @@ namespace QLNganHang
 
         private void btnNap_Click_1(object sender, EventArgs e)
         {
-            int soTien = int.Parse(txbSoTien.Text);
+            string soTienText = txbSoTien.Text;
 
-            string message = "Ban co chac muon nap tien ?";
-            string title = "NapTien";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons);
-            if (result == DialogResult.Yes)
+            if (string.IsNullOrEmpty(soTienText))
             {
-                db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu += soTien);
-                gan();
-                noidung = "Nap tien vao tai khoan  "+ SoTK;
-                LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
-                db.SubmitChanges();
-                KiemTra();
-                db.SubmitChanges();
+                // Giá trị trong txbSoTien là null hoặc rỗng
+                MessageBox.Show("Vui lòng nhập giá trị vào ô Số Tiền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                int soTien;
+
+                if (int.TryParse(soTienText, out soTien) && soTien >= 0)
+                {
+                    soTien = int.Parse(txbSoTien.Text);
+
+                    string message = "Ban co chac muon nap tien ?";
+                    string title = "NapTien";
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    DialogResult result = MessageBox.Show(message, title, buttons);
+                    if (result == DialogResult.Yes)
+                    {
+                        db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu += soTien);
+                        gan();
+                        noidung = "Nap tien vao tai khoan  " + SoTK;
+                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
+                        db.SubmitChanges();
+                        KiemTra();
+                        db.SubmitChanges();
+                    }
+                }
+                else
+                {
+                    
+                    MessageBox.Show("Vui lòng nhập một số nguyên không âm vào ô Số Tiền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
   
         }

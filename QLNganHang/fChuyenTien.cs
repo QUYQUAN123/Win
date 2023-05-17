@@ -88,51 +88,54 @@ namespace QLNganHang
         }
 
         private void btnChuyen_Click_1(object sender, EventArgs e)
-        {
-            var tkChuyen = txbTkChuyen.Text; // Tài khoản cần cộng tiền
-            var tkNhan = txbTkNhan.Text; // Tài khoản nhận tiền
-            int SoTien = int.Parse(txbSoTienChuyen.Text); // Số tiền cần chuyển
-            var tenKh = txbTenKHC.Text;
-            var noidung = txbNoiDung.Text;
-            var tenKhn = txbTenKHN.Text;
-
-            // Lấy số dư của tài khoản cần chuyển tiền
-            var soDuChuyen = db.TaiKhoans.Where(tk => tk.SoTK == tkChuyen).Select(tk => tk.SoDu).FirstOrDefault();
-
-            if (soDuChuyen >= SoTien) // Nếu số dư đủ để chuyển tiền
+        {   String amountText =txbSoTienChuyen.Text;
+            if (!string.IsNullOrEmpty(amountText) && double.TryParse(amountText, out double amount))
             {
-                string message = "Ban co chac muon chuyen tien ?";
-                string title = "ChuyenTien";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show(message, title, buttons);
-                if (result == DialogResult.No)
+                var tkChuyen = txbTkChuyen.Text; // Tài khoản cần cộng tiền
+                var tkNhan = txbTkNhan.Text; // Tài khoản nhận tiền
+                int SoTien = int.Parse(txbSoTienChuyen.Text); // Số tiền cần chuyển
+                var tenKh = txbTenKHC.Text;
+                var noidung = txbNoiDung.Text;
+                var tenKhn = txbTenKHN.Text;
+
+                // Lấy số dư của tài khoản cần chuyển tiền
+                var soDuChuyen = db.TaiKhoans.Where(tk => tk.SoTK == tkChuyen).Select(tk => tk.SoDu).FirstOrDefault();
+
+                if (soDuChuyen >= SoTien) // Nếu số dư đủ để chuyển tiền
                 {
-                    this.Hide();
-                    fChuyenTien f = new fChuyenTien();
-                    f.ShowDialog();
-                    this.Close();
+                    string message = "Ban co chac muon chuyen tien ?";
+                    string title = "ChuyenTien";
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    DialogResult result = MessageBox.Show(message, title, buttons);
+                    if (result == DialogResult.No)
+                    {
+                        this.Hide();
+                        fChuyenTien f = new fChuyenTien();
+                        f.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        db.TaiKhoans.Where(tk => tk.SoTK == tkChuyen).ToList().ForEach(tk => tk.SoDu -= SoTien);
+
+                        // Cập nhật số dư của tài khoản nhận tiền
+                        db.TaiKhoans.Where(tk => tk.SoTK == tkNhan).ToList().ForEach(tk => tk.SoDu += SoTien);
+                        string noidungc = noidung += "  (chuyen tien toi so TK " + tkNhan + ")";
+                        // Lưu các thay đổi vào cơ sở dữ liệu
+                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKh, SoTien, tkChuyen, noidungc);
+                        string noidungn = noidung += "  (Nhan tien tu so TK " + tkChuyen + ")";
+                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKhn, SoTien, tkNhan, noidungn);
+                        db.SubmitChanges();
+                        MessageBox.Show("Chuyen tien Thanh cong");
+                        Check();
+                    }
                 }
                 else
                 {
-                    db.TaiKhoans.Where(tk => tk.SoTK == tkChuyen).ToList().ForEach(tk => tk.SoDu -= SoTien);
-
-                    // Cập nhật số dư của tài khoản nhận tiền
-                    db.TaiKhoans.Where(tk => tk.SoTK == tkNhan).ToList().ForEach(tk => tk.SoDu += SoTien);
-                    string noidungc = noidung += "  (chuyen tien toi so TK " + tkNhan + ")";
-                    // Lưu các thay đổi vào cơ sở dữ liệu
-                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKh, SoTien, tkChuyen, noidungc);
-                    string noidungn = noidung += "  (Nhan tien tu so TK " + tkChuyen + ")";
-                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKhn, SoTien, tkNhan, noidungn);
-                    db.SubmitChanges();
-                    MessageBox.Show("Chuyen tien Thanh cong");
-                    Check();
+                    // Hiển thị thông báo cho người dùng rằng số dư không đủ để chuyển tiền
+                    MessageBox.Show("Số dư không đủ để thực hiện giao dịch này!");
                 }
-            }
-            else
-            {
-                // Hiển thị thông báo cho người dùng rằng số dư không đủ để chuyển tiền
-                MessageBox.Show("Số dư không đủ để thực hiện giao dịch này!");
-            }
+            }else { MessageBox.Show("Vui Long Nhap dung so tien"); }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
