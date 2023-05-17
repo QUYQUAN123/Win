@@ -59,7 +59,7 @@ namespace QLNganHang
             }
             else if (item1.ThuNhap < Convert.ToDecimal(txbTienVay.Text))
             {
-                MessageBox.Show("Giao dịch thất bại! Số dư hiện có của bạn thấp hơn số tiền bạn muốn vay.");
+                MessageBox.Show("Giao dịch thất bại! Thu nhập hiện tại của bạn thấp hơn số tiền bạn muốn vay.");
             }
             else
             {

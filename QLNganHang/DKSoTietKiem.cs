@@ -87,7 +87,7 @@ namespace QLNganHang
                 else
                 {
                     string sqlStr = string.Format("INSERT INTO SoTietKiem(MaSo,TenKH,MaKH,SDT, Cccd,TienGui,NgayGui,KyHan,LaiXuat,DaThanhToan) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}'," +
-                        "'{7}','{8}','{9}')", tbxSTKTK.Text, tbxTenKH.Text, txbMaKH.Text, tbxSDT.Text, tbxCCCD.Text, tbxSoTienGui.Text, dateNgayGui.Text, comboKyHan.Text, txbLaiXuat.Text, 2);
+                        "'{7}','{8}','{9}')", tbxSTKTK.Text, tbxTenKH.Text, txbMaKH.Text, tbxSDT.Text, tbxCCCD.Text, tbxSoTienGui.Text, dateNgayGui.Text, comboKyHan.Text, txbLaiXuat.Text, 1);
                     SqlCommand cmd = new SqlCommand(sqlStr, conn);
                     if (cmd.ExecuteNonQuery() > 0)
                         MessageBox.Show("Mở sổ thành công!");

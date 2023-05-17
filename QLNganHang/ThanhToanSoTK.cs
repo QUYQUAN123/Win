@@ -31,67 +31,78 @@ namespace QLNganHang
             DateTime ngayGui = DateTime.Parse(txbNgayGui.Text);
             DateTime NgayDong = ngayGui.AddMonths(Convert.ToInt32(txbKyHan.Text));
             int soSanh = NgayDong.CompareTo(now);
-            if (soSanh > 0)
+            if (item == null)
             {
-                DialogResult tb = MessageBox.Show("Sổ tiết kiệm của bạn chưa hoàn tất thời hạn, bạn có muốn tiến hành tất toán không?", "Lưu ý!", MessageBoxButtons.YesNo);
-                if (tb == DialogResult.Yes)
-                {
-                    DialogResult tb2 = MessageBox.Show("Sau khi tất toán, phần tiền lãi tương đương với lãi xuất 1% so với mức ban đầu. Bạn có muốn tiếp tục tất toán hay không?", "Lưu ý quan trọng!", MessageBoxButtons.YesNo);
-                    if (tb2 == DialogResult.Yes)
-                    {
-                        decimal temp = Convert.ToDecimal(tbxSoTienGui.Text) + Convert.ToDecimal(tbxSoTienGui.Text) / 100;
-                        DialogResult tb3 = MessageBox.Show("Số tiền bạn nhận được là:" + temp + ". Bạn có muốn tiền được gửi vào tài khoản ngân hàng hay không?", "Thông báo", MessageBoxButtons.YesNoCancel);
-                        if (tb3 == DialogResult.Yes)
-                        {
-                            string a = txbMaKH.Text;
-                            var item1 = (from u in NH.TaiKhoans
-                                         where u.MaKH == a
-                                         select u).FirstOrDefault();
-                            item1.SoDu += temp;
-                            item.DaThanhToan += 2;
-                            NH.SubmitChanges();
-                            MessageBox.Show("Giao dịch hoàn tất!");
-                        }
-                        else if (tb3 == DialogResult.No)
-                        {
-                            item.DaThanhToan += 2;
-                            NH.SubmitChanges();
-                            MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận lại tiền lời.");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Giao dịch bị huỷ bỏ");
-                        }
-                    }
-                }
+                MessageBox.Show("Không có thông tin sổ tiết kiệm!");
+            }
+            else if(item.DaThanhToan == 2)
+            {
+                MessageBox.Show("Sổ này đã đóng.");
             }
             else
             {
-                decimal temp = Convert.ToDecimal(tbxSoTienGui.Text) + ((Convert.ToDecimal(tbxSoTienGui.Text) * Convert.ToDecimal(txbLaiXuat.Text) / 100));
-                DialogResult tb3 = MessageBox.Show("Số tiền bạn nhận được là:" + temp + ". Bạn có muốn tiền được gửi vào tài khoản ngân hàng hay không?", "Thông báo", MessageBoxButtons.YesNoCancel);
-                if (tb3 == DialogResult.Yes)
+                if (soSanh > 0)
                 {
-                    string a = txbMaKH.Text;
-                    var item1 = (from u in NH.TaiKhoans
-                                 where u.MaKH == a
-                                 select u).FirstOrDefault();
-                    item1.SoDu += temp;
-                    item.DaThanhToan += 2;
-                    NH.SubmitChanges();
-                    MessageBox.Show("Giao dịch hoàn tất!");
-                }
-                else if (tb3 == DialogResult.No)
-                {
-                    item.DaThanhToan += 2;
-                    NH.SubmitChanges();
-                    MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận lại tiền lời.");
+                    DialogResult tb = MessageBox.Show("Sổ tiết kiệm của bạn chưa hoàn tất thời hạn, bạn có muốn tiến hành tất toán không?", "Lưu ý!", MessageBoxButtons.YesNo);
+                    if (tb == DialogResult.Yes)
+                    {
+                        DialogResult tb2 = MessageBox.Show("Sau khi tất toán, phần tiền lãi tương đương với lãi xuất 1% so với mức ban đầu. Bạn có muốn tiếp tục tất toán hay không?", "Lưu ý quan trọng!", MessageBoxButtons.YesNo);
+                        if (tb2 == DialogResult.Yes)
+                        {
+                            decimal temp = Convert.ToDecimal(tbxSoTienGui.Text) + Convert.ToDecimal(tbxSoTienGui.Text) / 100;
+                            DialogResult tb3 = MessageBox.Show("Số tiền bạn nhận được là:" + temp + ". Bạn có muốn tiền được gửi vào tài khoản ngân hàng hay không?", "Thông báo", MessageBoxButtons.YesNoCancel);
+                            if (tb3 == DialogResult.Yes)
+                            {
+                                string a = txbMaKH.Text;
+                                var item1 = (from u in NH.TaiKhoans
+                                             where u.MaKH == a
+                                             select u).FirstOrDefault();
+                                item1.SoDu += temp;
+                                item.DaThanhToan += 2;
+                                NH.SubmitChanges();
+                                MessageBox.Show("Giao dịch hoàn tất!");
+                            }
+                            else if (tb3 == DialogResult.No)
+                            {
+                                item.DaThanhToan += 2;
+                                NH.SubmitChanges();
+                                MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận lại tiền lời.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Giao dịch bị huỷ bỏ");
+                            }
+                        }
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Giao dịch bị huỷ bỏ");
+                    decimal temp = Convert.ToDecimal(tbxSoTienGui.Text) + ((Convert.ToDecimal(tbxSoTienGui.Text) * Convert.ToDecimal(txbLaiXuat.Text) / 100));
+                    DialogResult tb3 = MessageBox.Show("Số tiền bạn nhận được là:" + temp + ". Bạn có muốn tiền được gửi vào tài khoản ngân hàng hay không?", "Thông báo", MessageBoxButtons.YesNoCancel);
+                    if (tb3 == DialogResult.Yes)
+                    {
+                        string a = txbMaKH.Text;
+                        var item1 = (from u in NH.TaiKhoans
+                                     where u.MaKH == a
+                                     select u).FirstOrDefault();
+                        item1.SoDu += temp;
+                        item.DaThanhToan += 1;
+                        NH.SubmitChanges();
+                        MessageBox.Show("Giao dịch hoàn tất!");
+                    }
+                    else if (tb3 == DialogResult.No)
+                    {
+                        item.DaThanhToan += 2;
+                        NH.SubmitChanges();
+                        MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận lại tiền lời.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Giao dịch bị huỷ bỏ");
+                    }
                 }
             }
-        }
+        }               
     
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
@@ -101,7 +112,11 @@ namespace QLNganHang
                         select u).FirstOrDefault();
             if (item == null)
             {
-                MessageBox.Show("Vui lòng nhập Mã sổ hoặc kiểm tra lại thông tin");
+                MessageBox.Show("Không có thông tin sổ tiết kiệm!");
+            }
+            else if (item.DaThanhToan == 2)
+            {
+                MessageBox.Show("Sổ này đã đóng.");
             }
             else
             {
@@ -129,16 +144,27 @@ namespace QLNganHang
             var item = (from u in NH.SoTietKiems
                         where u.MaSo == d
                         select u).FirstOrDefault();
-            if (soSanh > 0)
+            if (item == null)
             {
-                MessageBox.Show("Lỗi! Sổ này chưa đến kỳ hạn đóng.");
+                MessageBox.Show("Không có thông tin sổ tiết kiệm!");
+            }
+            else if (item.DaThanhToan == 2)
+            {
+                MessageBox.Show("Sổ này đã đóng.");
             }
             else
             {
-                item.NgayGui = NgayDong;
-                item.TienGui += temp;
-                MessageBox.Show("Làm mới kỳ hạn thành công! Lãi nhập gốc.");
-                NH.SubmitChanges();
+                if (soSanh > 0)
+                {
+                    MessageBox.Show("Lỗi! Sổ này chưa đến kỳ hạn đóng.");
+                }
+                else
+                {
+                    item.NgayGui = NgayDong;
+                    item.TienGui += temp;
+                    MessageBox.Show("Làm mới kỳ hạn thành công! Lãi nhập gốc.");
+                    NH.SubmitChanges();
+                }
             }
         }
 
@@ -158,16 +184,28 @@ namespace QLNganHang
             var item1 = (from u in NH.TaiKhoans
                         where u.MaKH == t
                         select u).FirstOrDefault();
-            if (soSanh > 0)
+
+            if (item == null)
             {
-                MessageBox.Show("Lỗi! Sổ này chưa đến kỳ hạn đóng.");
+                MessageBox.Show("Không có thông tin sổ tiết kiệm!");
+            }
+            else if (item.DaThanhToan == 2)
+            {
+                MessageBox.Show("Sổ này đã đóng.");
             }
             else
             {
-                item1.SoDu += temp;
-                item.NgayGui = NgayDong;
-                MessageBox.Show("Chuyển lãi qua tài khoản thành công! Sổ tiết kiệm sẽ được làm mới kỳ hạn.");
-                NH.SubmitChanges();
+                if (soSanh > 0)
+                {
+                    MessageBox.Show("Lỗi! Sổ này chưa đến kỳ hạn đóng.");
+                }
+                else
+                {
+                    item1.SoDu += temp;
+                    item.NgayGui = NgayDong;
+                    MessageBox.Show("Chuyển lãi qua tài khoản thành công! Sổ tiết kiệm sẽ được làm mới kỳ hạn.");
+                    NH.SubmitChanges();
+                }
             }
         }
 
