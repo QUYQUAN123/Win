@@ -21,7 +21,7 @@ namespace QLNganHang
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=NGMINHLUN884A\\SQLEXPRESS;Initial Catalog=QLNganHang;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-0BEFH93;Initial Catalog=QLNganHang;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

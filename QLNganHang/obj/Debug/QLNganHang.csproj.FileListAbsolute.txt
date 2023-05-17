@@ -294,3 +294,6 @@ C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.e
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.pdb
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
 C:\Users\luanngo9352gmail.com\source\repos\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources
+E:\FinalProjectWin\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
+E:\FinalProjectWin\Win\QLNganHang\obj\Debug\QLNganHang.HomeVayTien.resources
+E:\FinalProjectWin\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources

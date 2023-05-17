@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtSoTD = new System.Windows.Forms.TextBox();
+            this.txtCccd = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtNoTD = new System.Windows.Forms.TextBox();
             this.txtNX = new System.Windows.Forms.TextBox();
@@ -53,7 +53,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -73,12 +73,12 @@
             this.label7.Size = new System.Drawing.Size(0, 22);
             this.label7.TabIndex = 6;
             // 
-            // txtSoTD
+            // txtCccd
             // 
-            this.txtSoTD.Location = new System.Drawing.Point(7, 56);
-            this.txtSoTD.Name = "txtSoTD";
-            this.txtSoTD.Size = new System.Drawing.Size(225, 29);
-            this.txtSoTD.TabIndex = 8;
+            this.txtCccd.Location = new System.Drawing.Point(7, 56);
+            this.txtCccd.Name = "txtCccd";
+            this.txtCccd.Size = new System.Drawing.Size(225, 29);
+            this.txtCccd.TabIndex = 8;
             // 
             // txtTenKH
             // 
@@ -252,8 +252,8 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.txtSoTD);
+            this.panel2.Controls.Add(this.label);
+            this.panel2.Controls.Add(this.txtCccd);
             this.panel2.Controls.Add(this.txtNX);
             this.panel2.Controls.Add(this.txtTenKH);
             this.panel2.Controls.Add(this.txtNoTD);
@@ -261,7 +261,7 @@
             this.panel2.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(61, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(494, 220);
+            this.panel2.Size = new System.Drawing.Size(494, 232);
             this.panel2.TabIndex = 24;
             // 
             // label2
@@ -269,7 +269,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(90, 149);
+            this.label2.Location = new System.Drawing.Point(199, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 22);
             this.label2.TabIndex = 28;
@@ -277,7 +277,7 @@
             // 
             // txtHanMuc
             // 
-            this.txtHanMuc.Location = new System.Drawing.Point(94, 174);
+            this.txtHanMuc.Location = new System.Drawing.Point(116, 200);
             this.txtHanMuc.Name = "txtHanMuc";
             this.txtHanMuc.Size = new System.Drawing.Size(252, 29);
             this.txtHanMuc.TabIndex = 28;
@@ -315,16 +315,16 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Ten khach hang";
             // 
-            // label3
+            // label
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label3.Location = new System.Drawing.Point(3, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 22);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Ma tin dung";
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label.Location = new System.Drawing.Point(3, 29);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(48, 22);
+            this.label.TabIndex = 16;
+            this.label.Text = "Cccd";
             // 
             // label1
             // 
@@ -372,7 +372,7 @@
             this.panel4.Controls.Add(this.txtST);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(117, 285);
+            this.panel4.Location = new System.Drawing.Point(112, 303);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(390, 98);
             this.panel4.TabIndex = 42;
@@ -404,7 +404,7 @@
 
         #endregion
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtSoTD;
+        private System.Windows.Forms.TextBox txtCccd;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.TextBox txtNoTD;
         private System.Windows.Forms.TextBox txtNX;
@@ -421,7 +421,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
