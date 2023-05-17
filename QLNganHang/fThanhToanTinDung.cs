@@ -51,7 +51,7 @@ namespace QLNganHang
 
         private void fTinDung_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnChuyen_Click(object sender, EventArgs e)
@@ -66,13 +66,13 @@ namespace QLNganHang
         {
 
             int sotien = int.Parse(txtST.Text);
-           
-          
-                db.TinDungs.Where(tk => tk.Cccd == txtCccd.Text).ToList().ForEach(tk => tk.NoTD -= sotien);
-                KiemTraTD();
-                db.SubmitChanges();
-            
-            
+
+
+            db.TinDungs.Where(tk => tk.Cccd == txtCccd.Text).ToList().ForEach(tk => tk.NoTD -= sotien);
+            KiemTraTD();
+            db.SubmitChanges();
+
+
         }
 
         private void btnKT_Click_1(object sender, EventArgs e)

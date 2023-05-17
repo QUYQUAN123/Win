@@ -63,8 +63,8 @@ namespace QLNganHang
             string soTD = txtMaTD.Text, tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text;//, solan = txtSoLan.Text;
             double laixuattd = double.Parse(cmbLaiXuat.Text);
             DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
-            decimal thunhap = decimal.Parse(txtThuNhap.Text) ,hanmuc = decimal.Parse(cmbHanMuc.Text);
-                //, notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
+            decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text);
+            //, notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
             if (KiemTraTrungSoTK(soTD))
             {
                 MessageBox.Show("Số tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -92,7 +92,7 @@ namespace QLNganHang
                 MessageBox.Show("Them thanh cong");
             }
         }
-        
+
         private void fThemTinDung_Load(object sender, EventArgs e)
         {
             txtMaTD.Text = SinhSoTK();

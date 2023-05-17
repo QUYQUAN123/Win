@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtCccd = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtNoTD = new System.Windows.Forms.TextBox();
             this.txtNX = new System.Windows.Forms.TextBox();
@@ -53,12 +52,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label = new System.Windows.Forms.Label();
+            this.txtCccd = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,13 +72,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 22);
             this.label7.TabIndex = 6;
-            // 
-            // txtCccd
-            // 
-            this.txtCccd.Location = new System.Drawing.Point(7, 56);
-            this.txtCccd.Name = "txtCccd";
-            this.txtCccd.Size = new System.Drawing.Size(225, 29);
-            this.txtCccd.TabIndex = 8;
             // 
             // txtTenKH
             // 
@@ -247,13 +240,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Linen;
+            this.panel2.Controls.Add(this.txtCccd);
+            this.panel2.Controls.Add(this.label);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtHanMuc);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label);
-            this.panel2.Controls.Add(this.txtCccd);
             this.panel2.Controls.Add(this.txtNX);
             this.panel2.Controls.Add(this.txtTenKH);
             this.panel2.Controls.Add(this.txtNoTD);
@@ -315,17 +308,6 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Ten khach hang";
             // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.BackColor = System.Drawing.Color.Transparent;
-            this.label.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label.Location = new System.Drawing.Point(3, 29);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(48, 22);
-            this.label.TabIndex = 16;
-            this.label.Text = "Cccd";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -377,6 +359,24 @@
             this.panel4.Size = new System.Drawing.Size(390, 98);
             this.panel4.TabIndex = 42;
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label.Location = new System.Drawing.Point(3, 29);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(48, 22);
+            this.label.TabIndex = 29;
+            this.label.Text = "Cccd";
+            // 
+            // txtCccd
+            // 
+            this.txtCccd.Location = new System.Drawing.Point(3, 56);
+            this.txtCccd.Name = "txtCccd";
+            this.txtCccd.Size = new System.Drawing.Size(225, 29);
+            this.txtCccd.TabIndex = 30;
+            // 
             // fThanhToanTinDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -404,7 +404,6 @@
 
         #endregion
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtCccd;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.TextBox txtNoTD;
         private System.Windows.Forms.TextBox txtNX;
@@ -421,7 +420,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -433,5 +431,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtHanMuc;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox txtCccd;
+        private System.Windows.Forms.Label label;
     }
 }
