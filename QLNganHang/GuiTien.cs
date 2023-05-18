@@ -54,30 +54,46 @@ namespace QLNganHang
 
         private void btnLuu_Click_1(object sender, EventArgs e)
         {
-            if (tbxSTKTK.Text == null)
+            string d = tbxSTKTK.Text;
+            string t = tbxCCCD.Text;
+            var item = (from u in NH.SoTietKiems
+                        where u.MaSo == d
+                        select u).FirstOrDefault();
+            var item1 = (from u in NH.TaiKhoans
+                        where u.Cccd == t
+                        select u).FirstOrDefault();
+            if (item.DaThanhToan == 2)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                MessageBox.Show("Sổ đã đóng!");
+            }
+            else if(item.DaThanhToan == 1)
+            {
+                MessageBox.Show("Sổ đã hoàn tất kỳ hạn chỉ có thể thể tiến hành đóng sổ.");
             }
             else
             {
-
-                string d = tbxSTKTK.Text;
-                var item = (from u in NH.SoTietKiems
-                            where u.MaSo == d
-                            select u).FirstOrDefault();
-                if (Convert.ToInt32(tbxSoTienGui.Text) == 0)
+                if (item1.SoDu < Convert.ToDecimal(tbxSoTienGui.Text))
                 {
-                    MessageBox.Show("Vui lòng nhập số tiền trên 500.000 VNĐ.");
+                    MessageBox.Show("Tài khoản không đủ tiền để thêm vào sổ!");
                 }
                 else
                 {
                     item.TienGui = item.TienGui + Convert.ToDecimal(tbxSoTienGui.Text);
+                    item1.SoDu -= Convert.ToDecimal(tbxSoTienGui.Text);
+                    double SoTien = double.Parse(tbxSoTienGui.Text);
+                    string tenkh = tbxTenKH.Text;
+                    string SoTK = item1.SoTK;
+                    string noidung = "Gui tien vao So Tiet Kiem  ";
+                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
                     NH.SubmitChanges();
                     MessageBox.Show("Giao dịch gửi tiền thành công!");
                 }
             }
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

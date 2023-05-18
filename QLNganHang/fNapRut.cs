@@ -94,7 +94,7 @@ namespace QLNganHang
                 else
                 {
                     
-                    MessageBox.Show("Vui lòng nhập một số nguyên không âm vào ô Số Tiền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập số tiền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
   

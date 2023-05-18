@@ -26,23 +26,60 @@ namespace QLNganHang
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
             string d = txbCCCD.Text;
-            var item = (from u in NH.VayTiens 
+            var item = (from u in NH.VayTiens
                         where u.Cccd == d
-                        select u).FirstOrDefault();
-            if(item == null)
+                        select new
+                        {
+                            u.TenKH,
+                            u.SDT,
+                            u.Email,
+                            u.Cccd,
+                            u.DiaChi,
+                            u.ThuNhap,
+                            u.SoTienVay,
+                            u.HinhThucVay,
+                            u.TaiSanTheChap,
+                            u.KyHan,
+                            u.LaiXuat,
+                            u.NgayVay,
+                            u.NgayTra,
+                            u.NoXau
+                        }).FirstOrDefault();
+
+            if (item == null)
             {
                 MessageBox.Show("Không có thông tin. Khách hàng chưa tạo tài khoản hoặc không có lịch sử nợ xấu");
             }
-            else if(item.NoXau == 0)
+            else if (item.NoXau == 0)
             {
-                MessageBox.Show("Khách hàng này không có lịch sử nợ xấu, đủ điều kiện giao dịch!");              
+                MessageBox.Show("Khách hàng này không có lịch sử nợ xấu, đủ điều kiện giao dịch!");
             }
             else
             {
                 var item1 = (from u in NH.VayTiens
-                            where u.Cccd == d
-                            select u).ToList();
+                             where u.Cccd == d
+                             select new
+                             {
+                                 u.TenKH,
+                                 u.SDT,
+                                 u.Email,
+                                 u.Cccd,
+                                 u.DiaChi,
+                                 u.ThuNhap,
+                                 u.SoTienVay,
+                                 u.HinhThucVay,
+                                 u.TaiSanTheChap,
+                                 u.KyHan,
+                                 u.LaiXuat,
+                                 u.NgayVay,
+                                 u.NgayTra,
+                                 u.NoXau
+                             }).ToList();
+
                 gridVayTien.DataSource = item1;
+
+                // Thiết lập auto-size cho các cột
+                gridVayTien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             }
         }
 

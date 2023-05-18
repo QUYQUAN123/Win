@@ -64,15 +64,24 @@ namespace QLNganHang
 
         private void btnTN_Click_1(object sender, EventArgs e)
         {
+            decimal no = decimal.Parse(txtNoTD.Text);
+            decimal sotien = decimal.Parse(txtST.Text);
 
-            int sotien = int.Parse(txtST.Text);
+            if (sotien > 0 && no > 0)
+            {
+                var tinDungs = db.TinDungs.Where(tk => tk.Cccd == txtCccd.Text).ToList();
+                foreach (var tk in tinDungs)
+                {
+                    tk.NoTD -= sotien;
+                }
 
-
-            db.TinDungs.Where(tk => tk.Cccd == txtCccd.Text).ToList().ForEach(tk => tk.NoTD -= sotien);
-            KiemTraTD();
-            db.SubmitChanges();
-
-
+                KiemTraTD();
+                db.SubmitChanges();
+            }
+            else
+            {
+                MessageBox.Show("het no.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnKT_Click_1(object sender, EventArgs e)
@@ -108,10 +117,22 @@ namespace QLNganHang
 
         private void btnRTTD_Click(object sender, EventArgs e)
         {
-            int sotien = int.Parse(txtST.Text);
-            db.TinDungs.Where(tk => tk.Cccd == txtCccd.Text).ToList().ForEach(tk => tk.HanMuc -= sotien);
-            KiemTraTD();
-            db.SubmitChanges();
+            decimal sotien = decimal.Parse(txtST.Text);
+            decimal hanmuc = decimal.Parse(txtHanMuc.Text);
+            if (sotien > 0 && hanmuc > 0)
+            {
+                var tinDungs = db.TinDungs.Where(tk => tk.Cccd == txtCccd.Text).ToList();
+                foreach (var tk in tinDungs)
+                {
+                    tk.HanMuc -= sotien;
+                }
+                KiemTraTD();
+                db.SubmitChanges();
+            }
+            else
+            {
+                MessageBox.Show("so du han muc khong du", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -55,58 +55,51 @@ namespace QLNganHang
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(5, 24);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDate.Location = new System.Drawing.Point(229, 79);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(223, 22);
+            this.txtDate.Size = new System.Drawing.Size(332, 31);
             this.txtDate.TabIndex = 68;
             // 
             // tbxCCCD
             // 
-            this.tbxCCCD.Location = new System.Drawing.Point(256, 73);
-            this.tbxCCCD.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxCCCD.Location = new System.Drawing.Point(606, 228);
             this.tbxCCCD.Name = "tbxCCCD";
-            this.tbxCCCD.Size = new System.Drawing.Size(224, 22);
+            this.tbxCCCD.Size = new System.Drawing.Size(334, 31);
             this.tbxCCCD.TabIndex = 67;
             // 
             // tbxSoDU
             // 
-            this.tbxSoDU.Location = new System.Drawing.Point(256, 123);
-            this.tbxSoDU.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxSoDU.Location = new System.Drawing.Point(606, 366);
             this.tbxSoDU.Name = "tbxSoDU";
-            this.tbxSoDU.Size = new System.Drawing.Size(224, 22);
+            this.tbxSoDU.Size = new System.Drawing.Size(334, 31);
             this.tbxSoDU.TabIndex = 65;
             // 
             // tbxSoTienGui
             // 
-            this.tbxSoTienGui.Location = new System.Drawing.Point(135, 188);
-            this.tbxSoTienGui.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxSoTienGui.Location = new System.Drawing.Point(609, 497);
             this.tbxSoTienGui.Name = "tbxSoTienGui";
-            this.tbxSoTienGui.Size = new System.Drawing.Size(223, 22);
+            this.tbxSoTienGui.Size = new System.Drawing.Size(332, 31);
             this.tbxSoTienGui.TabIndex = 60;
             // 
             // tbxSDT
             // 
-            this.tbxSDT.Location = new System.Drawing.Point(256, 24);
-            this.tbxSDT.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxSDT.Location = new System.Drawing.Point(605, 79);
             this.tbxSDT.Name = "tbxSDT";
-            this.tbxSDT.Size = new System.Drawing.Size(224, 22);
+            this.tbxSDT.Size = new System.Drawing.Size(334, 31);
             this.tbxSDT.TabIndex = 59;
             // 
             // tbxTenKH
             // 
-            this.tbxTenKH.Location = new System.Drawing.Point(5, 123);
-            this.tbxTenKH.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxTenKH.Location = new System.Drawing.Point(230, 366);
             this.tbxTenKH.Name = "tbxTenKH";
-            this.tbxTenKH.Size = new System.Drawing.Size(224, 22);
+            this.tbxTenKH.Size = new System.Drawing.Size(334, 31);
             this.tbxTenKH.TabIndex = 58;
             // 
             // tbxSTKTK
             // 
-            this.tbxSTKTK.Location = new System.Drawing.Point(5, 73);
-            this.tbxSTKTK.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxSTKTK.Location = new System.Drawing.Point(230, 228);
             this.tbxSTKTK.Name = "tbxSTKTK";
-            this.tbxSTKTK.Size = new System.Drawing.Size(224, 22);
+            this.tbxSTKTK.Size = new System.Drawing.Size(334, 31);
             this.tbxSTKTK.TabIndex = 57;
             // 
             // panel1
@@ -128,10 +121,12 @@ namespace QLNganHang
             this.panel1.Controls.Add(this.tbxSTKTK);
             this.panel1.Controls.Add(this.tbxTenKH);
             this.panel1.Controls.Add(this.tbxSDT);
-            this.panel1.Location = new System.Drawing.Point(22, 47);
+            this.panel1.Location = new System.Drawing.Point(35, 73);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(505, 345);
+            this.panel1.Size = new System.Drawing.Size(1191, 697);
             this.panel1.TabIndex = 69;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLayThongTin
             // 
@@ -142,9 +137,10 @@ namespace QLNganHang
             this.btnLayThongTin.FillColor = System.Drawing.Color.Silver;
             this.btnLayThongTin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLayThongTin.ForeColor = System.Drawing.Color.Black;
-            this.btnLayThongTin.Location = new System.Drawing.Point(122, 245);
+            this.btnLayThongTin.Location = new System.Drawing.Point(231, 469);
+            this.btnLayThongTin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLayThongTin.Name = "btnLayThongTin";
-            this.btnLayThongTin.Size = new System.Drawing.Size(121, 48);
+            this.btnLayThongTin.Size = new System.Drawing.Size(330, 75);
             this.btnLayThongTin.TabIndex = 70;
             this.btnLayThongTin.Text = "Lay thong tin";
             this.btnLayThongTin.Click += new System.EventHandler(this.btnLayThongTin_Click_1);
@@ -155,12 +151,13 @@ namespace QLNganHang
             this.btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLuu.FillColor = System.Drawing.Color.Gold;
+            this.btnLuu.FillColor = System.Drawing.Color.Tan;
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Location = new System.Drawing.Point(274, 245);
+            this.btnLuu.Location = new System.Drawing.Point(786, 575);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(96, 48);
+            this.btnLuu.Size = new System.Drawing.Size(144, 75);
             this.btnLuu.TabIndex = 71;
             this.btnLuu.Text = "Luu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click_1);
@@ -170,9 +167,10 @@ namespace QLNganHang
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label12.Location = new System.Drawing.Point(3, 6);
+            this.label12.Location = new System.Drawing.Point(225, 50);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 16);
+            this.label12.Size = new System.Drawing.Size(62, 25);
             this.label12.TabIndex = 75;
             this.label12.Text = "Ngay";
             // 
@@ -181,9 +179,10 @@ namespace QLNganHang
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(3, 55);
+            this.label11.Location = new System.Drawing.Point(226, 200);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(133, 16);
+            this.label11.Size = new System.Drawing.Size(218, 25);
             this.label11.TabIndex = 74;
             this.label11.Text = "So tai khoan tiet kiem";
             // 
@@ -192,9 +191,10 @@ namespace QLNganHang
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(3, 102);
+            this.label10.Location = new System.Drawing.Point(226, 333);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 16);
+            this.label10.Size = new System.Drawing.Size(167, 25);
             this.label10.TabIndex = 73;
             this.label10.Text = "Ten khach hang";
             // 
@@ -203,9 +203,10 @@ namespace QLNganHang
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label9.Location = new System.Drawing.Point(253, 6);
+            this.label9.Location = new System.Drawing.Point(601, 50);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 16);
+            this.label9.Size = new System.Drawing.Size(54, 25);
             this.label9.TabIndex = 72;
             this.label9.Text = "SDT";
             // 
@@ -214,9 +215,10 @@ namespace QLNganHang
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label8.Location = new System.Drawing.Point(253, 55);
+            this.label8.Location = new System.Drawing.Point(602, 200);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 16);
+            this.label8.Size = new System.Drawing.Size(61, 25);
             this.label8.TabIndex = 71;
             this.label8.Text = "Cccd";
             // 
@@ -225,9 +227,10 @@ namespace QLNganHang
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label5.Location = new System.Drawing.Point(253, 105);
+            this.label5.Location = new System.Drawing.Point(602, 338);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 16);
+            this.label5.Size = new System.Drawing.Size(68, 25);
             this.label5.TabIndex = 70;
             this.label5.Text = "So du";
             // 
@@ -236,9 +239,10 @@ namespace QLNganHang
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(205, 170);
+            this.label13.Location = new System.Drawing.Point(604, 469);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 16);
+            this.label13.Size = new System.Drawing.Size(114, 25);
             this.label13.TabIndex = 69;
             this.label13.Text = "So tien gui";
             // 
@@ -256,23 +260,23 @@ namespace QLNganHang
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(200, 6);
+            this.label1.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label1.Location = new System.Drawing.Point(491, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 38);
+            this.label1.Size = new System.Drawing.Size(227, 61);
             this.label1.TabIndex = 112;
             this.label1.Text = "Gui Tien";
             // 
             // GuiTien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(586, 402);
+            this.ClientSize = new System.Drawing.Size(1258, 796);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GuiTien";
             this.Text = "GuiTien";
             this.Load += new System.EventHandler(this.GuiTien_Load);

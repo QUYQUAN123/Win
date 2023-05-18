@@ -71,6 +71,7 @@ namespace QLNganHang
             }
             else
             {
+                decimal temp = item.SoTienVay + (Convert.ToDecimal(txbTienVay.Text) * Convert.ToDecimal(txbLaiXuat.Text) / 100);
                 DateTime now = DateTime.Now;
                 DateTime ngayTra = DateTime.Parse(txbNgayTra.Text);
                 int soSanh = ngayTra.CompareTo(now);
@@ -83,7 +84,7 @@ namespace QLNganHang
                     }
                     else
                     {
-                        if (item1.SoDu - item1.SoTienVay < 0)
+                        if (item1.SoDu - temp < 0)
                         {
                             MessageBox.Show("Số dư trong tài khoản không đủ để thanh toán.");
                         }
@@ -92,6 +93,11 @@ namespace QLNganHang
                             item1.SoDu -= item1.SoTienVay;
                             item1.SoTienVay -= item1.SoTienVay;
                             string sqlStr = string.Format("DELETE FROM VayTien WHERE Cccd ='"+cccdtxt.Text+"'");
+                            double SoTien = double.Parse(txbTienVay.Text);
+                            string tenkh = txbTenKH.Text;
+                            string SoTK = item1.SoTK;
+                            string noidung = "Thanh toán khoán vay  " + temp;
+                            LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
                             SqlCommand cmd = new SqlCommand(sqlStr, conn);
                             if (cmd.ExecuteNonQuery() > 0)
                                 MessageBox.Show("Thanh toán nợ hoàn tất. Khoản vay có kỳ hạn dưới 1 năm sẽ không phải chịu phí phạt.");

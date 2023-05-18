@@ -49,7 +49,7 @@
             // 
             // tbxCccd
             // 
-            this.tbxCccd.Location = new System.Drawing.Point(144, 20);
+            this.tbxCccd.Location = new System.Drawing.Point(217, 51);
             this.tbxCccd.Name = "tbxCccd";
             this.tbxCccd.Size = new System.Drawing.Size(302, 31);
             this.tbxCccd.TabIndex = 76;
@@ -57,11 +57,11 @@
             // gridviewThanhToan
             // 
             this.gridviewThanhToan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewThanhToan.Location = new System.Drawing.Point(40, 86);
+            this.gridviewThanhToan.Location = new System.Drawing.Point(30, 285);
             this.gridviewThanhToan.Name = "gridviewThanhToan";
             this.gridviewThanhToan.RowHeadersWidth = 82;
             this.gridviewThanhToan.RowTemplate.Height = 33;
-            this.gridviewThanhToan.Size = new System.Drawing.Size(990, 342);
+            this.gridviewThanhToan.Size = new System.Drawing.Size(1872, 576);
             this.gridviewThanhToan.TabIndex = 74;
             // 
             // btnDKMoSoTK
@@ -71,12 +71,12 @@
             this.btnDKMoSoTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDKMoSoTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDKMoSoTK.FillColor = System.Drawing.Color.Silver;
-            this.btnDKMoSoTK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDKMoSoTK.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDKMoSoTK.ForeColor = System.Drawing.Color.Black;
-            this.btnDKMoSoTK.Location = new System.Drawing.Point(39, 28);
+            this.btnDKMoSoTK.Location = new System.Drawing.Point(32, 9);
             this.btnDKMoSoTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDKMoSoTK.Name = "btnDKMoSoTK";
-            this.btnDKMoSoTK.Size = new System.Drawing.Size(132, 75);
+            this.btnDKMoSoTK.Size = new System.Drawing.Size(193, 116);
             this.btnDKMoSoTK.TabIndex = 71;
             this.btnDKMoSoTK.Text = "Dang ki mo so";
             this.btnDKMoSoTK.Click += new System.EventHandler(this.btnDKMoSoTK_Click_1);
@@ -88,12 +88,12 @@
             this.btnGuiTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuiTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuiTien.FillColor = System.Drawing.Color.LightCoral;
-            this.btnGuiTien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGuiTien.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuiTien.ForeColor = System.Drawing.Color.Black;
-            this.btnGuiTien.Location = new System.Drawing.Point(393, 28);
+            this.btnGuiTien.Location = new System.Drawing.Point(426, 9);
             this.btnGuiTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuiTien.Name = "btnGuiTien";
-            this.btnGuiTien.Size = new System.Drawing.Size(158, 75);
+            this.btnGuiTien.Size = new System.Drawing.Size(196, 116);
             this.btnGuiTien.TabIndex = 72;
             this.btnGuiTien.Text = "Nop tien vao so";
             this.btnGuiTien.Click += new System.EventHandler(this.btnGuiTien_Click_1);
@@ -105,12 +105,12 @@
             this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThanhToan.FillColor = System.Drawing.Color.PeachPuff;
-            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.Black;
-            this.btnThanhToan.Location = new System.Drawing.Point(207, 28);
+            this.btnThanhToan.Location = new System.Drawing.Point(233, 9);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(156, 75);
+            this.btnThanhToan.Size = new System.Drawing.Size(185, 116);
             this.btnThanhToan.TabIndex = 73;
             this.btnThanhToan.Text = "Thanh toan";
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click_1);
@@ -121,10 +121,10 @@
             this.panel1.Controls.Add(this.btnDKMoSoTK);
             this.panel1.Controls.Add(this.btnGuiTien);
             this.panel1.Controls.Add(this.btnThanhToan);
-            this.panel1.Location = new System.Drawing.Point(170, 436);
+            this.panel1.Location = new System.Drawing.Point(1256, 100);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(620, 127);
+            this.panel1.Size = new System.Drawing.Size(646, 130);
             this.panel1.TabIndex = 78;
             // 
             // guna2Elipse1
@@ -144,12 +144,12 @@
             this.btnTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnTimKiem.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Location = new System.Drawing.Point(468, 20);
+            this.btnTimKiem.Location = new System.Drawing.Point(605, 44);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(172, 38);
+            this.btnTimKiem.Size = new System.Drawing.Size(172, 48);
             this.btnTimKiem.TabIndex = 74;
             this.btnTimKiem.Text = "Tiem kiem";
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
@@ -163,11 +163,12 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(4, 20);
+            this.label10.Location = new System.Drawing.Point(13, 48);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(135, 25);
+            this.label10.Size = new System.Drawing.Size(174, 31);
             this.label10.TabIndex = 79;
             this.label10.Text = "Nhap CCCD:";
             // 
@@ -177,11 +178,12 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.btnTimKiem);
             this.panel2.Controls.Add(this.tbxCccd);
-            this.panel2.Location = new System.Drawing.Point(40, 11);
+            this.panel2.Location = new System.Drawing.Point(30, 100);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(666, 67);
+            this.panel2.Size = new System.Drawing.Size(833, 130);
             this.panel2.TabIndex = 80;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // guna2Elipse3
             // 
@@ -192,13 +194,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1068, 562);
+            this.ClientSize = new System.Drawing.Size(1932, 889);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gridviewThanhToan);
             this.Name = "ThongTinSoTietKiem";
             this.Text = "ThongTinSoTietKiem";
+            this.Load += new System.EventHandler(this.ThongTinSoTietKiem_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.gridviewThanhToan)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

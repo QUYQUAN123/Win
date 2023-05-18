@@ -42,20 +42,18 @@ namespace QLNganHang
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(232, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(775, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 36);
+            this.label1.Size = new System.Drawing.Size(463, 56);
             this.label1.TabIndex = 1;
             this.label1.Text = "DANH SACH DEN";
             // 
             // btnLoad
             // 
             this.btnLoad.Font = new System.Drawing.Font("Mongolian Baiti", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.Location = new System.Drawing.Point(8, 63);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLoad.Location = new System.Drawing.Point(12, 98);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(179, 50);
+            this.btnLoad.Size = new System.Drawing.Size(268, 78);
             this.btnLoad.TabIndex = 3;
             this.btnLoad.Text = "Load danh sach";
             this.btnLoad.UseVisualStyleBackColor = true;
@@ -64,23 +62,22 @@ namespace QLNganHang
             // gridDSDen
             // 
             this.gridDSDen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridDSDen.Location = new System.Drawing.Point(8, 124);
-            this.gridDSDen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridDSDen.Location = new System.Drawing.Point(12, 194);
             this.gridDSDen.Name = "gridDSDen";
             this.gridDSDen.RowHeadersWidth = 82;
             this.gridDSDen.RowTemplate.Height = 33;
-            this.gridDSDen.Size = new System.Drawing.Size(757, 251);
+            this.gridDSDen.Size = new System.Drawing.Size(1922, 560);
             this.gridDSDen.TabIndex = 4;
             // 
             // DSden
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 383);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1946, 775);
             this.Controls.Add(this.gridDSDen);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DSden";
             this.Text = "DSden";
             this.Load += new System.EventHandler(this.DSden_Load);

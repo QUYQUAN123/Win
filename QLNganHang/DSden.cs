@@ -25,10 +25,27 @@ namespace QLNganHang
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            var item = (from u in NH.VayTiens
-                        where u.NoXau == 1
-                        select u).ToList();
-            gridDSDen.DataSource = item;
+            var item1 = (from u in NH.VayTiens
+                         where u.NoXau == 1
+                         select new
+                         {
+                             u.TenKH,
+                             u.SDT,
+                             u.Cccd,
+                             u.DiaChi,
+                             u.SoTienVay,
+                             u.HinhThucVay,
+                             u.TaiSanTheChap,
+                             u.KyHan,
+                             u.LaiXuat,
+                             u.NgayVay,
+                             u.NgayTra,
+                         }).ToList();
+
+            gridDSDen.DataSource = item1;
+
+            // Thiết lập auto-size cho các cột
+            gridDSDen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void btnDongPhat_Click(object sender, EventArgs e)

@@ -66,6 +66,18 @@ namespace QLNganHang
                         where u.Cccd == d
                         select u).ToList();
             gridviewThanhToan.DataSource = item;
+            gridviewThanhToan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ThongTinSoTietKiem_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
