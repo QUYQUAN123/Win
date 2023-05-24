@@ -15,7 +15,8 @@ namespace QLNganHang
 {
     public partial class fChuyenTien : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+
+        QLNganHangEntities db = new QLNganHangEntities();
         public fChuyenTien()
         {
             InitializeComponent();
@@ -38,21 +39,20 @@ namespace QLNganHang
         }
         void Check()
         {
-            var Lst = (from tkc in db.View_KhachHangs where tkc.SoTK.Contains(txbTkChuyen.Text) select tkc).ToList();
-            if (Lst != null)
+            var khachHangChuyen = db.View_KhachHang.FirstOrDefault(tkc => tkc.SoTK.Contains(txbTkChuyen.Text));
+            if (khachHangChuyen != null)
             {
-                txbTenKHC.Text = Lst[0].TenKH;
-                txbCCCDC.Text = Lst[0].Cccd;
-                txbSoDuC.Text = Lst[0].SoDu.ToString();
+                txbTenKHC.Text = khachHangChuyen.TenKH;
+                txbCCCDC.Text = khachHangChuyen.Cccd;
+                txbSoDuC.Text = khachHangChuyen.SoDu.ToString();
             }
 
-
-            var nt = (from tkn in db.View_KhachHangs where tkn.SoTK.Contains(txbTkNhan.Text) select tkn).ToList();
-            if (nt != null )
+            var khachHangNhan = db.View_KhachHang.FirstOrDefault(tkn => tkn.SoTK.Contains(txbTkNhan.Text));
+            if (khachHangNhan != null)
             {
-                txbTenKHN.Text = nt[0].TenKH;
-                txbCCCDN.Text = nt[0].Cccd;
-                txbSoDuN.Text = nt[0].SoDu.ToString();
+                txbTenKHN.Text = khachHangNhan.TenKH;
+                txbCCCDN.Text = khachHangNhan.Cccd;
+                txbSoDuN.Text = khachHangNhan.SoDu.ToString();
             }
         }
         void LoadData()
@@ -60,7 +60,7 @@ namespace QLNganHang
 
             try
             {
-                var data = db.View_KhachHangs.Select(View_KhacHang => new
+                var data = db.View_KhachHang.Select(View_KhacHang => new
                 {
                     View_KhacHang.Cccd,
                     View_KhacHang.MaKH,
@@ -79,8 +79,7 @@ namespace QLNganHang
             }
         }
 
-     
-   
+
 
         private void btnKiemTra_Click_1(object sender, EventArgs e)
         {
@@ -88,7 +87,8 @@ namespace QLNganHang
         }
 
         private void btnChuyen_Click_1(object sender, EventArgs e)
-        {   String amountText =txbSoTienChuyen.Text;
+        {
+            String amountText = txbSoTienChuyen.Text;
             if (!string.IsNullOrEmpty(amountText) && double.TryParse(amountText, out double amount))
             {
                 var tkChuyen = txbTkChuyen.Text; // Tài khoản cần cộng tiền
@@ -116,16 +116,24 @@ namespace QLNganHang
                     }
                     else
                     {
-                        db.TaiKhoans.Where(tk => tk.SoTK == tkChuyen).ToList().ForEach(tk => tk.SoDu -= SoTien);
+                        var taiKhoanChuyen = db.TaiKhoans.FirstOrDefault(tk => tk.SoTK == tkChuyen);
+                        if (taiKhoanChuyen != null)
+                        {
+                            taiKhoanChuyen.SoDu -= SoTien;
+                        }
 
                         // Cập nhật số dư của tài khoản nhận tiền
-                        db.TaiKhoans.Where(tk => tk.SoTK == tkNhan).ToList().ForEach(tk => tk.SoDu += SoTien);
-                        string noidungc = noidung += "  (chuyen tien toi so TK " + tkNhan + ")";
+                        var taiKhoanNhan = db.TaiKhoans.FirstOrDefault(tk => tk.SoTK == tkNhan);
+                        if (taiKhoanNhan != null)
+                        {
+                            taiKhoanNhan.SoDu += SoTien;
+                        }
+                        /*string noidungc = noidung += "  (chuyen tien toi so TK " + tkNhan + ")";
                         // Lưu các thay đổi vào cơ sở dữ liệu
                         LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKh, SoTien, tkChuyen, noidungc);
                         string noidungn = noidung += "  (Nhan tien tu so TK " + tkChuyen + ")";
-                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKhn, SoTien, tkNhan, noidungn);
-                        db.SubmitChanges();
+                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenKhn, SoTien, tkNhan, noidungn);*/
+                        db.SaveChanges();
                         MessageBox.Show("Chuyen tien Thanh cong");
                         Check();
                     }
@@ -135,13 +143,13 @@ namespace QLNganHang
                     // Hiển thị thông báo cho người dùng rằng số dư không đủ để chuyển tiền
                     MessageBox.Show("Số dư không đủ để thực hiện giao dịch này!");
                 }
-            }else { MessageBox.Show("Vui Long Nhap dung so tien"); }
+            }
+            else { MessageBox.Show("Vui Long Nhap dung so tien"); }
         }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            LichSuGiaoDich ls = new LichSuGiaoDich();
-            ls.ShowDialog();
+            /*LichSuGiaoDich ls = new LichSuGiaoDich();
+            ls.ShowDialog();*/
         }
 
         

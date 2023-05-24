@@ -24,20 +24,26 @@ namespace QLNganHang
             string passWord = txbPassWord.Text;
             if (Login(userName, passWord))
             {
-                Account loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
-                if (loginAccount.Type == 0)
+                using (var context = new QLNganHangEntities())
                 {
-                   fKhachHang f = new fKhachHang(loginAccount);
-                    this.Hide();
-                    f.ShowDialog();
-                    this.Show();
-                }
-                if (loginAccount.Type == 1)
-                {
-                    fNhanVien f = new fNhanVien(loginAccount);
-                    this.Hide();
-                    f.ShowDialog();
-                    this.Show();
+                    var loginAccount = context.Accounts.FirstOrDefault(a => a.UserName == userName);
+
+                    if (loginAccount.Type == 0)
+                    {
+                        fKhachHang f = new fKhachHang(loginAccount);
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+
+                    }
+                    if (loginAccount.Type == 1)
+                    {
+                        fNhanVien f = new fNhanVien(loginAccount);
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+
+                    }
                 }
             }
             else
@@ -45,15 +51,12 @@ namespace QLNganHang
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
             }
         }
-        bool Login(string userName, string passWord)
+        private bool Login(string userName, string passWord)
         {
-            return AccountDAO.Instance.Login(userName, passWord);
-        }
-        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            using (var context = new QLNganHangEntities())
             {
-                e.Cancel = true;
+                var account = context.Accounts.FirstOrDefault(a => a.UserName == userName && a.PassWord == passWord);
+                return account != null;
             }
         }
 
@@ -68,6 +71,11 @@ namespace QLNganHang
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbUserName_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -12,8 +12,11 @@ namespace QLNganHang
 {
     public partial class fMoTaiKhoancs : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+         QLNganHangEntities db = new QLNganHangEntities();
         string ma, ten, sdt;
+
+        public fNewAccount fnewAccount;
+        private fNhanVien _fNhanVien;
         public string TextBoxValue { get; set; }
         public fMoTaiKhoancs()
         {
@@ -27,13 +30,14 @@ namespace QLNganHang
             txbSoTk.Text = SinhSoTK();
             txbSoTk.ReadOnly = true;
         }
-        private void XoaDuLieuTaiKhoan(string soTK)
+        public void XoaDuLieuTaiKhoan(string cccd)
         {
-            var taiKhoan = db.TaiKhoans.FirstOrDefault(tk => tk.SoTK == soTK);
-            if (taiKhoan != null)
+            fnewAccount.XoaDuLieuAccount(cccd);
+            var cc = db.TaiKhoans.FirstOrDefault(Cc => Cc.Cccd == cccd);
+            if (cc != null)
             {
-                db.TaiKhoans.DeleteOnSubmit(taiKhoan);
-                db.SubmitChanges();
+                db.TaiKhoans.Remove(cc);
+                db.SaveChanges();
             }
         }
         private string SinhSoTK()
@@ -56,63 +60,57 @@ namespace QLNganHang
             return db.TaiKhoans.Count(tk => tk.SoTK == soTK) > 0;
         }
 
-
         private void btn2_Click_1(object sender, EventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                string cccd = TextBoxValue;
-                bool result = KhachHangDAO.Instance.XoaKhachHangTheoCCCD(cccd);
-                bool resultn = AccountDAO.Instance.DeleteAccount(cccd);
-                this.Close();
-            }
+            XoaDuLieuTaiKhoan(txbSoTk.Text);
         }
 
         private void btnMoTK_Click_1(object sender, EventArgs e)
         {
-                thongtin();
-                string soTK = txbSoTk.Text;
-                if (KiemTraTrungSoTK(soTK))
+            thongtin();
+            string soTK = txbSoTk.Text;
+            if (KiemTraTrungSoTK(soTK))
+            {
+                MessageBox.Show("Số tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                KhachHang khachHang = db.KhachHangs.FirstOrDefault(kh => kh.Cccd == txbCCCD.Text);
+                if (khachHang != null)
                 {
-                    MessageBox.Show("Số tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-
                     TaiKhoan taiKhoan = new TaiKhoan
                     {
                         SoTK = soTK,
-                        MaKH = ma,
-                        TenKH = ten,
-                        SDT = sdt,
+                        MaKH = khachHang.MaKH,
+                        TenKH = khachHang.TenKH,
+                        SDT = khachHang.SDT,
                         Cccd = txbCCCD.Text,
                         SoDu = 0,
-                        SoTienVay = 0                       
+                        SoTienVay = 0
                     };
 
-                    db.TaiKhoans.InsertOnSubmit(taiKhoan);
-                    db.SubmitChanges();
+                    db.TaiKhoans.Add(taiKhoan);
+                    db.SaveChanges();
 
                     MessageBox.Show("Mở tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
+            }
         }
 
-       
-       
+
+
         private void thongtin()
         {
             string cccd = txbCCCD.Text;
-            List<KhachHang> lstKhachHang = KhachHangDAO.Instance.TimKhachHangTheoCCCD(cccd);
-            if (lstKhachHang.Count > 0)
+            KhachHang khachHang = db.KhachHangs.FirstOrDefault(kh => kh.Cccd == cccd);
+            if (khachHang != null)
             {
                 // Hiển thị thông tin lên các button tương ứng
-                ma = lstKhachHang[0].MaKH;
-                ten = lstKhachHang[0].TenKH;
-                sdt = lstKhachHang[0].SDT;
-   
+                ma = khachHang.MaKH;
+                ten = khachHang.TenKH;
+                sdt = khachHang.SDT;
             }
         }
 

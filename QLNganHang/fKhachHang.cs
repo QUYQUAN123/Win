@@ -14,7 +14,7 @@ namespace QLNganHang
     public partial class fKhachHang : Form
     {
 
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+      QLNganHangEntities db = new QLNganHangEntities();
         string nt;
         private Account loginAccount;
 

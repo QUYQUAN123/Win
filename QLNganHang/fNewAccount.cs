@@ -13,6 +13,8 @@ namespace QLNganHang
 {
     public partial class fNewAccount : Form
     {
+        QLNganHangEntities db = new QLNganHangEntities();
+        public fDangKiKhachHangMoi fdangKiKhachHangMoi;
         public string TextBoxValue { get; set; }
         public fNewAccount()
         {
@@ -28,19 +30,24 @@ namespace QLNganHang
         {
             string userName = txtNAccount.Text;
             string citizenID = txtnCCCD.Text;
-            int type = 0;
+            int type = 0; // Giá trị type của tài khoản, bạn có thể thay đổi theo yêu cầu
             string password = txtNPass.Text;
 
-            bool result = AccountDAO.Instance.InsertAccount(userName, citizenID, type, password);
+            using (var db = new QLNganHangEntities())
+            {
+                Account newAccount = new Account()
+                {
+                    UserName = userName,
+                    CitizenID = citizenID,
+                    Type = type,
+                    PassWord = password
+                };
 
-            if (result)
-            {
-                MessageBox.Show("Them Thang Cong");
+                db.Accounts.Add(newAccount);
+                db.SaveChanges();
             }
-            else
-            {
-                 MessageBox.Show("Thêm tài khoản thất bại");
-            }
+
+            MessageBox.Show("Thêm tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void ChecKAccount()
         {
@@ -58,25 +65,34 @@ namespace QLNganHang
             }
             else
             {
-                bool trungTenDangNhap = AccountDAO.Instance.KiemTraTrungTenDangNhap(tenDangNhap);
-                if (trungTenDangNhap)
+                using (var db = new QLNganHangEntities())
                 {
-                    MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    string cccd = txtnCCCD.Text;
-                    fMoTaiKhoancs fmo = new fMoTaiKhoancs();
-                    fmo.TextBoxValue = cccd;
-                    fmo.ShowDialog();
-                    this.Close();
+                    bool trungTenDangNhap = KiemTraTrungTenDangNhap(db, tenDangNhap);
+                    if (trungTenDangNhap)
+                    {
+                        MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        string cccd = txtnCCCD.Text;
+                        fMoTaiKhoancs fmo = new fMoTaiKhoancs();
+                        fmo.TextBoxValue = cccd;
+                        fmo.fnewAccount = this;
+                        fmo.ShowDialog();
+                        this.Close();
+                    }
                 }
             }
         }
 
-     
+        private bool KiemTraTrungTenDangNhap(QLNganHangEntities db, string tenDangNhap)
+        {
+            var account = db.Accounts.FirstOrDefault(a => a.UserName == tenDangNhap);
+            return account != null;
+        }
 
-      
+
+
 
         private void btnDangKi_Click_1(object sender, EventArgs e)
         {
@@ -89,9 +105,21 @@ namespace QLNganHang
             DialogResult dialogResult = MessageBox.Show("Bạn có muốn xoá không?", "Xác nhận", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                string cccd = TextBoxValue;
-                bool result = KhachHangDAO.Instance.XoaKhachHangTheoCCCD(cccd);
-                this.Close();
+                XoaDuLieuAccount(TextBoxValue);
+
+            }
+        }
+        public void XoaDuLieuAccount(string cccd)
+        {
+            if (fdangKiKhachHangMoi != null)
+            {
+                fdangKiKhachHangMoi.XoaDuLieuKhachHang(cccd);
+            }
+            var ac = db.Accounts.FirstOrDefault(Ac => Ac.CitizenID == cccd);
+            if (ac != null)
+            {
+                db.Accounts.Remove(ac);
+                db.SaveChanges();
             }
         }
     }

@@ -49,16 +49,16 @@ namespace QLNganHang
             }
             else
             {
-                if (AccountDAO.Instance.UpdateAccount(userName, citizenID, password, newpass))
+               /* if (AccountDAO.Instance.UpdateAccount(userName, citizenID, password, newpass))
                 {
                     MessageBox.Show("Cập nhật thành công");
                     if (updateAccount != null)
                         updateAccount(this, new AccountEvent(AccountDAO.Instance.GetAccountByUserName(userName)));
-                }
+                }*//*
                 else
                 {
                     MessageBox.Show("Vui lòng điền đúng mật khấu");
-                }
+                }*/
             }
         }
 

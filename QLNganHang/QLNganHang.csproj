@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.Charts.WinForms, Version=1.0.8.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.Charts.WinForms.1.0.8\lib\net472\Guna.Charts.WinForms.dll</HintPath>
     </Reference>
@@ -40,6 +46,7 @@
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -47,6 +54,8 @@
     </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,13 +68,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="AccountDAO.cs" />
-    <Compile Include="DataProvider.cs" />
-    <Compile Include="DataQLNganHang.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataQLNganHang.dbml</DependentUpon>
+    <Compile Include="Account.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
     </Compile>
     <Compile Include="DKSoTietKiem.cs">
       <SubType>Form</SubType>
@@ -181,20 +185,44 @@
     <Compile Include="HomeVayTien.Designer.cs">
       <DependentUpon>HomeVayTien.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachHang.cs" />
-    <Compile Include="KhachHangDAO.cs" />
+    <Compile Include="KhachHang.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LaiXuat.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
     <Compile Include="LichSuGiaoDich.cs">
-      <SubType>Form</SubType>
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
     </Compile>
     <Compile Include="LichSuGiaoDich.Designer.cs">
       <DependentUpon>LichSuGiaoDich.cs</DependentUpon>
     </Compile>
-    <Compile Include="LsGiaoDich.cs" />
-    <Compile Include="LsGiaoDichDAO.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="NhanVienDAO.cs" />
+    <Compile Include="ModelQLNganHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelQLNganHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelQLNganHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelQLNganHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelQLNganHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoTietKiem.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
     <Compile Include="ThanhToanSoTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,11 +241,20 @@
     <Compile Include="ThongTinSoTietKiem.Designer.cs">
       <DependentUpon>ThongTinSoTietKiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="TinDung.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
     <Compile Include="VayTien.cs">
-      <SubType>Form</SubType>
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
     </Compile>
     <Compile Include="VayTien.Designer.cs">
       <DependentUpon>VayTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_KhachHang.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_VayTien.cs">
+      <DependentUpon>ModelQLNganHang.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DKSoTietKiem.resx">
       <DependentUpon>DKSoTietKiem.cs</DependentUpon>
@@ -301,13 +338,12 @@
     <EmbeddedResource Include="VayTien.resx">
       <DependentUpon>VayTien.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataQLNganHang.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataQLNganHang.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataQLNganHang.dbml.layout">
-      <DependentUpon>DataQLNganHang.dbml</DependentUpon>
+    <EntityDeploy Include="ModelQLNganHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelQLNganHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelQLNganHang.edmx.diagram">
+      <DependentUpon>ModelQLNganHang.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -325,6 +361,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\key.jpg" />
@@ -361,6 +398,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelQLNganHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelQLNganHang.Context.cs</LastGenOutput>
+      <DependentUpon>ModelQLNganHang.edmx</DependentUpon>
+    </Content>
+    <Content Include="ModelQLNganHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelQLNganHang.edmx</DependentUpon>
+      <LastGenOutput>ModelQLNganHang.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

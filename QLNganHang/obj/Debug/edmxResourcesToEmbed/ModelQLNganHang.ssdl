@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLNganHangModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CitizenID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DiaChi" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ThuNhap" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLNganHang.dbo.LaiXuat' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LaiXuat">
+    <Key>
+      <PropertyRef Name="KyHan" />
+      <PropertyRef Name="LaiXuatVay" />
+      <PropertyRef Name="LaiXuatGui" />
+    </Key>
+    <Property Name="KyHan" Type="int" Nullable="false" />
+    <Property Name="LaiXuatVay" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+    <Property Name="LaiXuatGui" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LichSuGiaoDich">
+    <Key>
+      <PropertyRef Name="MaGD" />
+    </Key>
+    <Property Name="MaGD" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SoTK" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SoTienGiaoDich" Type="money" />
+    <Property Name="NoiDungGiaoDich" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenNV" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DiaChi" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SoTietKiem">
+    <Key>
+      <PropertyRef Name="MaSo" />
+    </Key>
+    <Property Name="MaSo" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TienGui" Type="money" />
+    <Property Name="NgayGui" Type="date" Nullable="false" />
+    <Property Name="KyHan" Type="int" Nullable="false" />
+    <Property Name="LaiXuat" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+    <Property Name="DaThanhToan" Type="int" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="SoTK" />
+    </Key>
+    <Property Name="SoTK" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SoDu" Type="money" Nullable="false" />
+    <Property Name="SoTienVay" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TinDung">
+    <Key>
+      <PropertyRef Name="MaTD" />
+    </Key>
+    <Property Name="MaTD" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ThuNhap" Type="money" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="LoaiThe" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="HanMuc" Type="money" Nullable="false" />
+    <Property Name="NgayTra" Type="date" Nullable="false" />
+    <Property Name="LaiXuatTD" Type="float" Nullable="false" />
+    <Property Name="NoTD" Type="money" />
+    <Property Name="NoXau" Type="money" />
+    <Property Name="SoLan" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="VayTien">
+    <Key>
+      <PropertyRef Name="Cccd" />
+    </Key>
+    <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DiaChi" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ThuNhap" Type="money" />
+    <Property Name="SoTienVay" Type="money" Nullable="false" />
+    <Property Name="HinhThucVay" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TaiSanTheChap" Type="varchar" MaxLength="255" />
+    <Property Name="KyHan" Type="int" Nullable="false" />
+    <Property Name="LaiXuat" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+    <Property Name="NgayVay" Type="date" Nullable="false" />
+    <Property Name="NgayTra" Type="date" Nullable="false" />
+    <Property Name="NoXau" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLNganHang.dbo.View_KhachHang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="Cccd" />
+      <PropertyRef Name="TenKH" />
+      <PropertyRef Name="NgaySinh" />
+      <PropertyRef Name="SDT" />
+      <PropertyRef Name="Email" />
+      <PropertyRef Name="DiaChi" />
+      <PropertyRef Name="SoTK" />
+      <PropertyRef Name="SoDu" />
+    </Key>
+    <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DiaChi" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SoTK" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SoDu" Type="money" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLNganHang.dbo.View_VayTien' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_VayTien">
+    <Key>
+      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="TenKH" />
+      <PropertyRef Name="NgaySinh" />
+      <PropertyRef Name="SDT" />
+      <PropertyRef Name="Email" />
+      <PropertyRef Name="Cccd" />
+      <PropertyRef Name="DiaChi" />
+    </Key>
+    <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cccd" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DiaChi" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ThuNhap" Type="money" />
+  </EntityType>
+  <EntityContainer Name="QLNganHangModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LichSuGiaoDich" EntityType="Self.LichSuGiaoDich" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SoTietKiem" EntityType="Self.SoTietKiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinDung" EntityType="Self.TinDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VayTien" EntityType="Self.VayTien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LaiXuat" EntityType="Self.LaiXuat" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LaiXuat].[KyHan] AS [KyHan], 
+    [LaiXuat].[LaiXuatVay] AS [LaiXuatVay], 
+    [LaiXuat].[LaiXuatGui] AS [LaiXuatGui]
+    FROM [dbo].[LaiXuat] AS [LaiXuat]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_KhachHang" EntityType="Self.View_KhachHang" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_KhachHang].[MaKH] AS [MaKH], 
+    [View_KhachHang].[Cccd] AS [Cccd], 
+    [View_KhachHang].[TenKH] AS [TenKH], 
+    [View_KhachHang].[NgaySinh] AS [NgaySinh], 
+    [View_KhachHang].[SDT] AS [SDT], 
+    [View_KhachHang].[Email] AS [Email], 
+    [View_KhachHang].[DiaChi] AS [DiaChi], 
+    [View_KhachHang].[SoTK] AS [SoTK], 
+    [View_KhachHang].[SoDu] AS [SoDu]
+    FROM [dbo].[View_KhachHang] AS [View_KhachHang]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_VayTien" EntityType="Self.View_VayTien" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_VayTien].[MaKH] AS [MaKH], 
+    [View_VayTien].[TenKH] AS [TenKH], 
+    [View_VayTien].[NgaySinh] AS [NgaySinh], 
+    [View_VayTien].[SDT] AS [SDT], 
+    [View_VayTien].[Email] AS [Email], 
+    [View_VayTien].[Cccd] AS [Cccd], 
+    [View_VayTien].[DiaChi] AS [DiaChi], 
+    [View_VayTien].[ThuNhap] AS [ThuNhap]
+    FROM [dbo].[View_VayTien] AS [View_VayTien]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class fNapRut : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+        QLNganHangEntities db = new QLNganHangEntities();
         public fNapRut()
         {
             InitializeComponent();
@@ -29,10 +29,10 @@ namespace QLNganHang
             db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu -= soTien);
             KiemTra();
             // Lưu các thay đổi vào cơ sở dữ liệu
-            db.SubmitChanges();
-            
+            db.SaveChanges();
+
         }
-        
+
         public void KiemTra()
         {
 
@@ -85,19 +85,19 @@ namespace QLNganHang
                         db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu += soTien);
                         gan();
                         noidung = "Nap tien vao tai khoan  " + SoTK;
-                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
-                        db.SubmitChanges();
+                        /* LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);*/
+                        db.SaveChanges();
                         KiemTra();
-                        db.SubmitChanges();
+                        db.SaveChanges();
                     }
                 }
                 else
                 {
-                    
+
                     MessageBox.Show("Vui lòng nhập số tiền.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-  
+
         }
 
         private void btnKiemTra_Click_1(object sender, EventArgs e)
@@ -117,13 +117,12 @@ namespace QLNganHang
             {
                 db.TaiKhoans.Where(tk => tk.SoTK == txbSoTK.Text).ToList().ForEach(tk => tk.SoDu -= soTien);
                 gan();
-                noidung = "Rut Tien Tu tai khoan  "+ SoTK;
-                LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
+                noidung = "Rut Tien Tu tai khoan  " + SoTK;
+                /*         LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);*/
                 KiemTra();
-                db.SubmitChanges();
+                db.SaveChanges();
             }
 
-            
         }
         void gan()
         {

@@ -13,7 +13,7 @@ namespace QLNganHang
 {
     public partial class fNhanVien : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+        QLNganHangEntities db = new QLNganHangEntities();
 
 
         private Account loginAccount;
@@ -37,21 +37,22 @@ namespace QLNganHang
 
         void LoadData()
         {
-           
+
             try
             {
-                var data = db.View_KhachHangs.Select(View_KhacHang => new
+                var data = db.View_KhachHang.Select(view => new
                 {
-                    View_KhacHang.MaKH,
-                    View_KhacHang.TenKH,
-                    View_KhacHang.NgaySinh,
-                    View_KhacHang.SDT,
-                    View_KhacHang.Email,
-                    View_KhacHang.Cccd,
-                    View_KhacHang.DiaChi,
-                    View_KhacHang.SoTK,
-                    View_KhacHang.SoDu,
-                });
+                    view.MaKH,
+                    view.TenKH,
+                    view.NgaySinh,
+                    view.SDT,
+                    view.Email,
+                    view.Cccd,
+                    view.DiaChi,
+                    view.SoTK,
+                    view.SoDu
+                }).ToList();
+
                 gvKhachHang.DataSource = data;
             }
             catch (SqlException)
@@ -59,7 +60,7 @@ namespace QLNganHang
                 MessageBox.Show("Không kết nối lấy được dữ liệu ", "Lỗi dữ liệu!");
             }
 
-          
+
         }
 
 
@@ -67,15 +68,14 @@ namespace QLNganHang
         {
             đổiMậtKhẩuToolStripMenuItem.Text += " (" + LoginAccount.CitizenID + ")";
         }
-
         private void btnChuyenTien_Click(object sender, EventArgs e)
         {
-           
-            fChuyenTien f =new fChuyenTien();
-            string nt = db.View_KhachHangs.Where(p => p.Cccd == txbNhapCccd.Text).Select(p => p.SoTK).FirstOrDefault();
+
+            fChuyenTien f = new fChuyenTien();
+            string nt = db.View_KhachHang.Where(p => p.Cccd == txbNhapCccd.Text).Select(p => p.SoTK).FirstOrDefault();
             f.TextBoxValue = nt;
             f.ShowDialog();
-            
+
         }
        
         private void đổiMậtKhẩuToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -125,20 +125,25 @@ namespace QLNganHang
         private void button2_Click(object sender, EventArgs e)
         {
             this.LoadData();
-            DialogResult dialogResult = MessageBox.Show("Bạn có muốn xoa không?", "Xác nhận", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn xóa không?", "Xác nhận", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 string cccd = txbNhapCccd.Text;
-                bool result = KhachHangDAO.Instance.XoaKhachHangTheoCCCD(cccd);
-                bool resultn = AccountDAO.Instance.DeleteAccount(cccd);
-                MessageBox.Show("xoa thanh cong ");
+
+                // Tạo một instance của form fMoTaiKhoancs
+                fMoTaiKhoancs fMoTaiKhoancs = new fMoTaiKhoancs();
+
+                // Gọi phương thức XoaDuLieuTaiKhoan trong fMoTaiKhoancs
+                fMoTaiKhoancs.XoaDuLieuTaiKhoan(cccd);
+
+                MessageBox.Show("Xóa thành công");
             }
         }
 
         private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
-           LoadData();
-            var Lst = (from Cccd in db.View_KhachHangs where Cccd.Cccd.Contains(txbNhapCccd.Text) select Cccd).ToList();
+            LoadData();
+            var Lst = (from Cccd in db.View_KhachHang where Cccd.Cccd.Contains(txbNhapCccd.Text) select Cccd).ToList();
             dataGridView1.DataSource = Lst;
         }
 
@@ -154,9 +159,9 @@ namespace QLNganHang
         }
 
         private void lichSuGiaoDichToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {/*
             LichSuGiaoDich s= new LichSuGiaoDich();
-            s.ShowDialog();
+            s.ShowDialog();*/
         }
     }
 }
