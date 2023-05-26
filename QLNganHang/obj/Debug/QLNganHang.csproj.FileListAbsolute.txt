@@ -336,3 +336,33 @@ D:\WinForm\Project\Win\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.c
 D:\WinForm\Project\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache
 D:\WinForm\Project\Win\QLNganHang\obj\Debug\QLNganHang.exe
 D:\WinForm\Project\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.csproj.AssemblyReference.cache
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.csproj.SuggestedBindingRedirects.cache
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.DKSoTietKiem.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.DSden.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fAccountProfile.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fChuyenTien.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fDangKiKhachHangMoi.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fKhachHang.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fKiemTraTD.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.Form1.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fMoTaiKhoancs.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fNapRut.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fNewAccount.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fNhanVien.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fThanhToanTinDung.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.FThongTinKhacHang.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fThongTinNV.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.fTinDung.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.GuiTien.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.HomeVayTien.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.LichSuGiaoDich.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.Properties.Resources.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanSoTK.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.ThongTinSoTietKiem.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.VayTien.resources
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.cache
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.exe
+E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.pdb

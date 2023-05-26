@@ -13,7 +13,7 @@ namespace QLNganHang
 {
     public partial class fKiemTraTD : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+        QLNganHangEntities db = new QLNganHangEntities();
 
         List<CheckBox> listCheckbox = new List<CheckBox>();
 
@@ -28,7 +28,7 @@ namespace QLNganHang
 
         private void fKiemTraTD_Load(object sender, EventArgs e)
         {
-            db = new DataQLNganHangDataContext();
+            db = new QLNganHangEntities();
             gvTD.DataSource = db.TinDungs;
         }
 
@@ -80,7 +80,7 @@ namespace QLNganHang
                 tindung.SoLan = 0.ToString();
             }
 
-            db.SubmitChanges();
+            db.SaveChanges();
         }
 
         private void checkBox2_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace QLNganHang
                 checkBox2.Checked = false;
             }
 
-            db.SubmitChanges();
+            db.SaveChanges();
         }
 
         private void checkBox3_Click(object sender, EventArgs e)
@@ -120,7 +120,7 @@ namespace QLNganHang
                 checkBox3.Checked = false;
             }
 
-            db.SubmitChanges();
+            db.SaveChanges();
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -129,7 +129,7 @@ namespace QLNganHang
             var a = db.TinDungs.Where(s => s.MaTD == txtSTD.Text).Single();
             DateTime dateTime = Convert.ToDateTime(a.NgayTra);
 
-            db.SubmitChanges();
+            db.SaveChanges();
 
         }
 

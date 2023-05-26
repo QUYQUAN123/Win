@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class fTinDung : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+        QLNganHangEntities db = new QLNganHangEntities();
         public fTinDung()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace QLNganHang
         }
         void LoadData()
         {
-            db = new DataQLNganHangDataContext();
+            db = new QLNganHangEntities();
             gvTinDung.DataSource = db.TinDungs;
         }
 
@@ -83,8 +83,8 @@ namespace QLNganHang
                 st.NoTD = notd;
                 st.NoXau = noxau;
                 st.SoLan = solan;
-                db.TinDungs.DeleteOnSubmit(st);
-                db.SubmitChanges();
+                db.TinDungs.Remove(st);
+                db.SaveChanges();
                 MessageBox.Show("Xoa thanh cong");
                 LoadData();
             }
@@ -108,17 +108,33 @@ namespace QLNganHang
             st.NoTD = notd;
             st.NoXau = noxau;
             st.SoLan = solan;
-            db.SubmitChanges();
+            db.SaveChanges();
             MessageBox.Show("Sua thanh cong");
             LoadData();
         }
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            fThemTinDung f = new fThemTinDung();
-            f.ShowDialog();
-            this.Close();
+            string tenkh = txtTenKH.Text, cccd = txtCccd.Text, loaithe = cmbLoaiThe.Text, solan = txtSoLan.Text;
+            double laixuattd = double.Parse(cmbLaiXuat.Text);
+            DateTime ngaytra = DateTime.Parse(dateTimePicker1.Text);
+            decimal thunhap = decimal.Parse(txtThuNhap.Text), hanmuc = decimal.Parse(cmbHanMuc.Text)
+            , notd = decimal.Parse(txtNoTD.Text), noxau = decimal.Parse(txtNoXau.Text);
+            var st = (from s in db.TinDungs where s.MaTD == txtMaTD.Text select s).First();
+            st.TenKH = tenkh;
+            st.ThuNhap = thunhap;
+            st.Cccd = cccd;
+            st.LoaiThe = loaithe;
+            st.HanMuc = hanmuc;
+            st.NgayTra = ngaytra;
+            st.LaiXuatTD = laixuattd;
+            st.NoTD = notd;
+            st.NoXau = noxau;
+            st.SoLan = solan;
+            db.TinDungs.Add(st);
+            db.SaveChanges();
+            MessageBox.Show("them thanh cong");
+            LoadData();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

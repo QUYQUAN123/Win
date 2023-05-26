@@ -14,7 +14,7 @@ namespace QLNganHang
 
     public partial class fThanhToanTinDung : Form
     {
-        DataQLNganHangDataContext db = new DataQLNganHangDataContext();
+        QLNganHangEntities db = new QLNganHangEntities();
         public fThanhToanTinDung()
         {
             InitializeComponent();
@@ -76,7 +76,7 @@ namespace QLNganHang
                 }
 
                 KiemTraTD();
-                db.SubmitChanges();
+                db.SaveChanges();
             }
             else
             {
@@ -96,7 +96,7 @@ namespace QLNganHang
 
             db.TinDungs.Where(td => td.Cccd == txtCccd.Text).ToList().ForEach(td => td.NoXau = (notd + noxau));
             KiemTraTD();
-            db.SubmitChanges();
+            db.SaveChanges();
         }
 
         private void btnChuyen_Click_1(object sender, EventArgs e)
@@ -127,7 +127,7 @@ namespace QLNganHang
                     tk.HanMuc -= sotien;
                 }
                 KiemTraTD();
-                db.SubmitChanges();
+                db.SaveChanges();
             }
             else
             {
