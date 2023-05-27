@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class HomeVayTien : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         public HomeVayTien()
         {
             InitializeComponent();
@@ -85,7 +85,7 @@ namespace QLNganHang
 
         private void btnDK_Click(object sender, EventArgs e)
         {
-            VayTien vt = new VayTien();
+            VayTien_Entity vt = new VayTien_Entity();
             vt.ShowDialog();
         }
 

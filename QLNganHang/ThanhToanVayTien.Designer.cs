@@ -474,6 +474,7 @@ namespace QLNganHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1540, 829);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel2);

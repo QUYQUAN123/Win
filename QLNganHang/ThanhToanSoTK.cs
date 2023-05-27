@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class ThanhToanSoTK : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         public ThanhToanSoTK()
         {
             InitializeComponent();
@@ -59,18 +59,13 @@ namespace QLNganHang
                                              select u).FirstOrDefault();
                                 item1.SoDu += temp;
                                 item.DaThanhToan += 2;
-                                double SoTien = Convert.ToDouble(temp);
-                                string tenkh = tbxTenKH.Text;
-                                string SoTK = item1.SoTK;
-                                string noidung = "Thanh toan So Tiet Kiem - Tat Toan  ";
-                                LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
-                                NH.SubmitChanges();
+                                NH.SaveChanges();
                                 MessageBox.Show("Giao dịch hoàn tất!");
                             }
                             else if (tb3 == DialogResult.No)
                             {
                                 item.DaThanhToan += 2;
-                                NH.SubmitChanges();
+                                NH.SaveChanges();
                                 MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận lại tiền lời.");
                             }
                             else
@@ -92,18 +87,13 @@ namespace QLNganHang
                                      select u).FirstOrDefault();
                         item1.SoDu += temp;
                         item.DaThanhToan += 1;
-                        double SoTien = Convert.ToDouble(temp);
-                        string tenkh = tbxTenKH.Text;
-                        string SoTK = item1.SoTK;
-                        string noidung = "Thanh toan So Tiet Kiem  ";
-                        LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
-                        NH.SubmitChanges();
+                        NH.SaveChanges();
                         MessageBox.Show("Giao dịch hoàn tất!");
                     }
                     else if (tb3 == DialogResult.No)
                     {
                         item.DaThanhToan += 2;
-                        NH.SubmitChanges();
+                        NH.SaveChanges();
                         MessageBox.Show("Giao dịch hoàn tất! Vui lòng nhận lại tiền lời.");
                     }
                     else
@@ -173,7 +163,7 @@ namespace QLNganHang
                     item.NgayGui = NgayDong;
                     item.TienGui += temp;
                     MessageBox.Show("Làm mới kỳ hạn thành công! Lãi nhập gốc.");
-                    NH.SubmitChanges();
+                    NH.SaveChanges();
                 }
             }
         }
@@ -214,12 +204,7 @@ namespace QLNganHang
                     item1.SoDu += temp;
                     item.NgayGui = NgayDong;
                     MessageBox.Show("Chuyển lãi qua tài khoản thành công! Sổ tiết kiệm sẽ được làm mới kỳ hạn.");
-                    double SoTien = Convert.ToDouble(temp);
-                    string tenkh = tbxTenKH.Text;
-                    string SoTK = item1.SoTK;
-                    string noidung = "Thanh toan So Tiet Kiem - Chuyen lai qua goc  ";
-                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
-                    NH.SubmitChanges();
+                    NH.SaveChanges();
                 }
             }
         }

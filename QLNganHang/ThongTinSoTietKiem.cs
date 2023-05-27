@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class ThongTinSoTietKiem : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         public ThongTinSoTietKiem()
         {
             InitializeComponent();

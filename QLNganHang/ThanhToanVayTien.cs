@@ -13,7 +13,7 @@ namespace QLNganHang
 {
     public partial class ThanhToanVayTien : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.QLNganHangConnectionString1);
         public ThanhToanVayTien()
         {
@@ -23,7 +23,7 @@ namespace QLNganHang
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
             string d = cccdtxt.Text;
-            var item = (from u in NH.View_VayTiens
+            var item = (from u in NH.View_VayTien
                         where u.Cccd == d
                         select u).FirstOrDefault();
             var item1 = (from u in NH.VayTiens
@@ -93,17 +93,12 @@ namespace QLNganHang
                             item1.SoDu -= item1.SoTienVay;
                             item1.SoTienVay -= item1.SoTienVay;
                             string sqlStr = string.Format("DELETE FROM VayTien WHERE Cccd ='"+cccdtxt.Text+"'");
-                            double SoTien = double.Parse(txbTienVay.Text);
-                            string tenkh = txbTenKH.Text;
-                            string SoTK = item1.SoTK;
-                            string noidung = "Thanh toán khoán vay  " + temp;
-                            LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
                             SqlCommand cmd = new SqlCommand(sqlStr, conn);
                             if (cmd.ExecuteNonQuery() > 0)
                                 MessageBox.Show("Thanh toán nợ hoàn tất. Khoản vay có kỳ hạn dưới 1 năm sẽ không phải chịu phí phạt.");
                         }
                     }
-                    NH.SubmitChanges();
+                    NH.SaveChanges();
                 }
                 catch
                 {

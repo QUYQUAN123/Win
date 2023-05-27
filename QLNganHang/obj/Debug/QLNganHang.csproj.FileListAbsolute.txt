@@ -366,3 +366,45 @@ E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.ca
 E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache
 E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.exe
 E:\New folder (2)\Win\QLNganHang\obj\Debug\QLNganHang.pdb
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.csproj.AssemblyReference.cache
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.DKSoTietKiem.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.DSden.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fAccountProfile.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fChuyenTien.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fDangKiKhachHangMoi.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fKhachHang.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fKiemTraTD.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.Form1.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fMoTaiKhoancs.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fNapRut.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fNewAccount.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fNhanVien.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fThanhToanTinDung.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.FThongTinKhacHang.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fThongTinNV.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.fTinDung.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.GuiTien.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.HomeVayTien.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.LichSuGiaoDich.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.Properties.Resources.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.ThanhToanSoTK.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.ThanhToanVayTien.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.ThongTinSoTietKiem.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.VayTien.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.VayTien_Entity.resources
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.csproj.GenerateResource.cache
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.csproj.CoreCompileInputs.cache
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.exe
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.pdb
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\QLNganHang.exe.config
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\QLNganHang.exe
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\QLNganHang.pdb
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\EntityFramework.dll
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\Guna.Charts.WinForms.dll
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\Guna.UI2.dll
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\System.Data.SqlClient.dll
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\EntityFramework.xml
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\bin\Debug\System.Data.SqlClient.xml
+C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\obj\Debug\QLNganHang.csproj.CopyComplete

@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class DSden : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         public DSden()
         {
             InitializeComponent();

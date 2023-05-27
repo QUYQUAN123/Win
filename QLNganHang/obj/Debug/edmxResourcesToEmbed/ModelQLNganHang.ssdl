@@ -11,7 +11,7 @@
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
-      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="Cccd" />
     </Key>
     <Property Name="MaKH" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="TenKH" Type="varchar" MaxLength="255" Nullable="false" />

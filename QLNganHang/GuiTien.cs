@@ -12,7 +12,7 @@ namespace QLNganHang
 {
     public partial class GuiTien : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         public GuiTien()
         {
             InitializeComponent();
@@ -80,12 +80,7 @@ namespace QLNganHang
                 {
                     item.TienGui = item.TienGui + Convert.ToDecimal(tbxSoTienGui.Text);
                     item1.SoDu -= Convert.ToDecimal(tbxSoTienGui.Text);
-                    double SoTien = double.Parse(tbxSoTienGui.Text);
-                    string tenkh = tbxTenKH.Text;
-                    string SoTK = item1.SoTK;
-                    string noidung = "Gui tien vao So Tiet Kiem  ";
-                    LsGiaoDichDAO.Instance.ThemLichSuGiaoDich(tenkh, SoTien, SoTK, noidung);
-                    NH.SubmitChanges();
+                    NH.SaveChanges();
                     MessageBox.Show("Giao dịch gửi tiền thành công!");
                 }
             }

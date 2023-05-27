@@ -24,78 +24,17 @@ namespace QLNganHang
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txbTenKH.Text) || string.IsNullOrWhiteSpace(txbSDT.Text) || string.IsNullOrWhiteSpace(txbEmail.Text) || string.IsNullOrWhiteSpace(txbDiaChi.Text))
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
-                return;
-            }
-
-            KhachHang kh = new KhachHang();
-            kh.MaKH = txbMaKH.Text;
-            kh.TenKH = txbTenKH.Text;
-            kh.NgaySinh = dtNgaySinh.Value;
-            kh.SDT = txbSDT.Text;
-            kh.Email = txbEmail.Text;
-            kh.CCCD = txbCCCD.Text;
-            kh.DiaChi = txbDiaChi.Text;
-            kh.ThuNhap = decimal.Parse(txbThuNhap.Text);
-
-
-            if (KhachHangDAO.Instance.CapNhatThongTinKhachHang(kh))
-            {
-                MessageBox.Show("Cập nhật thông tin thành công.");
-            }
-            else
-            {
-                MessageBox.Show("Cập nhật thông tin không thành công.");
-            }
+            
         }
 
         private void btnKT_Click(object sender, EventArgs e)
         {
-            string cccd = txbCCCD.Text;
-            List<KhachHang> lstKhachHang = KhachHangDAO.Instance.TimKhachHangTheoCCCD(cccd);
-            if (lstKhachHang.Count > 0)
-            {
-                // Hiển thị thông tin lên các button tương ứng
-                txbMaKH.Text = lstKhachHang[0].MaKH;
-                txbTenKH.Text = lstKhachHang[0].TenKH;
-                dtNgaySinh.Text = lstKhachHang[0].NgaySinh.ToString("dd/MM/yyyy");
-                txbSDT.Text = lstKhachHang[0].SDT;
-                txbEmail.Text = lstKhachHang[0].Email;
-                txbCCCD.Text = lstKhachHang[0].CCCD;
-                txbDiaChi.Text = lstKhachHang[0].DiaChi;
-                txbThuNhap.Text = lstKhachHang[0].ThuNhap.ToString();
-            }
+            
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txbTenKH.Text) || string.IsNullOrWhiteSpace(txbSDT.Text) || string.IsNullOrWhiteSpace(txbEmail.Text) || string.IsNullOrWhiteSpace(txbDiaChi.Text))
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
-                return;
-            }
-
-            KhachHang kh = new KhachHang();
-            kh.MaKH = txbMaKH.Text;
-            kh.TenKH = txbTenKH.Text;
-            kh.NgaySinh = dtNgaySinh.Value;
-            kh.SDT = txbSDT.Text;
-            kh.Email = txbEmail.Text;
-            kh.CCCD = txbCCCD.Text;
-            kh.DiaChi = txbDiaChi.Text;
-            kh.ThuNhap = decimal.Parse(txbThuNhap.Text);
-
-
-            if (KhachHangDAO.Instance.CapNhatThongTinKhachHang(kh))
-            {
-                MessageBox.Show("Cập nhật thông tin thành công.");
-            }
-            else
-            {
-                MessageBox.Show("Cập nhật thông tin không thành công.");
-            }
+           
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

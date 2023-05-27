@@ -14,7 +14,7 @@ namespace QLNganHang
 {
     public partial class DKSoTietKiem : Form
     {
-        DataQLNganHangDataContext NH = new DataQLNganHangDataContext();
+        QLNganHangEntities NH = new QLNganHangEntities();
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.QLNganHangConnectionString1);
         public DKSoTietKiem()
         {
@@ -91,7 +91,7 @@ namespace QLNganHang
                     SqlCommand cmd = new SqlCommand(sqlStr, conn);
                     if (cmd.ExecuteNonQuery() > 0)
                         MessageBox.Show("Mở sổ thành công!");
-                    NH.SubmitChanges();
+                    NH.SaveChanges();
                     string d = txbMaKH.Text;
                     var item = (from u in NH.TaiKhoans
                                 where u.MaKH == d
@@ -100,7 +100,7 @@ namespace QLNganHang
                         * Convert.ToDecimal(comboKyHan.Text)) / 100);
                     item.SoDu += temp;
                 }
-                NH.SubmitChanges();
+                NH.SaveChanges();
             }
             catch (Exception ex)
             {

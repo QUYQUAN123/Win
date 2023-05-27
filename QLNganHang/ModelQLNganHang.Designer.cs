@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\WinForm\Project\Win\QLNganHang\ModelQLNganHang.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\luanngo9352gmail.com\source\repos\QLNganHang_Entity\QLNganHang\ModelQLNganHang.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
